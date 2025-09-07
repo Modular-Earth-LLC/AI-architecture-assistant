@@ -7,7 +7,7 @@ A world-class Artificial Intelligence (AI) architect and technical project manag
 **Why it's useful**:
 > "Artificial intelligence (AI) initiatives often stall because of poor architectural choices, a lack of preparation and the inability to scale. Enterprise architecture and technology innovation leaders can create an AI architect role to help build a robust enterprise-wide architecture for AI.
 
-Through 2023, Gartner estimates that 50% of IT leaders will struggle to move their AI projects past the proof of concept (POC) stage into production. To increase the chances of success, organizations can hire an AI architect to help define the architectural strategy, create workflows, identify toolsets and scale artificial intelligence operations."
+> Through 2023, Gartner estimates that 50% of IT leaders will struggle to move their AI projects past the proof of concept (POC) stage into production. To increase the chances of success, organizations can hire an AI architect to help define the architectural strategy, create workflows, identify toolsets and scale artificial intelligence operations."
 <https://www.gartner.com/en/articles/what-are-ai-architects-and-what-do-they-do>
 
 ---
