@@ -1,16 +1,16 @@
 # Discovery Guide
 
-**Purpose:** Understand client needs, identify technical requirements, and assess AI solution opportunities  
+**Purpose:** Understand stakeholder needs, identify technical requirements, and assess AI solution opportunities  
 **Duration:** 30-45 minutes  
-**When to use:** Initial client meeting or project kickoff
+**When to use:** Initial meeting or project kickoff
 
 ---
 
 ## Overview
 
-The discovery session is your first technical conversation with a client or stakeholder. Your goal is to understand their business context, identify pain points that AI could address, and determine if a requirements workshop is needed.
+The discovery session is your first technical conversation with stakeholders. Your goal is to understand their context, identify pain points that AI could address, and determine if a requirements workshop is needed.
 
-This is a listening and learning session, not a selling session.
+This is a listening and learning session focused on understanding the problem.
 
 ---
 
@@ -18,18 +18,18 @@ This is a listening and learning session, not a selling session.
 
 ### Research Tasks (15-30 minutes)
 
-1. **Review client materials:**
-   - Website and public documentation
-   - Industry context and common challenges
+1. **Review available context:**
+   - Documentation and background information
+   - Domain context and common challenges
    - Technology they mention using
 
 2. **Prepare examples:**
-   - 3-5 AI agent use cases relevant to their industry
+   - 3-5 AI agent use cases relevant to their domain
    - Similar problems you've solved before
    - Concrete examples of automation opportunities
 
 3. **Technical setup:**
-   - Video conferencing ready
+   - Meeting platform ready
    - Note-taking system prepared
    - Ability to share screen if needed
 
@@ -47,17 +47,17 @@ This is a listening and learning session, not a selling session.
 
 **Key questions:**
 
-- "What are your core services or processes?"
-- "Who are your clients/users, and what does a typical engagement look like?"
+- "What are your core processes or workflows?"
+- "Who are your users, and what does a typical workflow look like?"
 - "Walk me through your role—what do you handle versus delegate?"
 - "What tools and systems do you use daily?"
 
 **What to capture:**
 
-- Service delivery model
+- Operating model and processes
 - Current delegation patterns
 - Technology stack (tools mentioned)
-- Business scale and complexity
+- Scale and complexity
 - Technical sophistication level
 
 ### 3. Pain Point Identification (10-15 minutes)
@@ -88,7 +88,7 @@ This is a listening and learning session, not a selling session.
 - Exact description of pain points (use their words)
 - Frequency and time spent
 - Current workarounds
-- Impact on business (time, quality, capacity)
+- Impact (time, quality, capacity)
 
 ### 4. Opportunity Framing (5-10 minutes)
 
@@ -140,8 +140,8 @@ This is a listening and learning session, not a selling session.
 
 ### Within 24 Hours
 
-1. **Send meeting summary** to client
-2. **Schedule requirements workshop** if client committed
+1. **Send meeting summary** to stakeholders
+2. **Schedule requirements workshop** if committed
 3. **Conduct additional research** if needed
 4. **Update project documentation**
 
@@ -152,11 +152,11 @@ This is a listening and learning session, not a selling session.
 ```markdown
 # Discovery Session Summary
 
-**Client:** [NAME]  
 **Date:** [DATE]  
 **Duration:** [MINUTES]  
+**Stakeholders:** [NAMES]
 
-## Business Context
+## Context
 [2-3 sentence description of how they operate]
 
 ## Pain Points Identified
@@ -197,38 +197,38 @@ This is a listening and learning session, not a selling session.
 
 ## Common Challenges & Solutions
 
-### Client gives vague answers
+### Stakeholder gives vague answers
 **Solution:** Ask for specific recent examples  
 *"Tell me about the last time you did [TASK]. Walk me through that specific instance."*
 
-### Client jumps between topics
+### Stakeholder jumps between topics
 **Solution:** Acknowledge and refocus  
 *"That's interesting—let me note that and we can come back to it. First, I want to understand [CURRENT_TOPIC]."*
 
-### Client doesn't see AI opportunities
-**Solution:** Use concrete examples from their industry  
-*"In [SIMILAR_BUSINESS], we built an agent that handles [SPECIFIC_TASK]. Do you do anything similar?"*
+### Stakeholder doesn't see AI opportunities
+**Solution:** Use concrete examples from their domain  
+*"In [SIMILAR_CONTEXT], we built an agent that handles [SPECIFIC_TASK]. Do you do anything similar?"*
 
-### Client expects AI to do everything
+### Stakeholder expects AI to do everything
 **Solution:** Set realistic expectations  
-*"AI is excellent at [SPECIFIC_TASKS] but still requires your expertise for [JUDGMENT_TASKS]. Think of it as a capable assistant, not a replacement."*
+*"AI is excellent at [SPECIFIC_TASKS] but still requires expertise for [JUDGMENT_TASKS]. Think of it as a capable assistant, not a replacement."*
 
 ---
 
 ## Success Indicators
 
 ✅ **Good discovery session:**
-- Client articulates 3+ pain points clearly
+- Stakeholders articulate 3+ pain points clearly
 - At least 2 pain points are AI-suitable
-- Client can envision AI helping
-- Client commits to next step (workshop or follow-up)
+- Stakeholders can envision AI helping
+- Stakeholders commit to next step (workshop or follow-up)
 - Meeting stays on time (30-45 minutes)
 
 ⚠️ **Red flags:**
 - No clear pain points ("everything is fine")
-- Client wants AI for novelty, not solving real problems
+- Want AI for novelty, not solving real problems
 - Unrealistic expectations about AI capabilities
-- Client resistant to structured process
+- Resistant to structured process
 - All identified problems require human judgment
 
 ---
@@ -248,13 +248,13 @@ This is a listening and learning session, not a selling session.
 ## Copy-Paste Checklist
 
 Before the meeting:
-- [ ] Researched client/company
+- [ ] Researched context
 - [ ] Prepared 3-5 relevant examples
 - [ ] Note-taking system ready
-- [ ] Meeting link tested
+- [ ] Meeting platform tested
 
 During the meeting:
-- [ ] Set clear expectations (exploratory, not sales)
+- [ ] Set clear expectations (exploratory, focused on understanding)
 - [ ] Asked all core questions
 - [ ] Captured pain points with details
 - [ ] Noted technology stack
@@ -265,5 +265,5 @@ After the meeting:
 - [ ] Notes organized within 1 hour
 - [ ] Meeting summary created
 - [ ] Next steps scheduled
-- [ ] Client summary sent within 24 hours
+- [ ] Summary sent within 24 hours
 

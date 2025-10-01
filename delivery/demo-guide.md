@@ -1,6 +1,6 @@
 # Prototype Demo Guide
 
-**Purpose:** Effectively demonstrate your AI agent prototype to clients/stakeholders  
+**Purpose:** Effectively demonstrate your AI agent prototype to stakeholders/stakeholders  
 **Duration:** 45-60 minutes  
 **When to use:** After prototype development, before production decision
 
@@ -41,7 +41,7 @@ The prototype demo is where you prove the concept works and gather feedback. You
 
 ### Communication
 
-- [ ] Meeting reminder sent to client
+- [ ] Meeting reminder sent to stakeholder
 - [ ] Agenda shared
 - [ ] Access credentials prepared (if hands-on demo)
 
@@ -154,7 +154,7 @@ If you have coordinated agents, show one workflow:
 #### Facilitation Approach
 
 **Do:**
-- ✅ Let client lead
+- ✅ Let stakeholder lead
 - ✅ Observe quietly
 - ✅ Note what they try first
 - ✅ Watch for confusion or delight
@@ -334,7 +334,7 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 - Make note and address later
 - Don't spend >2 minutes debugging live
 
-### Challenge: Client Seems Disengaged
+### Challenge: Stakeholder Seems Disengaged
 
 **Response:**
 - Ask directly: *"Is this addressing what you expected?"*
@@ -342,7 +342,7 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 - Focus on their specific pain points
 - Ask what they'd like to see
 
-### Challenge: Client Has Unrealistic Expectations
+### Challenge: Stakeholder Has Unrealistic Expectations
 
 **Response:**
 - Set realistic boundaries: *"That's outside the scope of what AI can reliably do"*
@@ -358,7 +358,7 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 - Show it working correctly with different input
 - Make note for refinement
 
-### Challenge: Client Can't Think of Use Cases During Hands-On
+### Challenge: Stakeholder Can't Think of Use Cases During Hands-On
 
 **Response:**
 - Provide specific prompts: *"Try [SPECIFIC_SCENARIO] you mentioned in our workshop"*
@@ -372,25 +372,25 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 
 ### ✅ Strong Demo
 
-- Client can use prototype without extensive guidance
-- Client identifies 3+ specific use cases
-- Client provides detailed feedback (positive AND critical)
-- Client asks about implementation timeline
-- Client tries multiple scenarios independently
-- Client connects value to specific pain points
+- Stakeholder can use prototype without extensive guidance
+- Stakeholder identifies 3+ specific use cases
+- Stakeholder provides detailed feedback (positive AND critical)
+- Stakeholder asks about implementation timeline
+- Stakeholder tries multiple scenarios independently
+- Stakeholder connects value to specific pain points
 
 ### ⚠️ Moderate Demo
 
-- Client needs some guidance
-- Client sees some value but has concerns
+- Stakeholder needs some guidance
+- Stakeholder sees some value but has concerns
 - Feedback is mostly general
-- Client interested but not urgent
+- Stakeholder interested but not urgent
 - Some usage during hands-on
 
 ### ❌ Weak Demo
 
-- Client struggles to use even with guidance
-- Client doesn't see clear value
+- Stakeholder struggles to use even with guidance
+- Stakeholder doesn't see clear value
 - Minimal feedback
 - Can't think of use cases
 - Doesn't engage during hands-on
@@ -473,7 +473,7 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 ## Tips for Effective Demos
 
 1. **Start with the "wow" moment** - Lead with your best agent
-2. **Use real client data** - Generic examples don't resonate
+2. **Use real stakeholder data** - Generic examples don't resonate
 3. **Keep technical explanations minimal** - They care about "what" not "how"
 4. **Embrace imperfection** - It's a prototype, own that
 5. **Watch their face more than the screen** - Their reactions tell the story
@@ -489,7 +489,7 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 - [ ] Test all scenarios
 - [ ] Prepare backup plan
 - [ ] Review requirements doc
-- [ ] Send reminder to client
+- [ ] Send reminder to stakeholder
 
 **30 minutes before:**
 - [ ] Test screen sharing
@@ -512,5 +512,5 @@ Listen for: Realistic usage frequency, specific applications, workflow fit
 
 ---
 
-**Remember:** The goal is honest feedback, not applause. A client who points out problems is giving you valuable guidance for building the right solution.
+**Remember:** The goal is honest feedback, not applause. A stakeholder who points out problems is giving you valuable guidance for building the right solution.
 

@@ -36,13 +36,13 @@ Review the requirements document and extract:
 **Constraints:**
 - Budget (development and operational)
 - Timeline (when it needs to be ready)
-- Existing technology (client's current stack)
+- Existing technology (stakeholder's current stack)
 - Security requirements (compliance, data protection)
 - Team capabilities (technical sophistication)
 
 **Success Criteria:**
 - How will success be measured?
-- What metrics matter to the client?
+- What metrics matter to the stakeholder?
 - What's the minimum viable system?
 
 ---
@@ -108,7 +108,7 @@ Break the system into individual agents. Each agent should:
 **Inputs:**
 - QuickBooks data export (CSV)
 - Report template (DOCX)
-- Client-specific parameters (JSON)
+- Stakeholder-specific parameters (JSON)
 
 **Processing:**
 - Parse QuickBooks data
@@ -226,7 +226,7 @@ For each external system, determine:
 - API reliability
 
 **Alternatives to consider:**
-- OpenAI GPT-4 (if client prefers or has existing relationship)
+- OpenAI GPT-4 (if stakeholder prefers or has existing relationship)
 - Azure OpenAI (if enterprise compliance needed)
 - Local models (only if strict data privacy requirements)
 
@@ -252,12 +252,12 @@ For each external system, determine:
 **Recommended: Python + FastAPI**
 
 **Why:**
-- Python: AI/ML ecosystem, LLM libraries, client familiarity
+- Python: AI/ML ecosystem, LLM libraries, stakeholder familiarity
 - FastAPI: Async support, auto-documentation, type safety, performance
-- Wide hiring pool if client needs to maintain later
+- Wide hiring pool if stakeholder needs to maintain later
 
 **Alternatives:**
-- Node.js + Express (if client team is JS-heavy)
+- Node.js + Express (if stakeholder team is JS-heavy)
 - Go (if performance is critical)
 - Keep it simple - don't over-engineer
 
@@ -297,12 +297,12 @@ For each external system, determine:
 **For Prototypes:**
 - Railway.app (simple, good free tier)
 - Vercel (for Next.js frontends)
-- Local Docker containers (if client wants on-prem)
+- Local Docker containers (if stakeholder wants on-prem)
 
 **For Production:**
-- AWS (most features, client likely already uses)
+- AWS (most features, stakeholder likely already uses)
 - Google Cloud (better ML tools)
-- Azure (if client is Microsoft-heavy)
+- Azure (if stakeholder is Microsoft-heavy)
 - Docker + Docker Compose (simple deployments)
 - Kubernetes (only if scale demands it)
 
@@ -512,17 +512,17 @@ Before finalizing architecture:
 - [ ] Cost estimates within budget
 - [ ] Scalability plan for future growth
 - [ ] Failure modes identified with fallback strategies
-- [ ] Client can understand and approve architecture
+- [ ] Stakeholder can understand and approve architecture
 
 ---
 
 ## Next Steps After Architecture
 
-1. **Get client approval** on architecture document
+1. **Get stakeholder approval** on architecture document
 2. **Create development plan** with milestones
 3. **Set up development environment** with chosen stack
 4. **Begin prototype development** starting with highest-priority agent
-5. **Iterate based on testing** and client feedback
+5. **Iterate based on testing** and stakeholder feedback
 
 ---
 
@@ -552,7 +552,7 @@ For your next architecture design:
 - [ ] Security model designed
 - [ ] Cost estimates calculated
 - [ ] Architecture document created
-- [ ] Client review scheduled
+- [ ] Stakeholder review scheduled
 
 ---
 

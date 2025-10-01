@@ -1,338 +1,283 @@
-# AI Architecture Assistant
+# AI Solution Architecture Framework
 
-**A practical framework for AI engineers and architects to gather requirements, design multi-agent systems, and deliver AI solutions.**
+**A practical toolkit for designing and building AI agent systems—from requirements to prototype in 1-2 weeks.**
 
 ---
 
-## For AI Engineers and Architects
+## What This Is
 
-This repository provides a structured, battle-tested process for taking AI projects from initial client conversation to working prototype. If you design and build AI agent systems, this toolkit helps you:
+A streamlined framework for anyone doing AI solution architecture. Whether you're a consultant working with stakeholders, an engineer building internal tools, or a product team prototyping features—this gives you the structure to go from idea to working prototype fast.
 
-- **Gather complete requirements** using proven workshop techniques
-- **Design robust architectures** with reusable patterns
-- **Build working prototypes** fast using agent design templates
-- **Deliver professional solutions** with proper handoff documentation
+**Core workflow:**
+1. **Discover** → Understand the problem (30 min)
+2. **Document** → Capture requirements (90 min)
+3. **Design** → Architect the solution (2-4 hours)
+4. **Build** → Create prototype (1-2 weeks)
+5. **Demo** → Validate and iterate (1 hour)
 
-**Everything is copy-paste friendly.** No complex setup, no APIs to configure. Just guides, templates, and prompts you can use immediately.
+**Everything is copy-paste ready.** No complex setup. Just guides, templates, and AI assistant prompts you can use immediately.
 
 ---
 
 ## Quick Start
 
-### For Your Next Project
+### Core Process (1-2 Weeks)
 
-1. **Discovery** (30 min)
-   - Use [`requirements/discovery-guide.md`](requirements/discovery-guide.md)
-   - Understand client needs and identify AI opportunities
+```bash
+1. Discovery (30 min)
+   → Use: requirements/discovery-guide.md
+   → Understand workflows and identify opportunities
 
-2. **Requirements** (90 min)
-   - Use [`requirements/workshop-guide.md`](requirements/workshop-guide.md)
-   - Capture detailed workflows and create requirements doc
+2. Requirements Workshop (90 min)
+   → Use: requirements/workshop-guide.md + requirements-agent.prompt.md
+   → Document detailed requirements
 
-3. **Architecture** (2-4 hours)
-   - Use [`architecture/design-guide.md`](architecture/design-guide.md)
-   - Design agents and select technology stack
+3. Architecture Design (2-4 hours)
+   → Use: architecture/design-guide.md + technical-architect-agent.prompt.md
+   → Design agent system and select tech stack
 
-4. **Development** (2-4 weeks)
-   - Use [`development/prototype-guide.md`](development/prototype-guide.md)
-   - Build functional prototype with agent patterns
+4. Prototype Development (1-2 weeks)
+   → Use: development/prototype-guide.md + prototype-builder-agent.prompt.md
+   → Build working system
 
-5. **Delivery** (1-2 days)
-   - Use [`delivery/demo-guide.md`](delivery/demo-guide.md)
-   - Demo system and gather feedback
-   - Use [`delivery/handoff-checklist.md`](delivery/handoff-checklist.md)
-   - Complete project handoff
+5. Demo & Iterate (1 hour)
+   → Use: delivery/demo-guide.md
+   → Validate, gather feedback, refine
+```
 
-### Using the Agent Prompts
+### Using the AI Assistants
 
-This toolkit includes specialized AI assistant prompts for use in **Cursor**, **Claude Projects**, or **Claude Workspaces**:
+Copy any agent prompt into **Cursor**, **Claude Projects**, **ChatGPT**, or **Mistral** for real-time assistance:
 
-**During requirements:**
-- Copy [`requirements/discovery-agent.prompt.md`](requirements/discovery-agent.prompt.md) into your AI workspace
-- Use for real-time guidance during discovery sessions and workshops
-
-**During architecture:**
-- Copy [`architecture/technical-architect-agent.prompt.md`](architecture/technical-architect-agent.prompt.md)
-- Get architecture recommendations and design patterns
-
-**During development:**
-- Copy [`development/prototype-builder-agent.prompt.md`](development/prototype-builder-agent.prompt.md)
-- Generate agent prompts, code templates, and demo scenarios
-
-**Advanced workflows:**
-- Use prompts in [`architecture/`](architecture/) for specialized tasks:
-  - Requirements analysis
-  - Tech stack selection
-  - Team composition planning
-  - Project estimation
+- **`requirements/discovery-agent.prompt.md`** - Helps run discovery sessions
+- **`architecture/technical-architect-agent.prompt.md`** - Designs system architecture  
+- **`development/prototype-builder-agent.prompt.md`** - Generates code and agent prompts
+- **Architecture workflow prompts** (5 specialized prompts for requirements analysis, tech stack selection, team composition, project planning, cost estimation)
 
 ---
 
-## What's Included
+## Repository Structure
 
-### Requirements Phase
+```
+/requirements/
+├── discovery-guide.md              # How to run discovery sessions
+├── workshop-guide.md               # How to run requirements workshops  
+├── requirements-template.md        # Requirements document template
+└── discovery-agent.prompt.md       # AI assistant for requirements
 
-📁 **requirements/**
+/architecture/
+├── design-guide.md                 # How to design agent systems
+├── architecture-template.md        # Architecture document template
+├── agent-design-patterns.md        # Reusable agent patterns
+├── technical-architect-agent.prompt.md  # AI assistant for architecture
+└── [5 workflow prompts]            # Specialized architecture prompts
 
-- **[discovery-guide.md](requirements/discovery-guide.md)** - Run effective 30-minute discovery sessions
-- **[workshop-guide.md](requirements/workshop-guide.md)** - Conduct 90-minute requirements workshops
-- **[requirements-template.md](requirements/requirements-template.md)** - Complete requirements document template
-- **[discovery-agent.prompt.md](requirements/discovery-agent.prompt.md)** - AI assistant for requirements gathering
+/development/
+├── prototype-guide.md              # How to build prototypes
+├── development-checklist.md        # 2-week dev checklist
+└── prototype-builder-agent.prompt.md  # AI assistant for prototyping
 
-### Architecture Phase
-
-📁 **architecture/**
-
-- **[design-guide.md](architecture/design-guide.md)** - Design multi-agent AI systems
-- **[architecture-template.md](architecture/architecture-template.md)** - System architecture document template
-- **[agent-design-patterns.md](architecture/agent-design-patterns.md)** - Reusable agent patterns with examples
-- **[technical-architect-agent.prompt.md](architecture/technical-architect-agent.prompt.md)** - AI assistant for architecture design
-- **5 specialized prompts** for requirements analysis, tech stack, team planning, project planning, cost estimation
-
-### Development Phase
-
-📁 **development/**
-
-- **[prototype-guide.md](development/prototype-guide.md)** - Build working AI agent prototypes
-- **[development-checklist.md](development/development-checklist.md)** - 2-week sprint checklist
-- **[prototype-builder-agent.prompt.md](development/prototype-builder-agent.prompt.md)** - AI assistant for rapid prototyping
-
-### Delivery Phase
-
-📁 **delivery/**
-
-- **[demo-guide.md](delivery/demo-guide.md)** - Conduct effective prototype demonstrations
-- **[handoff-checklist.md](delivery/handoff-checklist.md)** - Complete project handoff process
-- **[communication-templates.md](delivery/communication-templates.md)** - Professional email and meeting templates
+/delivery/
+├── demo-guide.md                   # How to demo effectively
+└── handoff-checklist.md            # Project handoff checklist
+```
 
 ---
 
-## Three Quick-Start Scenarios
+## What You Get
 
-### Scenario 1: Simple Automation (1-2 weeks)
+### ✅ Proven Process
 
-**When:** Client needs to automate 1-2 repetitive tasks
+- Battle-tested workflow from real projects
+- Optimized for 1-2 week execution by one person
+- Focus on working prototypes, not perfect systems
+- Clear decision points and quality checks
 
-**Use:**
-1. [`requirements/discovery-guide.md`](requirements/discovery-guide.md) - 30 min discovery call
-2. Skip formal workshop, capture requirements in conversation
-3. [`architecture/agent-design-patterns.md`](architecture/agent-design-patterns.md) - Use "Specialist Agent" pattern
-4. [`development/prototype-guide.md`](development/prototype-guide.md) - Build in 3-5 days
-5. [`delivery/demo-guide.md`](delivery/demo-guide.md) - Quick demo and handoff
+### ✅ AI Agent Patterns
 
-**Timeline:** 1-2 weeks  
-**Agents:** 1-2 specialist agents  
-**Effort:** 20-40 hours
+Reusable agent patterns for common scenarios:
+- **Specialist Agents** - Single-task focus
+- **Workflow Agents** - Multi-step processes
+- **Document Generators** - Formatted outputs
+- **Research Agents** - Information gathering
+- **Review Agents** - Validation and QA
+- **Router Agents** - Orchestration and coordination
 
-### Scenario 2: Standard Multi-Agent System (3-4 weeks)
-
-**When:** Client needs coordinated agents for multiple workflows
-
-**Use:**
-1. [`requirements/discovery-guide.md`](requirements/discovery-guide.md) - Discovery session
-2. [`requirements/workshop-guide.md`](requirements/workshop-guide.md) - Full requirements workshop
-3. [`architecture/design-guide.md`](architecture/design-guide.md) - Design system architecture
-4. [`development/prototype-guide.md`](development/prototype-guide.md) - Build in 2-3 weeks
-5. [`delivery/demo-guide.md`](delivery/demo-guide.md) + [`delivery/handoff-checklist.md`](delivery/handoff-checklist.md) - Demo and handoff
-
-**Timeline:** 3-4 weeks  
-**Agents:** 3-5 coordinated agents  
-**Effort:** 80-160 hours
-
-### Scenario 3: Complex Enterprise System (6-12 weeks)
-
-**When:** Large organization, multiple integrations, high complexity
-
-**Use:**
-1. Full requirements process with multiple stakeholders
-2. Complete architecture documentation
-3. Use all specialized architecture prompts (tech stack, team composition, cost estimation)
-4. Phased development approach
-5. Comprehensive handoff with knowledge transfer
-
-**Timeline:** 6-12 weeks  
-**Agents:** 7+ agents with complex workflows  
-**Effort:** 320+ hours
-
----
-
-## Key Features
-
-### ✅ Copy-Paste Workflows
-
-Every guide is designed to be used immediately:
-- Clear step-by-step instructions
-- Real example scripts and prompts
-- No complex setup required
-- Works with any AI platform
-
-### ✅ Agent Design Patterns
-
-Proven patterns for common scenarios:
-- Specialist agents (focused on single tasks)
-- Workflow agents (multi-step processes)
-- Document generators (formatted output)
-- Research & synthesis agents
-- Review & validation agents
-- Coordinator/router agents
-
-Each pattern includes:
-- When to use it
-- Complete prompt templates
-- Testing approaches
-- Common variations
+Each pattern includes when to use it, implementation details, and testing approaches.
 
 ### ✅ Platform Agnostic
 
-Works with your preferred tools:
-- **LLM Platforms:** Anthropic Claude, OpenAI, Azure OpenAI, others
+Works with your tools:
+- **LLMs:** Claude, GPT-4, Mistral, or any LLM
 - **Development:** Python, Node.js, any language
-- **Deployment:** Cloud, on-premise, serverless
-- **AI Tools:** Cursor, Claude Projects, Claude Workspaces
+- **Deployment:** Cloud, on-premise, or local
+- **AI Tools:** Cursor, Claude Projects, ChatGPT, etc.
 
-### ✅ Real-World Tested
+### ✅ Copy-Paste Friendly
 
-These processes have been used to deliver actual client projects. Not theoretical—practical and battle-tested.
-
----
-
-## Philosophy
-
-### Human-First, AI-Augmented
-
-This toolkit is designed for **manual execution** first:
-- Copy guides into your workflow
-- Follow step-by-step processes
-- Use templates as starting points
-- Leverage AI assistants where helpful
-
-You don't need complex automation. You need clear processes.
-
-### Function Over Perfection
-
-The goal is **working systems**, not perfect systems:
-- Prototype to prove value
-- Iterate based on feedback
-- Ship functional code fast
-- Optimize for clarity and maintainability
-
-### Practical, Not Academic
-
-This is a **practitioner's toolkit**:
-- Focus on what works in real projects
-- Clear recommendations, not endless options
-- Examples from actual use cases
-- Honest about trade-offs and limitations
+Every resource is designed for immediate use:
+- Clear step-by-step instructions
+- Real example scripts
+- Working code templates
+- No complex configuration
 
 ---
 
 ## Who This Is For
 
-### ✅ Great for:
+**✅ Perfect for:**
+- AI engineers building agent systems
+- Solution architects designing AI implementations
+- Product engineers prototyping AI features
+- Technical leads planning AI projects
+- Anyone gathering requirements for AI solutions
 
-- **AI Engineers** building agent systems for clients or internal projects
-- **Solution Architects** designing AI implementations
-- **Independent Consultants** delivering AI solutions
-- **Product Engineers** prototyping AI features
-- **Engineering Managers** planning AI projects
-
-### ⚠️ Less useful for:
-
+**⚠️ Less useful for:**
 - ML researchers focused on model development
 - Data scientists building predictive models
-- Salespeople (this is technical, not sales-focused)
-- Non-technical business owners (too hands-on)
+- Non-technical stakeholders (this is hands-on technical)
 
 ---
 
-## Example Usage
+## Philosophy
 
-### Using Discovery Guide
+### Function Over Perfection
 
-```bash
-# Before client meeting
-1. Read requirements/discovery-guide.md
-2. Prepare 3-5 relevant AI use case examples
-3. Set up note-taking system
+Build working systems that demonstrate value:
+- Prototype to prove concepts
+- Iterate based on real feedback
+- Ship functional code fast
+- Optimize for clarity and maintainability
 
-# During 30-min discovery call
-1. Follow question structure from guide
-2. Capture pain points and technology stack
-3. Identify AI opportunities
+### Human-First Design
 
-# Within 1 hour after
-1. Use meeting summary template
-2. Categorize pain points (HIGH/MEDIUM/LOW for AI)
-3. Determine next steps
-```
+AI augments, doesn't replace judgment:
+- Clear processes you can follow manually
+- AI assistants provide guidance when helpful
+- Templates are starting points, not rigid rules
+- Adapt everything to your specific context
 
-### Using Agent Design Patterns
+### Practical, Not Academic
 
-```bash
-# When designing an agent
-1. Read architecture/agent-design-patterns.md
-2. Choose pattern matching your need:
-   - Specialist Agent for focused tasks
-   - Document Generator for formatted outputs
-   - Research Agent for information gathering
-3. Copy prompt template
-4. Customize with your domain specifics
-5. Test and iterate
-```
+Real-world focused:
+- What works in actual projects
+- Clear recommendations over endless options
+- Examples from real use cases
+- Honest about trade-offs and limitations
 
-### Using with Cursor AI
+---
+
+## Usage Examples
+
+### Example 1: Simple Automation (1-2 weeks)
+
+**Scenario:** Need to automate 1-2 repetitive tasks
+
+**Process:**
+1. 30-min discovery → identify automation opportunity
+2. Skip formal workshop, capture requirements in conversation
+3. Use "Specialist Agent" pattern from agent-design-patterns.md
+4. Build prototype in 3-5 days
+5. Quick demo and iterate
+
+**Result:** 1-2 specialized agents, 20-40 hours effort
+
+---
+
+### Example 2: Multi-Agent System (3-4 weeks)
+
+**Scenario:** Multiple coordinated workflows
+
+**Process:**
+1. Discovery session → understand scope
+2. Full 90-min requirements workshop
+3. Design multi-agent architecture
+4. Build prototype over 2-3 weeks  
+5. Demo, gather feedback, handoff
+
+**Result:** 3-5 coordinated agents, 80-160 hours effort
+
+---
+
+### Example 3: Using with Cursor
 
 ```bash
 # Setup
 1. Open this repo in Cursor
-2. Copy requirements/discovery-agent.prompt.md
-3. Paste into Cursor chat
-4. Cursor will now provide real-time guidance
+2. Open requirements/discovery-agent.prompt.md
+3. Copy entire prompt into Cursor chat
+4. Cursor now provides real-time discovery guidance
 
-# During requirements workshop
-YOU: "Client just described spending 8 hours/week on manual reporting"
-CURSOR: "🔴 PAIN POINT IDENTIFIED: Manual report generation
-         Classification: HIGH - Document generation task
-         Suggested follow-up: 'Walk me through creating one report...'
-         Potential solution: Report automation agent"
+# During requirements session
+YOU: "Stakeholder mentioned spending 8 hours/week on manual reports"
+
+CURSOR: 
+🔴 PAIN POINT IDENTIFIED: Manual report generation
+Classification: HIGH - Document generation task
+Suggested follow-up: "Walk me through creating one report..."
+Potential solution: Report automation agent
 ```
+
+---
+
+## Key Features
+
+### Rapid Requirements Capture
+
+- 30-min discovery sessions
+- 90-min comprehensive workshops
+- Structured templates that work
+- AI assistant for real-time guidance
+
+### Agent Design Patterns
+
+- Proven patterns for common scenarios
+- Complete prompt templates
+- Integration approaches
+- Testing strategies
+
+### Fast Prototyping
+
+- 1-2 week development cycles
+- Code generation support
+- Demo scenario templates
+- Iteration framework
 
 ---
 
 ## Documentation Standards
 
-All guides in this repository follow these principles:
+All guides follow these principles:
 
-1. **Actionable** - Every guide includes clear next steps
-2. **Scannable** - Use headings, bullets, and formatting
+1. **Actionable** - Clear next steps, always
+2. **Scannable** - Headings, bullets, clear formatting
 3. **Example-Rich** - Real examples, not abstract concepts
-4. **Honest** - Include what doesn't work, not just what does
-5. **Concise** - Respect your time, no unnecessary length
+4. **Honest** - What doesn't work, not just what does
+5. **Concise** - Respect your time
+
+---
+
+## Getting Started
+
+1. **Read** `requirements/discovery-guide.md`
+2. **Use it** for your next requirements conversation
+3. **Copy** agent prompts into your AI tool of choice
+4. **Follow** the process from discovery → demo
+5. **Adapt** everything to your specific needs
 
 ---
 
 ## Contributing
 
-This toolkit is maintained as a resource for the AI architecture community.
+This is a living framework. Contributions welcome:
 
-### Ways to Contribute
-
-**Share improvements:**
 - Better workshop questions
 - Additional agent patterns
-- Real-world case studies
-- Process refinements
+- Real-world case studies  
+- Process improvements
+- Bug fixes and clarifications
 
-**Submit pull requests:**
-- Fix errors or unclear sections
-- Add missing use cases
-- Improve examples
-- Enhance templates
-
-**Provide feedback:**
-- Open issues for suggestions
-- Share what works/doesn't work for you
-- Request additional guides or patterns
+Open issues or submit PRs. All contributions appreciated.
 
 ---
 
@@ -347,7 +292,7 @@ MIT License - Use freely for commercial and personal projects
 **Paul Prae**  
 AI Architect & Engineer
 
-- Email: <hireme@paulprae.com>
+- Email: hireme@paulprae.com
 - LinkedIn: [linkedin.com/in/paulprae](https://linkedin.com/in/paulprae)
 - GitHub: [github.com/praeducer](https://github.com/praeducer)
 
@@ -359,37 +304,15 @@ Built on principles from:
 - **Service-as-Software** (Foundation Capital) - AI-native business models
 - **AI Agent Orchestration** (LangChain, AutoGen) - Multi-agent patterns
 - **Solution Architecture** - Enterprise architecture methodologies
-- **Consulting Best Practices** - Requirements gathering and client delivery
+- **Requirements Engineering** - Structured requirements gathering
 
-Inspired by real client engagements and the generous sharing of the AI engineering community.
-
----
-
-## Quick Links
-
-**Core Guides:**
-- [Discovery Guide](requirements/discovery-guide.md) - Start here for new projects
-- [Workshop Guide](requirements/workshop-guide.md) - Detailed requirements gathering
-- [Design Guide](architecture/design-guide.md) - System architecture design
-- [Agent Patterns](architecture/agent-design-patterns.md) - Reusable agent designs
-- [Prototype Guide](development/prototype-guide.md) - Build working systems
-- [Demo Guide](delivery/demo-guide.md) - Effective demonstrations
-
-**Templates:**
-- [Requirements Template](requirements/requirements-template.md)
-- [Architecture Template](architecture/architecture-template.md)
-- [Communication Templates](delivery/communication-templates.md)
-
-**AI Assistants:**
-- [Discovery Agent](requirements/discovery-agent.prompt.md)
-- [Technical Architect Agent](architecture/technical-architect-agent.prompt.md)
-- [Prototype Builder Agent](development/prototype-builder-agent.prompt.md)
+Inspired by real projects and the AI engineering community.
 
 ---
 
-**Version:** 2.0 (Refactored October 2025)  
-**Status:** Production-ready for manual execution
+**Version:** 3.0 (Universal Refactor - October 2025)  
+**Status:** Production-ready
 
 ---
 
-**Get Started:** Read [`requirements/discovery-guide.md`](requirements/discovery-guide.md) and use it for your next client conversation.
+**Start here:** [`requirements/discovery-guide.md`](requirements/discovery-guide.md)

@@ -17,7 +17,7 @@
 - [ ] Plan agent coordination logic
 - [ ] Select technology stack (LLM platform, orchestration framework)
 - [ ] Design data flow between agents
-- [ ] Plan integration points with client's tools
+- [ ] Plan integration points with stakeholder tools
 
 **Agent Support (technical-architect-agent):**
 - [ ] Generate architecture diagrams
@@ -42,7 +42,7 @@
 - [ ] Create agent prompt templates
 - [ ] Set up testing framework
 - [ ] Configure tool integrations (APIs, authentication)
-- [ ] Create demo data sets based on client's workflows
+- [ ] Create demo data sets based on stakeholder workflows
 
 **Agent Support (prototype-builder-agent):**
 - [ ] Generate base agent prompt structures
@@ -114,8 +114,8 @@
 
 **Human Tasks:**
 - [ ] Complete tool integrations
-  - [ ] Test data retrieval from client's systems
-  - [ ] Test data writing to client's systems
+  - [ ] Test data retrieval from stakeholder systems
+  - [ ] Test data writing to stakeholder systems
   - [ ] Implement authentication and security
 - [ ] Create realistic demo scenarios (minimum 5)
 - [ ] Test each scenario end-to-end
@@ -144,7 +144,7 @@
 - [ ] Create quick-start guide
 - [ ] Prepare demo environment
 - [ ] Create backup demo data in case of technical issues
-- [ ] Test on clean environment (simulate client's first use)
+- [ ] Test on clean environment (simulate stakeholder first use)
 
 **Agent Support (technical-writer-agent - future):**
 - [ ] Generate user documentation
@@ -169,7 +169,7 @@
 - [ ] Set up screen recording (backup in case of technical difficulties during demo)
 - [ ] Test system on different devices/browsers if web-based
 - [ ] Prepare answers to anticipated questions
-- [ ] Send meeting reminder to client (24 hours before)
+- [ ] Send meeting reminder to stakeholder (24 hours before)
 
 **Agent Support (orchestrator-agent):**
 - [ ] Validate all checklist items complete
@@ -182,7 +182,7 @@
 - Presentation materials
 - Demo script
 - Backup recordings
-- Client reminder sent
+- Stakeholder reminder sent
 
 ---
 
@@ -201,9 +201,9 @@ A successful prototype must include:
 - Multi-agent workflows function end-to-end
 
 ✅ **Tool Integration**
-- At least one integration with client's primary tool
-- Can retrieve data from client's systems (even if simulated)
-- Can generate outputs in client's required format
+- At least one integration with stakeholder primary tool
+- Can retrieve data from stakeholder systems (even if simulated)
+- Can generate outputs in stakeholder required format
 
 ✅ **User Interface**
 - Simple, intuitive interface for agent interaction
@@ -211,7 +211,7 @@ A successful prototype must include:
 - Ability to test different scenarios during demo
 
 ✅ **Demo Scenarios**
-- Minimum 5 realistic scenarios based on client's actual workflows
+- Minimum 5 realistic scenarios based on stakeholder actual workflows
 - Scenarios demonstrate clear value (time savings, quality improvement)
 - Scenarios show agent coordination and tool integration
 
@@ -222,7 +222,7 @@ A successful prototype must include:
 
 ---
 
-## Quality Checks Before Client Demo
+## Quality Checks Before Stakeholder Demo
 
 ### Functionality Checks
 - [ ] All agents respond within acceptable timeframe (<10 seconds for most queries)
@@ -236,13 +236,13 @@ A successful prototype must include:
 - [ ] Agent responses are formatted well
 - [ ] Clear indication of agent activity (loading states)
 - [ ] Error messages are helpful, not technical
-- [ ] System works on client's likely setup (browser, device)
+- [ ] System works on stakeholder likely setup (browser, device)
 
 ### Content Quality Checks
-- [ ] Agent outputs reflect client's brand voice
-- [ ] Agents use client's preferred terminology
+- [ ] Agent outputs reflect stakeholder brand voice
+- [ ] Agents use stakeholder preferred terminology
 - [ ] Generated content is professional and polished
-- [ ] No placeholder text or dummy data visible to client
+- [ ] No placeholder text or dummy data visible to stakeholder
 - [ ] Outputs match quality standards from requirements
 
 ### Demo Preparation Checks
@@ -273,7 +273,7 @@ A successful prototype must include:
 **Solution:** Test failure modes. What happens when agent doesn't understand input? When tool integration fails?
 
 **Pitfall:** Neglecting documentation
-**Solution:** If client can't figure out how to use it, it doesn't matter how well it works. Document as you build.
+**Solution:** If stakeholder can't figure out how to use it, it doesn't matter how well it works. Document as you build.
 
 **Pitfall:** Waiting until Day 14 to test everything together
 **Solution:** Integrate and test continuously. Don't save integration for the end.
@@ -305,7 +305,7 @@ A successful prototype must include:
 
 **Risk:** Performance too slow for live demo
 **Mitigation:**
-- Test on client-similar network conditions
+- Test on stakeholder-similar network conditions
 - Cache common queries
 - Have pre-run examples as backup
 
@@ -314,13 +314,13 @@ A successful prototype must include:
 **Risk:** Development takes longer than 2 weeks
 **Mitigation:**
 - Cut scope to MVP if needed
-- Communicate proactively with client if delay needed
+- Communicate proactively with stakeholder if delay needed
 - Prioritize highest-value agents
 
-**Risk:** Client requirements were incomplete
+**Risk:** Stakeholder requirements were incomplete
 **Mitigation:**
 - Flag gaps early (Day 1-2)
-- Reach out to client for clarification immediately
+- Reach out to stakeholder for clarification immediately
 - Make reasonable assumptions and document them
 
 ---
@@ -335,9 +335,9 @@ A successful prototype development phase results in:
 4. ✅ User documentation complete
 5. ✅ Demo environment stable and tested
 6. ✅ Completed on time (within 2 weeks)
-7. ✅ Ready for client demonstration
-8. ✅ Client receives progress update email at Week 1
+7. ✅ Ready for stakeholder demonstration
+8. ✅ Stakeholder receives progress update email at Week 1
 
 ---
 
-This checklist ensures consistent, high-quality prototype delivery that demonstrates clear value to the client.
+This checklist ensures consistent, high-quality prototype delivery that demonstrates clear value to the stakeholder.

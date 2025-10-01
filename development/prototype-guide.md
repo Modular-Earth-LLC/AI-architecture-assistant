@@ -2,7 +2,7 @@
 
 **Purpose:** Build a working AI agent system from approved requirements and architecture  
 **Duration:** 2-4 weeks depending on complexity  
-**Output:** Functional prototype ready for client testing
+**Output:** Functional prototype ready for stakeholder testing
 
 ---
 
@@ -25,7 +25,7 @@ The prototype phase is where you transform architecture designs into working cod
 **Prototype priorities:**
 - ✅ Demonstrates core functionality
 - ✅ Proves technical feasibility
-- ✅ Shows clear value to client
+- ✅ Shows clear value to stakeholder
 - ✅ Simple, understandable code
 - ✅ Works reliably for demo scenarios
 
@@ -122,7 +122,7 @@ import os
 
 class Agent1:
     def __init__(self):
-        self.client = anthropic.Anthropic(
+        self.stakeholder = anthropic.Anthropic(
             api_key=os.environ.get("ANTHROPIC_API_KEY")
         )
         self.system_prompt = """
@@ -146,7 +146,7 @@ class Agent1:
     def process(self, user_input: str) -> str:
         """Process user input and return agent response"""
         
-        message = self.client.messages.create(
+        message = self.stakeholder.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=1024,
             temperature=0,  # For consistency
@@ -188,7 +188,7 @@ if __name__ == "__main__":
 **Iterate on the system prompt until:**
 - Agent produces consistent outputs
 - Format matches requirements
-- Tone matches client brand voice
+- Tone matches stakeholder brand voice
 - Handles edge cases gracefully
 
 **Common refinements:**
@@ -236,7 +236,7 @@ import os
 
 class IntentOrchestrator:
     def __init__(self):
-        self.client = anthropic.Anthropic(
+        self.stakeholder = anthropic.Anthropic(
             api_key=os.environ.get("ANTHROPIC_API_KEY")
         )
         self.agents = {
@@ -247,7 +247,7 @@ class IntentOrchestrator:
     def classify_intent(self, user_input: str) -> str:
         """Use LLM to determine which agent should handle this"""
         
-        message = self.client.messages.create(
+        message = self.stakeholder.messages.create(
             model="claude-sonnet-4-20250514",
             max_tokens=100,
             temperature=0,
@@ -377,7 +377,7 @@ from integrations.tool_1 import Tool1Integration
 
 class Agent1:
     def __init__(self):
-        self.client = anthropic.Anthropic(...)
+        self.stakeholder = anthropic.Anthropic(...)
         self.tool = Tool1Integration()
     
     def process(self, user_input: str) -> str:
@@ -394,7 +394,7 @@ class Agent1:
         Provide a helpful response based on this data.
         """
         
-        message = self.client.messages.create(...)
+        message = self.stakeholder.messages.create(...)
         return message.content[0].text
 ```
 
@@ -640,14 +640,14 @@ class ParallelOrchestrator:
 
 ## Pre-Demo Checklist
 
-Two days before client demo:
+Two days before stakeholder demo:
 
 - [ ] All demo scenarios tested and working
 - [ ] Error handling in place (graceful failures)
 - [ ] UI is clear and intuitive
 - [ ] No debugging output visible to user
 - [ ] All placeholders replaced with real content
-- [ ] Agent outputs match client brand voice
+- [ ] Agent outputs match stakeholder brand voice
 - [ ] Integration fallbacks working
 - [ ] Demo environment stable
 - [ ] Backup plan prepared (screen recording)
@@ -693,7 +693,7 @@ CMD ["streamlit", "run", "ui/app.py"]
 
 After successful demo:
 
-1. **Gather feedback** from client testing
+1. **Gather feedback** from stakeholder testing
 2. **Prioritize improvements** based on feedback
 3. **Plan production development** (if approved)
 4. **Document lessons learned**

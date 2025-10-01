@@ -1,13 +1,13 @@
 # Project Handoff Checklist
 
-**Purpose:** Ensure smooth transition from prototype to production or client ownership  
-**When to use:** After demo approval, before client takes ownership
+**Purpose:** Ensure smooth transition from prototype to production or stakeholder ownership  
+**When to use:** After demo approval, before stakeholder takes ownership
 
 ---
 
 ## Overview
 
-Project handoff is the final delivery phase where you transfer the system (and knowledge about it) to the client or production team. A complete handoff ensures the system can be maintained, improved, and operated without you.
+Project handoff is the final delivery phase where you transfer the system (and knowledge about it) to the stakeholder or production team. A complete handoff ensures the system can be maintained, improved, and operated without you.
 
 ---
 
@@ -34,9 +34,9 @@ Project handoff is the final delivery phase where you transfer the system (and k
 
 ### Access & Credentials
 
-- [ ] Client accounts created
+- [ ] Stakeholder accounts created
 - [ ] Access credentials prepared
-- [ ] API keys transferred or regenerated in client's account
+- [ ] API keys transferred or regenerated in stakeholder's account
 - [ ] Deployment access configured
 - [ ] Monitoring access set up
 
@@ -368,10 +368,10 @@ To adjust agent behavior:
 - [ ] System walkthrough completed
 - [ ] Documentation delivered
 - [ ] Credentials transferred
-- [ ] Access verified by client
+- [ ] Access verified by stakeholder
 - [ ] Knowledge transfer session completed
 - [ ] Q&A addressed
-- [ ] Client signoff obtained
+- [ ] Stakeholder signoff obtained
 
 ### Day After Handoff
 
@@ -429,7 +429,7 @@ handoff-package/
 
 ---
 
-## Client Signoff
+## Stakeholder Signoff
 
 ### Signoff Document Template
 
@@ -438,7 +438,7 @@ handoff-package/
 
 **Project:** [SYSTEM_NAME]
 **Date:** [DATE]
-**Client:** [CLIENT_NAME]
+**Stakeholder:** [CLIENT_NAME]
 
 ## Deliverables Received
 
@@ -463,7 +463,7 @@ I confirm that:
 - [ISSUE_1] - Target resolution: [DATE]
 - [ISSUE_2] - Target resolution: [DATE]
 
-**Client Signature:** _____________________________
+**Stakeholder Signature:** _____________________________
 
 **Date:** _____________________________
 
@@ -478,20 +478,20 @@ I confirm that:
 
 A successful handoff means:
 
-✅ Client can operate the system independently  
-✅ Client knows how to get help  
+✅ Stakeholder can operate the system independently  
+✅ Stakeholder knows how to get help  
 ✅ All documentation is complete and understandable  
 ✅ All access and credentials transferred  
-✅ Client has confidence in the system  
+✅ Stakeholder has confidence in the system  
 ✅ Support plan is clear and agreed upon  
 ✅ No major unresolved issues  
-✅ Client signoff obtained  
+✅ Stakeholder signoff obtained  
 
 ---
 
 ## Common Handoff Issues
 
-### Issue: Client Overwhelmed by Documentation
+### Issue: Stakeholder Overwhelmed by Documentation
 
 **Solution:**
 - Create a "start here" quick guide
@@ -499,7 +499,7 @@ A successful handoff means:
 - Offer follow-up training sessions
 - Create video walkthroughs
 
-### Issue: Client Lacks Technical Resources
+### Issue: Stakeholder Lacks Technical Resources
 
 **Solution:**
 - Provide managed hosting option
@@ -507,7 +507,7 @@ A successful handoff means:
 - Simplify deployment process
 - Increase support availability
 
-### Issue: Client Has Unrealistic Expectations for Self-Maintenance
+### Issue: Stakeholder Has Unrealistic Expectations for Self-Maintenance
 
 **Solution:**
 - Be honest about complexity
@@ -539,7 +539,7 @@ A successful handoff means:
 
 - [ ] Support requests tracked
 - [ ] System performance monitored
-- [ ] Client satisfaction checked quarterly
+- [ ] Stakeholder satisfaction checked quarterly
 - [ ] Improvements identified and communicated
 
 ---
@@ -557,5 +557,5 @@ A successful handoff means:
 
 ---
 
-**Remember:** A good handoff makes the client self-sufficient while giving them confidence you're still available if needed. Balance enabling independence with providing safety nets.
+**Remember:** A good handoff makes the stakeholder self-sufficient while giving them confidence you're still available if needed. Balance enabling independence with providing safety nets.
 

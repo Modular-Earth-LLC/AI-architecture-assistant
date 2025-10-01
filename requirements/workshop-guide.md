@@ -8,9 +8,9 @@
 
 ## Overview
 
-The requirements workshop is a structured deep-dive into the client's operations. Your goal is to capture enough detail to design and build an AI agent system that actually solves their problems.
+The requirements workshop is a structured deep-dive into stakeholder operations. Your goal is to capture enough detail to design and build an AI agent system that actually solves their problems.
 
-This workshop produces a requirements document that becomes the blueprint for your architecture and development work.
+This workshop produces a requirements document that becomes the blueprint for architecture and development work.
 
 ---
 
@@ -21,9 +21,9 @@ This workshop produces a requirements document that becomes the blueprint for yo
 1. **Review discovery notes:**
    - Pain points identified
    - Technology stack mentioned
-   - Business context
+   - Context
 
-2. **Research client's industry:**
+2. **Research their domain:**
    - Common workflows
    - Standard tools and integrations
    - Typical AI use cases
@@ -59,10 +59,10 @@ This workshop produces a requirements document that becomes the blueprint for yo
 ### Questions
 
 1. "What industry are you in, and what industries do you serve?"
-2. "How do you describe your services to potential clients?"
-3. "What makes your approach different from competitors?"
-4. "Who is your ideal client?"
-5. "What problems do clients have when they come to you?"
+2. "How do you describe your work to others?"
+3. "What makes your approach different?"
+4. "Who are your primary users or stakeholders?"
+5. "What problems are you typically solving?"
 
 ### What to Capture
 
@@ -86,10 +86,10 @@ Understanding market context helps you design agents that:
 ### Questions
 
 1. "How would you describe your mission and core values?"
-2. "How do you communicate with clients? What tone?"
+2. "How do you communicate with users/stakeholders? What tone?"
 3. "Does your communication style change by audience?"
 4. "Are there specific phrases you use or avoid?"
-5. "Show me examples of your typical client communication."
+5. "Show me examples of your typical communication."
 
 ### What to Capture
 
@@ -112,9 +112,9 @@ Understanding market context helps you design agents that:
 
 ### Questions
 
-1. "How do you currently acquire clients?"
-2. "Walk through your sales process from first contact to signed contract."
-3. "How do you price your services?"
+1. "How do you currently bring in new work or users?"
+2. "Walk through your process from initial engagement to commitment."
+3. "How are things scoped or priced?"
 4. "What's your biggest growth opportunity?"
 5. "What prevents you from scaling faster?"
 
@@ -146,9 +146,9 @@ This section requires the most time and detail. For each major service, walk thr
 
 For client's top 2-3 services, ask:
 
-1. **Service overview:** "Describe [SERVICE] from the client's perspective. What are they getting?"
+1. **Service overview:** "Describe [PROCESS] from the user's perspective. What are they getting?"
 
-2. **Workflow walkthrough:** "Walk me through delivering this service step by step, from contract signing to final delivery."
+2. **Workflow walkthrough:** "Walk me through this process step by step, from start to completion."
 
 3. **Digital work:** "For each step, what digital work is involved? What gets created on a computer?"
 
@@ -162,7 +162,7 @@ For client's top 2-3 services, ask:
 
 ### Example Deep Dive
 
-**Client:** "I do financial modeling for SaaS companies."
+**Example:** "I do financial modeling for SaaS companies."
 
 **Follow-up sequence:**
 1. "What specific models do you create most often?"
@@ -388,10 +388,10 @@ Complete tool inventory with:
 ### ❌ Poor Workshop (Requires Follow-Up)
 
 - Sections skipped or rushed
-- Only high-level service descriptions (no workflows)
+- Only high-level descriptions (no workflows)
 - Incomplete technology stack
 - Fewer than 3 AI opportunities
-- Client distracted or vague answers
+- Stakeholders distracted or vague answers
 - Priorities unclear
 - No confirmed next meeting
 
@@ -399,19 +399,19 @@ Complete tool inventory with:
 
 ## Common Challenges & Solutions
 
-### Client gives surface-level answers
+### Stakeholder gives surface-level answers
 **Solution:** Use the "tell me about last time" approach  
 *"Rather than generally, tell me about the last time you did [TASK]. Walk me through that specific instance."*
 
-### Client jumps between topics
+### Stakeholder jumps between topics
 **Solution:** Acknowledge and redirect  
 *"That's interesting—let me note that. We'll come back to it after [CURRENT_SECTION]."*
 
-### Client says "it depends" for everything
+### Stakeholder says "it depends" for everything
 **Solution:** Focus on the common case  
 *"I understand it varies. What are the 2-3 most common scenarios?"*
 
-### Client doesn't know technical details
+### Stakeholder doesn't know technical details
 **Solution:** Focus on use cases  
 *"That's fine—just tell me what you use it for day-to-day. I'll research the technical details."*
 
@@ -419,9 +419,9 @@ Complete tool inventory with:
 **Solution:** Prioritize and schedule follow-up  
 *"We have 30 minutes left and still need to cover [X] and [Y]. I may need a brief follow-up call. Let's prioritize [MOST_CRITICAL] for the rest of today."*
 
-### Client fixates on AI limitations
+### Stakeholder fixates on AI limitations
 **Solution:** Validate and redirect  
-*"You're absolutely right that AI can't [X]. That's why we're not proposing to automate that. Your judgment is irreplaceable. We're looking at whether AI can handle the routine parts so you have more time for strategic work."*
+*"You're absolutely right that AI can't [X]. That's why we're not proposing to automate that. Expert judgment is irreplaceable. We're looking at whether AI can handle the routine parts to free up time for strategic work."*
 
 ---
 
@@ -430,10 +430,10 @@ Complete tool inventory with:
 A successful requirements workshop results in:
 
 1. ✅ All six sections completed
-2. ✅ 2+ services with detailed workflow documentation
+2. ✅ 2+ processes with detailed workflow documentation
 3. ✅ Complete technology stack (80%+ tools captured)
 4. ✅ 5+ specific AI opportunities identified
-5. ✅ Client validates top 3 priorities
+5. ✅ Stakeholders validate top 3 priorities
 6. ✅ Prototype review meeting confirmed
 7. ✅ Requirements document deliverable within 48 hours
 
@@ -459,6 +459,6 @@ During the workshop:
 After the workshop:
 - [ ] Notes organized within 2 hours
 - [ ] Requirements document created within 48 hours
-- [ ] Client review scheduled
+- [ ] Stakeholder review scheduled
 - [ ] Architecture phase planned
 
