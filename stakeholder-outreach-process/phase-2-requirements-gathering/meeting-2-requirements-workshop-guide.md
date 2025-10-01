@@ -67,7 +67,7 @@ Any questions before we dive in?"
 **Q5: Client Problems**
 "What problems do clients typically have when they first come to you? What are they struggling with?"
 
-### What to Capture
+### Section 1 What to Capture
 
 - Primary industry vertical(s)
 - Target client demographics
@@ -77,25 +77,24 @@ Any questions before we dive in?"
 
 ### Agent Guidance
 
-SECTION 1: Industry & Market (15 min)
-Progress: [X/5 questions]
-Key captures:
-✓ Industry: [VALUE]
-✓ Target clients: [VALUE]
-✓ Differentiation: [VALUE]
-⚠️ Watch for:
+#### Section 1: Industry & Market (15 min)
 
-Generic descriptions → Probe for specifics
-"We do everything" → Help client narrow focus
-Unclear value prop → Ask for client testimonial language
-
-Time check: [X] minutes remaining in section
+- Progress: [X/5 questions]
+- Key captures:
+  - ✓ Industry: [VALUE]
+  - ✓ Target clients: [VALUE]
+  - ✓ Differentiation: [VALUE]
+- ⚠️ Watch for:
+  - Generic descriptions → Probe for specifics
+  - "We do everything" → Help client narrow focus
+  - Unclear value prop → Ask for client testimonial language
+- Time check: [X] minutes remaining in section
 
 ---
 
 ## Section 2: Brand Voice and Values (15 minutes)
 
-### Questions
+### Section 2 Questions
 
 **Q1: Mission and Values**
 "How would you describe [CLIENT_COMPANY_NAME]'s mission? What are your core values?"
@@ -112,7 +111,7 @@ Time check: [X] minutes remaining in section
 **Q5: Integration of Unique Elements**
 "I noticed [UNIQUE_ELEMENT_FROM_RESEARCH]. How does that integrate into your daily operations and client interactions?"
 
-### What to Capture
+### Section 2 What to Capture
 
 - Mission statement (exact wording)
 - Core values (client's language)
@@ -125,27 +124,26 @@ Time check: [X] minutes remaining in section
 
 This section determines how AI agents will communicate on behalf of the business. Capture exact phrases and language patterns.
 
-### Agent Guidance
+### Section 2 Agent Guidance
 
-SECTION 2: Brand Voice (15 min)
-🔴 CRITICAL: Capture exact language patterns
-Current captures:
-✓ Mission: "[EXACT_QUOTE]"
-✓ Values: [LIST]
-✓ Client tone: [DESCRIPTION]
-⚠️ Need examples:
+#### Section 2: Brand Voice (15 min)
 
-How does client open emails to clients?
-How does client close proposals?
-What phrases appear in their marketing?
-
-Action: Request client share example email/proposal if available
+- 🔴 CRITICAL: Capture exact language patterns
+- Current captures:
+  - ✓ Mission: "[EXACT_QUOTE]"
+  - ✓ Values: [LIST]
+  - ✓ Client tone: [DESCRIPTION]
+- ⚠️ Need examples:
+  - How does client open emails to clients?
+  - How does client close proposals?
+  - What phrases appear in their marketing?
+- Action: Request client share example email/proposal if available
 
 ---
 
 ## Section 3: Go-to-Market Strategy (15 minutes)
 
-### Questions
+### Section 3 Questions
 
 **Q1: Client Acquisition**
 "How do you currently find and acquire clients? What channels work best?"
@@ -162,7 +160,7 @@ Action: Request client share example email/proposal if available
 **Q5: Growth and Scaling**
 "Where do you see the biggest opportunity for growth? What's preventing you from scaling faster?"
 
-### What to Capture
+### Section 3 What to Capture
 
 - Client acquisition channels (with success rates if available)
 - Sales process stages and typical duration
@@ -171,26 +169,27 @@ Action: Request client share example email/proposal if available
 - Growth opportunities
 - Scaling bottlenecks
 
-### Agent Guidance
+### Section 3 Agent Guidance
 
-SECTION 3: Go-to-Market (15 min)
-Current captures:
-✓ Acquisition: [CHANNELS]
-✓ Sales cycle: [DURATION]
-✓ Pricing: [MODEL]
-🔴 AI OPPORTUNITIES:
+#### Section 3: Go-to-Market (15 min)
 
-If "proposal creation takes too long" → Proposal generation agent
-If "lead qualification manual" → Lead scoring agent
-If "follow-up inconsistent" → Client communication agent
-
-Time check: 45 minutes elapsed, on schedule
+- Current captures:
+  - ✓ Acquisition: [CHANNELS]
+  - ✓ Sales cycle: [DURATION]
+  - ✓ Pricing: [MODEL]
+- 🔴 AI OPPORTUNITIES:
+  - If "proposal creation takes too long" → Proposal generation agent
+  - If "lead qualification manual" → Lead scoring agent
+  - If "follow-up inconsistent" → Client communication agent
+- Time check: 45 minutes elapsed, on schedule
 
 ---
 
 ## Section 4: Core Service Delivery (25 minutes)
 
-**This is the most critical section—allocate full 25 minutes**
+### Critical Section Note
+
+This is the most critical section—allocate full 25 minutes
 
 ### Process for Each Service
 
@@ -232,7 +231,7 @@ For client's top 2-3 services, work through this sequence:
 7. "What software do you use?"
 8. "If I watched you create a model, what would I see you doing for the first hour?"
 
-### What to Capture
+### Section 4 What to Capture
 
 For each service:
 
@@ -287,7 +286,7 @@ If 1 service: Full 25 min deep dive
 
 ## Section 5: Business Objectives and Challenges (10 minutes)
 
-### Questions
+### Section 5 Questions
 
 **Q1: Near-Term Objectives**
 "What are your main objectives for the next quarter or year?"
@@ -304,7 +303,7 @@ If 1 service: Full 25 min deep dive
 **Q5: Concerns**
 "What concerns or hesitations do you have about implementing AI in your practice?"
 
-### What to Capture
+### Section 5 What to Capture
 
 - Specific quarterly/annual objectives (with metrics if available)
 - Current operational challenges (prioritized)
@@ -312,9 +311,10 @@ If 1 service: Full 25 min deep dive
 - Success metrics and vision
 - Concerns, fears, or hesitations about AI
 
-### Agent Guidance
+### Section 5 Agent Guidance
 
-SECTION 5: Objectives & Challenges (10 min)
+#### Section 5: Objectives & Challenges (10 min)
+
 Linking analysis:
 Objective: [STATED_GOAL]
 ↓
@@ -338,7 +338,7 @@ Time check: 75 minutes elapsed, 15 minutes remaining
 
 ## Section 6: Technology Stack and Tools (10 minutes)
 
-### Questions
+### Section 6 Questions
 
 **Q1: Client-Facing Tools**
 "What tools do you use for client work? Walk me through your primary tools."
@@ -355,7 +355,7 @@ Time check: 75 minutes elapsed, 15 minutes remaining
 **Q5: Technology Comfort**
 "On a scale of 1-10, how comfortable are you adopting new technology? What's your typical process for learning a new tool?"
 
-### What to Capture
+### Section 6 What to Capture
 
 Complete tool inventory with:
 
@@ -368,9 +368,10 @@ Complete tool inventory with:
 - User pain points
 - Technology adoption willingness score
 
-### Agent Guidance
+### Section 6 Agent Guidance
 
-SECTION 6: Technology Stack (10 min)
+#### Section 6: Technology Stack (10 min)
+
 TOOL INVENTORY:
 Client-Facing:
 

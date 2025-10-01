@@ -93,7 +93,8 @@ For each client engagement, create 5-7 demo scenarios that:
 - Client's Excel template loaded
 - Presentation template ready
 
-**User Input:**"Generate a monthly financial report for [TEST_CLIENT_NAME] covering January 2025.
+**User Input:**
+"Generate a monthly financial report for [TEST_CLIENT_NAME] covering January 2025.
 Include 13-week cash flow projections with best case, expected, and worst case scenarios."
 
 **Agent Processing:**
@@ -153,7 +154,8 @@ Include 13-week cash flow projections with best case, expected, and worst case s
 - Simulated client inquiry email
 - Client's proposal template loaded
 
-**User Input:**"Draft a proposal for [PROSPECTIVE_CLIENT_NAME], a Series A SaaS company in the
+**User Input:**
+"Draft a proposal for [PROSPECTIVE_CLIENT_NAME], a Series A SaaS company in the
 healthcare space looking for financial planning support. They mentioned concerns
 about cash runway and preparing for Series B."
 
@@ -213,7 +215,8 @@ about cash runway and preparing for Series B."
 
 - New client information (name, company, service agreement)
 
-**User Input:**"Onboard new client [CLIENT_NAME] from [COMPANY_NAME]. They signed the
+**User Input:**
+"Onboard new client [CLIENT_NAME] from [COMPANY_NAME]. They signed the
 financial planning retainer starting February 1st."
 
 **Agent Processing:**
@@ -287,7 +290,8 @@ financial planning retainer starting February 1st."
 
 - Client's financial data for past 12 months
 
-**User Input:**"Analyze [CLIENT_NAME]'s financial data for the past year. Identify trends,
+**User Input:**
+"Analyze [CLIENT_NAME]'s financial data for the past year. Identify trends,
 anomalies, and opportunities for cost optimization."
 
 **Agent Processing:**
@@ -346,7 +350,8 @@ anomalies, and opportunities for cost optimization."
 
 - Client context (recent project work, client relationship)
 
-**User Input:**"Draft a status update email to [CLIENT_NAME] letting them know the Q1 financial
+**User Input:**
+"Draft a status update email to [CLIENT_NAME] letting them know the Q1 financial
 model is complete, the results look positive with 15% revenue growth, and I'd like
 to schedule a review call next week."
 
