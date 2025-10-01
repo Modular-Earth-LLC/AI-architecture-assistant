@@ -10,6 +10,7 @@
 This document contains proven patterns for designing AI agents that perform specific tasks reliably. Use these as starting points for your own agent designs.
 
 Each pattern includes:
+
 - When to use it
 - How it works
 - Example prompt structure
@@ -25,6 +26,7 @@ Each pattern includes:
 **Use when:** You need an agent focused on a single, well-defined task
 
 **Structure:**
+
 - Clear, narrow purpose
 - Specific input format
 - Deterministic output format
@@ -59,6 +61,7 @@ CONSTRAINTS:
 ```
 
 **Variations:**
+
 - Research specialist (gather information on specific topics)
 - Classification specialist (categorize inputs)
 - Extraction specialist (pull structured data from unstructured text)
@@ -70,6 +73,7 @@ CONSTRAINTS:
 **Use when:** You need to guide a multi-step process
 
 **Structure:**
+
 - State tracking (where we are in the process)
 - Step-by-step execution
 - Validation at each step
@@ -109,6 +113,7 @@ OUTPUT:
 ```
 
 **Variations:**
+
 - Troubleshooting agent (diagnostic workflows)
 - Form-filling agent (guided data collection)
 - Interview agent (structured questioning)
@@ -120,6 +125,7 @@ OUTPUT:
 **Use when:** You need to create formatted documents from data
 
 **Structure:**
+
 - Template awareness
 - Data transformation
 - Brand voice consistency
@@ -162,6 +168,7 @@ QUALITY CHECKS:
 ```
 
 **Variations:**
+
 - Report generator (data → formatted report)
 - Email composer (context → email draft)
 - Contract generator (terms → legal document)
@@ -173,6 +180,7 @@ QUALITY CHECKS:
 **Use when:** You need to gather and synthesize information
 
 **Structure:**
+
 - Search strategy
 - Source evaluation
 - Information extraction
@@ -217,6 +225,7 @@ QUALITY STANDARDS:
 ```
 
 **Variations:**
+
 - Market research agent (industry trends)
 - Technical research agent (implementation approaches)
 - Customer research agent (understand user needs)
@@ -228,6 +237,7 @@ QUALITY STANDARDS:
 **Use when:** You need to check quality or compliance
 
 **Structure:**
+
 - Clear evaluation criteria
 - Systematic checking process
 - Specific feedback
@@ -275,6 +285,7 @@ PASS CRITERIA:
 ```
 
 **Variations:**
+
 - Code review agent (technical quality)
 - Compliance checker (regulatory requirements)
 - Data validation agent (format and completeness)
@@ -286,6 +297,7 @@ PASS CRITERIA:
 **Use when:** You need to direct work to appropriate specialists
 
 **Structure:**
+
 - Intent classification
 - Capability mapping
 - Routing logic
@@ -332,6 +344,7 @@ SPECIAL HANDLING:
 ```
 
 **Variations:**
+
 - Lead qualification router (sales routing)
 - Task assignment agent (team coordination)
 - Priority triage agent (work prioritization)
@@ -454,11 +467,13 @@ DETECT EXPERTISE:
 ### 1. Clear Role Definition
 
 ❌ **Vague:**
+
 ```
 You are helpful.
 ```
 
 ✅ **Clear:**
+
 ```
 You are a financial analyst specializing in SaaS company metrics.
 You help CFOs understand their business performance through data analysis.
@@ -467,11 +482,13 @@ You help CFOs understand their business performance through data analysis.
 ### 2. Explicit Constraints
 
 ❌ **Open-ended:**
+
 ```
 Analyze this data.
 ```
 
 ✅ **Constrained:**
+
 ```
 Analyze this data focusing only on:
 - Revenue trends (month-over-month)
@@ -487,11 +504,13 @@ Do NOT:
 ### 3. Format Specifications
 
 ❌ **Ambiguous:**
+
 ```
 Give me the results.
 ```
 
 ✅ **Specific:**
+
 ```
 OUTPUT FORMAT:
 {
@@ -506,11 +525,13 @@ OUTPUT FORMAT:
 ### 4. Examples (Few-Shot Learning)
 
 ❌ **No examples:**
+
 ```
 Categorize this customer inquiry.
 ```
 
 ✅ **With examples:**
+
 ```
 Categorize this customer inquiry.
 
@@ -530,6 +551,7 @@ Now categorize: [user input]
 ### 5. Quality Checks
 
 ✅ **Built-in validation:**
+
 ```
 Before providing your final answer:
 1. Check all numbers add up correctly
@@ -549,6 +571,7 @@ If any check fails, fix the issue before responding.
 **Problem:** Agent tries to do everything, does nothing well
 
 **Solution:** Split into multiple specialist agents
+
 ```
 ❌ General business assistant
 ✅ Invoice generator + Email responder + Report analyzer
@@ -559,6 +582,7 @@ If any check fails, fix the issue before responding.
 **Problem:** Agent produces different formats each time
 
 **Solution:** Explicit output schemas
+
 ```
 ✅ Always respond in this exact JSON structure:
 {
@@ -573,6 +597,7 @@ If any check fails, fix the issue before responding.
 **Problem:** Agent makes up information
 
 **Solution:** Constrain to provided information
+
 ```
 ✅ Base your analysis ONLY on the data provided.
 ✅ If information is not in the provided data, respond "Data not available"
@@ -584,6 +609,7 @@ If any check fails, fix the issue before responding.
 **Problem:** Agent writes essays when you need bullet points
 
 **Solution:** Specify length and format
+
 ```
 ✅ Provide exactly 3 bullet points, each under 20 words
 ✅ Maximum response length: 100 words
@@ -595,6 +621,7 @@ If any check fails, fix the issue before responding.
 **Problem:** Agent fails on unusual inputs
 
 **Solution:** Explicit edge case handling
+
 ```
 ✅ EDGE CASES:
 - If input is empty: Return error "No input provided"
@@ -676,4 +703,3 @@ TEST CASES:
 6. **Iterate based** on results
 
 **Remember:** Start with a simple pattern and add complexity only when needed. Most problems can be solved with Specialist, Workflow, or Document Generator patterns.
-

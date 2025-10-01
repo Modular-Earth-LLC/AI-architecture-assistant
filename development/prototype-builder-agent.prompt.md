@@ -20,6 +20,7 @@ Generate effective agent prompts based on requirements:
 
 **INPUT:** Agent specification  
 **OUTPUT:** Working agent prompt with:
+
 - Clear role definition
 - Specific instructions
 - Output format specification
@@ -30,6 +31,7 @@ Generate effective agent prompts based on requirements:
 ### 2. Code Generation
 
 Generate prototype code:
+
 - Agent implementation classes
 - Orchestration logic
 - Integration code
@@ -39,6 +41,7 @@ Generate prototype code:
 ### 3. Architecture Guidance
 
 Recommend:
+
 - Simple orchestration patterns
 - Integration approaches
 - Technology choices
@@ -47,6 +50,7 @@ Recommend:
 ### 4. Testing Support
 
 Create:
+
 - Demo scenarios
 - Test cases
 - Edge case identification
@@ -236,7 +240,9 @@ DEMO_SCENARIOS = [
 
 **System Prompt:**
 ```
+
 [Full prompt here]
+
 ```
 
 **Test with:**
@@ -361,6 +367,7 @@ DEMO_SCENARIOS = [
 ### 4. Pragmatic Compromises
 
 For prototypes, it's OK to:
+
 - Use simulated data
 - Skip perfect error handling
 - Have simple UI
@@ -374,6 +381,7 @@ For prototypes, it's OK to:
 Before declaring prototype complete:
 
 ### Functionality
+
 - [ ] All agents respond correctly to typical inputs
 - [ ] Agents coordinate properly (if multi-agent)
 - [ ] At least one external tool integration works
@@ -381,18 +389,21 @@ Before declaring prototype complete:
 - [ ] Error messages are helpful (not technical)
 
 ### User Experience
+
 - [ ] UI is intuitive and clear
 - [ ] Agent responses are well-formatted
 - [ ] Loading states show progress
 - [ ] Instructions are clear
 
 ### Content Quality
+
 - [ ] Outputs match required style
 - [ ] Terminology is consistent
 - [ ] No placeholder text visible
 - [ ] Professional quality outputs
 
 ### Demo Readiness
+
 - [ ] 5+ demo scenarios tested
 - [ ] Demo script prepared
 - [ ] Backup plan in place
@@ -407,6 +418,7 @@ Before declaring prototype complete:
 **Diagnosis:** Temperature too high or insufficient examples
 
 **Solution:**
+
 ```python
 # Set temperature to 0 for deterministic output
 message = client.messages.create(
@@ -432,6 +444,7 @@ Output: [exact expected format]
 **Diagnosis:** Prompt not specific enough
 
 **Solution:**
+
 ```markdown
 Add to system prompt:
 
@@ -453,6 +466,7 @@ WHEN UNCERTAIN:
 **Diagnosis:** External API unreliable
 
 **Solution:**
+
 ```python
 def get_data(self, query):
     try:
@@ -470,6 +484,7 @@ def get_data(self, query):
 ### Challenge: Response Time Too Slow
 
 **Solutions:**
+
 - Reduce context window size
 - Cache frequent queries
 - Use parallel processing where possible
@@ -490,11 +505,13 @@ def get_data(self, query):
 
 **System Prompt:**
 ```
+
 You are a financial report generator specializing in small business accounting.
 
 INPUT: QuickBooks data export (CSV) with: Date, Description, Category, Amount, Balance
 
 YOUR TASK:
+
 1. Parse the financial data
 2. Calculate key metrics:
    - Total revenue (income categories)
@@ -505,28 +522,35 @@ YOUR TASK:
 4. Generate professional summary
 
 OUTPUT FORMAT (Markdown):
+
 # Financial Report - [Month Year]
 
 ## Summary
+
 [2-3 sentence overview]
 
 ## Key Metrics
+
 - Revenue: $X,XXX.XX
 - Expenses: $X,XXX.XX
 - Net Profit: $X,XXX.XX
 
 ## Breakdown by Category
+
 [Table: category, amount, percentage]
 
 ## Trends
+
 [Notable changes or patterns]
 
 CONSTRAINTS:
+
 - Use accounting standard terminology
 - Be factual, no speculation
 - Round to 2 decimal places
 - Professional tone
 - Flag data inconsistencies
+
 ```
 
 **Test scenario:**
@@ -544,10 +568,12 @@ print(report)
 ```
 
 **Next steps:**
+
 1. Test with real QuickBooks export
 2. Refine formatting based on preferences
 3. Add month-over-month comparison
 4. Integrate with QuickBooks API (or CSV for prototype)
+
 ```
 
 ---

@@ -11,29 +11,34 @@
 I need a comprehensive technical project plan for my AI-driven MVP. Here are the project details:
 
 **Project Overview:**
+
 - Product name: [PRODUCT_NAME]
 - Product type: [WEB_APP / MOBILE_APP / API / DESKTOP_APP]
 - Target launch: [LAUNCH_DATE]
 - Team size: [NUMBER_OF_DEVELOPERS]
 
 **Technical Requirements:**
+
 - Technology stack: [SELECTED_TECH_STACK]
 - AI capabilities: [AI_FEATURES_TO_IMPLEMENT]
 - Integration requirements: [EXTERNAL_APIS / SERVICES]
 - Performance targets: [RESPONSE_TIME / UPTIME / SCALE]
 
 **Team Composition:**
+
 - [ROLE]: [NUMBER] developers with [EXPERIENCE_LEVEL] experience
 - [ROLE]: [NUMBER] developers with [EXPERIENCE_LEVEL] experience
 - [ROLE]: [NUMBER] developers with [EXPERIENCE_LEVEL] experience
 
 **Constraints:**
+
 - Budget: [TOTAL_BUDGET]
 - Timeline: [TOTAL_DURATION]
 - Risk tolerance: [LOW / MEDIUM / HIGH]
 - Quality requirements: [MINIMUM_VIABLE / PRODUCTION_READY]
 
 Please provide:
+
 1. Detailed project timeline with milestones
 2. Sprint planning with deliverables
 3. Resource allocation and dependencies
@@ -82,65 +87,80 @@ The project-planning-agent should deliver:
 ## Project Phases Breakdown
 
 ### Phase 1: Foundation (Weeks 1-2)
+
 **Objectives:**
+
 - Set up development environment
 - Initialize project structure
 - Configure CI/CD pipeline
 - Set up basic infrastructure
 
 **Deliverables:**
+
 - Project repository with proper structure
 - Development environment documentation
 - Basic CI/CD pipeline
 - Infrastructure provisioning scripts
 
 ### Phase 2: Core Development (Weeks 3-6)
+
 **Objectives:**
+
 - Implement core business logic
 - Build user interface
 - Set up database and APIs
 - Implement authentication
 
 **Deliverables:**
+
 - Core application functionality
 - User interface (web/mobile)
 - RESTful API endpoints
 - User authentication system
 
 ### Phase 3: AI Integration (Weeks 7-10)
+
 **Objectives:**
+
 - Integrate AI/ML capabilities
 - Implement AI agent workflows
 - Set up vector databases
 - Build AI orchestration layer
 
 **Deliverables:**
+
 - AI agent implementations
 - Vector database integration
 - AI orchestration system
 - AI model evaluation framework
 
 ### Phase 4: Testing & Polish (Weeks 11-12)
+
 **Objectives:**
+
 - Comprehensive testing
 - Performance optimization
 - Security hardening
 - User experience refinement
 
 **Deliverables:**
+
 - Test suite with high coverage
 - Performance benchmarks
 - Security audit report
 - Polished user experience
 
 ### Phase 5: Launch (Weeks 13-14)
+
 **Objectives:**
+
 - Production deployment
 - Monitoring setup
 - User onboarding
 - Launch preparation
 
 **Deliverables:**
+
 - Production-ready application
 - Monitoring and alerting
 - User documentation
@@ -151,18 +171,21 @@ The project-planning-agent should deliver:
 ## Risk Mitigation Strategies
 
 ### Technical Risks
+
 - **AI Model Performance:** Implement A/B testing and fallback mechanisms
 - **Integration Failures:** Build robust error handling and retry logic
 - **Scalability Issues:** Design for horizontal scaling from the start
 - **Data Quality:** Implement data validation and cleaning pipelines
 
 ### Resource Risks
+
 - **Key Developer Unavailable:** Cross-train team members and document processes
 - **Skill Gaps:** Provide training and consider external consultants
 - **Budget Overruns:** Implement cost monitoring and regular budget reviews
 - **Scope Creep:** Maintain strict change control and regular scope reviews
 
 ### Timeline Risks
+
 - **AI Development Delays:** Start AI work early and have fallback plans
 - **Integration Complexity:** Prototype integrations early
 - **Testing Bottlenecks:** Implement automated testing from day one
@@ -183,4 +206,3 @@ A successful project plan should result in:
 ---
 
 This prompt ensures comprehensive project planning that balances ambition with realism for AI-driven product development.
-

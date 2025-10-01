@@ -9,6 +9,7 @@
 A streamlined framework for anyone doing AI solution architecture. Whether you're a consultant working with stakeholders, an engineer building internal tools, or a product team prototyping features—this gives you the structure to go from idea to working prototype fast.
 
 **Core workflow:**
+
 1. **Discover** → Understand the problem (30 min)
 2. **Document** → Capture requirements (90 min)
 3. **Design** → Architect the solution (2-4 hours)
@@ -96,6 +97,7 @@ Copy any agent prompt into **Cursor**, **Claude Projects**, **ChatGPT**, or **Mi
 ### ✅ AI Agent Patterns
 
 Reusable agent patterns for common scenarios:
+
 - **Specialist Agents** - Single-task focus
 - **Workflow Agents** - Multi-step processes
 - **Document Generators** - Formatted outputs
@@ -108,6 +110,7 @@ Each pattern includes when to use it, implementation details, and testing approa
 ### ✅ Platform Agnostic
 
 Works with your tools:
+
 - **LLMs:** Claude, GPT-4, Mistral, or any LLM
 - **Development:** Python, Node.js, any language
 - **Deployment:** Cloud, on-premise, or local
@@ -116,6 +119,7 @@ Works with your tools:
 ### ✅ Copy-Paste Friendly
 
 Every resource is designed for immediate use:
+
 - Clear step-by-step instructions
 - Real example scripts
 - Working code templates
@@ -126,6 +130,7 @@ Every resource is designed for immediate use:
 ## Who This Is For
 
 **✅ Perfect for:**
+
 - AI engineers building agent systems
 - Solution architects designing AI implementations
 - Product engineers prototyping AI features
@@ -133,6 +138,7 @@ Every resource is designed for immediate use:
 - Anyone gathering requirements for AI solutions
 
 **⚠️ Less useful for:**
+
 - ML researchers focused on model development
 - Data scientists building predictive models
 - Non-technical stakeholders (this is hands-on technical)
@@ -144,6 +150,7 @@ Every resource is designed for immediate use:
 ### Function Over Perfection
 
 Build working systems that demonstrate value:
+
 - Prototype to prove concepts
 - Iterate based on real feedback
 - Ship functional code fast
@@ -152,6 +159,7 @@ Build working systems that demonstrate value:
 ### Human-First Design
 
 AI augments, doesn't replace judgment:
+
 - Clear processes you can follow manually
 - AI assistants provide guidance when helpful
 - Templates are starting points, not rigid rules
@@ -160,6 +168,7 @@ AI augments, doesn't replace judgment:
 ### Practical, Not Academic
 
 Real-world focused:
+
 - What works in actual projects
 - Clear recommendations over endless options
 - Examples from real use cases
@@ -174,6 +183,7 @@ Real-world focused:
 **Scenario:** Need to automate 1-2 repetitive tasks
 
 **Process:**
+
 1. 30-min discovery → identify automation opportunity
 2. Skip formal workshop, capture requirements in conversation
 3. Use "Specialist Agent" pattern from agent-design-patterns.md
@@ -189,6 +199,7 @@ Real-world focused:
 **Scenario:** Multiple coordinated workflows
 
 **Process:**
+
 1. Discovery session → understand scope
 2. Full 90-min requirements workshop
 3. Design multi-agent architecture
@@ -292,7 +303,7 @@ MIT License - Use freely for commercial and personal projects
 **Paul Prae**  
 AI Architect & Engineer
 
-- Email: hireme@paulprae.com
+- Email: <hireme@paulprae.com>
 - LinkedIn: [linkedin.com/in/paulprae](https://linkedin.com/in/paulprae)
 - GitHub: [github.com/praeducer](https://github.com/praeducer)
 
@@ -301,6 +312,7 @@ AI Architect & Engineer
 ## Acknowledgments
 
 Built on principles from:
+
 - **Service-as-Software** (Foundation Capital) - AI-native business models
 - **AI Agent Orchestration** (LangChain, AutoGen) - Multi-agent patterns
 - **Solution Architecture** - Enterprise architecture methodologies

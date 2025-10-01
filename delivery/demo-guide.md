@@ -1,6 +1,6 @@
 # Prototype Demo Guide
 
-**Purpose:** Effectively demonstrate your AI agent prototype to stakeholders/stakeholders  
+**Purpose:** Effectively demonstrate your AI agent prototype to client/stakeholders  
 **Duration:** 45-60 minutes  
 **When to use:** After prototype development, before production decision
 
