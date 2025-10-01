@@ -1,103 +1,211 @@
 # AI Architecture Assistant
 
-A world-class Artificial Intelligence (AI) architect and technical project manager. It architects and plans the development of agentic systems, including requirements analysis, tech stack recommendations, project plan generation, team composition creation, and project cost estimation. It can then package it all up as a project proposal.
+A comprehensive multi-agent system for AI solution architecture and sales process automation.
 
-**How it works**: Load the assistant's System Prompt as a chat mode or custom agent on your preferred agentic generative AI platform.
+## Overview
 
-**Why it's useful**:
-> "Artificial intelligence (AI) initiatives often stall because of poor architectural choices, a lack of preparation and the inability to scale. Enterprise architecture and technology innovation leaders can create an AI architect role to help build a robust enterprise-wide architecture for AI.
-Gartner estimates that 50% of IT leaders will struggle to move their AI projects past the proof of concept (POC) stage into production. To increase the chances of success, organizations can hire an AI architect to help define the architectural strategy, create workflows, identify toolsets and scale artificial intelligence operations."
+This repository contains a complete framework for Modular Earth's sales and solution architecture process, from initial client prospecting through prototype delivery and partnership negotiation. The system is designed to be executed manually at first, with progressive automation through specialized AI agents.
 
-<https://www.gartner.com/en/articles/what-are-ai-architects-and-what-do-they-do>
+## Philosophy
 
----
+Rather than replacing human expertise, this system augments AI solution architects with specialized agents that handle routine tasks, provide real-time guidance, ensure process consistency, and capture critical information. The human architect maintains control at all decision points while agents accelerate execution.
 
-## Quick Start: Use the Prompt Engineering Assistant in Cursor and GitHub Copilot
+## Repository Structure
 
-1. Open `system.prompt.md`.
-2. Copy all contents to your clipboard.
-3. In Cursor (Custom Mode - Recommended):
-   - Enable Custom Modes: Go to `Cursor Settings` → `Chat` → `Custom Modes`
-   - Create a new Custom Mode called "AI Architecture Assistant"
-   - Set Tools: Select "All tools enabled" or customize as needed
-   - Set Instructions: Paste the entire contents of System Prompt
-   - Save the Custom Mode
-   - Use the mode picker dropdown in Agent to select your new chat mode
-   - Reference: [Cursor Custom Modes Documentation](https://docs.cursor.com/en/agent/modes#custom)
-4. In GitHub Copilot (Custom Chat Mode - Recommended):
-   - Open Command Palette: Press `⇧⌘P` (macOS) or `Ctrl+Shift+P` (Windows/Linux)
-   - Type and select `Chat: New Mode File`
-   - Choose `.github/chatmodes` in your project directory for workspace-specific modes
-   - Name it `Prompt Engineering Assistant.chatmode.md`
-   - Add YAML frontmatter at the top:
+AI-architecture-assistant/
+├── sales-process/          # Five-phase client engagement process
+│   ├── phase-1-initial-engagement/
+│   ├── phase-2-requirements-gathering/
+│   ├── phase-3-prototype-development/
+│   ├── phase-4-prototype-review/
+│   └── phase-5-partnership-discussion/
+├── templates/              # Reusable document templates
+├── agents/                 # AI agent prompts and instructions
+└── workflows/              # Process workflows and interaction maps
 
-     ```yaml
-     ---
-     description: 'Advanced prompt engineering assistant with recursive improvement capabilities'
-     tools: ['codebase', 'search', 'fetch', 'websearch']
-     ---
-     ```
+## The Five-Phase Process
 
-   - Below the frontmatter, paste the entire contents of the System Prompt
-   - Save the file, then select the assistant from the chat mode dropdown
-   - Reference: [GitHub Copilot Custom Chat Modes Documentation](https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes)
-5. Begin prompt engineering. Keep the system prompt pinned to preserve behavior across the session.
+### Phase 1: Initial Engagement
 
----
+- Discovery call to understand client needs
+- Pain point identification
+- Opportunity qualification
+- **Duration:** 1 week
+- **Key Agents:** discovery-call-agent, notetaker-agent
 
-## How To Use These Prompts Day-to-Day
+### Phase 2: Requirements Gathering
 
-1. Load `system.prompt.md` into your chat tool (pin it).
-2. Describe your task (e.g., “”).
-3. Follow the assistant’s checklist to clarify objectives, constraints, and success metrics.
-4. Run the built-in validation. Address findings; iterate as needed.
+- 90-minute structured workshop
+- Comprehensive business understanding
+- AI opportunity mapping
+- **Duration:** 1-2 weeks
+- **Key Agents:** requirements-workshop-agent, requirements-document-agent
 
-Expected result: 
+### Phase 3: Prototype Development
 
----
+- System architecture design
+- Working AI agent system build
+- Integration development
+- **Duration:** 2 weeks
+- **Key Agents:** technical-architect-agent, prototype-builder-agent
 
-## AI Development Workflow (How These Prompts Work Together)
+### Phase 4: Prototype Review
 
-The workflow combines specialized AI development tasks, creating a comprehensive toolkit for building AI systems. This workflow integrates specialized prompts for complete AI project development:
+- Live demonstration
+- Hands-on client exploration
+- Feedback capture
+- **Duration:** 1 week
+- **Key Agents:** feedback-capture-agent
 
-- **Requirements Analysis** → **Tech Stack Generation** → **Technical Project Planning** → **Team Composition Generation** → **Project Cost Estimation** → **Project Proposal**
+### Phase 5: Partnership Discussion
 
-Each stage uses the System Prompt as its foundation, ensuring consistent quality and improvement capabilities across the entire development lifecycle.
+- Formal proposal presentation
+- Pricing and terms negotiation
+- Deal closure or next steps
+- **Duration:** 1-2 weeks
+- **Key Agents:** proposal-generator-agent, sales-strategist-agent
 
----
+## AI Agents
 
-## Repository Files Overview
+This system includes seven specialized agents coordinated by a central orchestrator:
 
-### Core Prompts
+### Core Agents
 
-- `system.prompt.md` — The main system prompt (start here).
+1. **orchestrator-agent** - Central coordinator managing entire engagement workflow
+2. **email-composer-agent** - Drafts all client communications
+3. **meeting-facilitator-agent** - Provides real-time guidance during client meetings
+4. **notetaker-agent** - Captures and structures meeting insights
 
-### AI Development Pipeline Prompts
+### Specialized Agents
 
-Complete workflow for developing an open-source AI-driven MVP software product ready for commercialization. Each prompt guides AI engineers through critical decisions, from the initial concept to a market-ready proposal.
+5. **requirements-analyst-agent** - Analyzes requirements and identifies AI opportunities
+6. **technical-architect-agent** - Designs multi-agent system architectures
+7. **sales-strategist-agent** - Provides pricing guidance and negotiation support
 
-#### End-to-End Development Workflow (Works in Progress)
+See `/agents/` directory for complete agent prompts and instructions.
 
-1. **`workflow/requirements_analysis.user.prompt.md`** — Analyze market needs, define product requirements, and validate AI use cases for your MVP concept
-2. **`workflow/tech_stack_generation.user.prompt.md`** — Select optimal AI frameworks, cloud platforms, and development tools aligned with your requirements and team capabilities  
-3. **`workflow/technical_project_plan_generation.user.prompt.md`** — Create detailed implementation roadmaps, sprint planning, and risk mitigation strategies for AI product development
-4. **`workflow/team_composition_generation.user.prompt.md`** — Determine ideal team structure, skill requirements, and hiring priorities for your AI startup or product team
-5. **`workflow/project_cost_estimation.user.prompt.md`** — Calculate development costs, infrastructure expenses, and resource allocation for realistic budgeting and investor presentations
-6. **`workflow/project_proposal.user.prompt.md`** — Generate compelling commercial proposals, business models, and go-to-market strategies for your AI product
+## Getting Started
 
----
+### Manual Execution (Current State)
 
-## Troubleshooting
+1. Review `/workflows/complete-engagement-workflow.md` for end-to-end process
+2. For each client engagement:
+   - Start with Phase 1 materials in `/sales-process/phase-1-initial-engagement/`
+   - Follow meeting guides and email templates
+   - Progress through phases sequentially
+3. Customize templates based on client industry and needs
 
-- Can’t find a “System Prompt” field in your tool? Paste the system prompt as your first chat message and pin it.
-- The assistant “forgets” behavior mid-session: Re-pin the system prompt or start a fresh chat and paste it again.
-- Very long prompts/context: Use the file links and summaries instead of pasting entire codebases; ask the assistant to summarize and extract variables.
-- Conflicting instructions: Ask the assistant to run its self-check and highlight conflicts before generating outputs.
+### AI-Augmented Execution (Intermediate State)
 
----
+1. Deploy agents in Anthropic Claude workspace
+2. Use agents as real-time copilots during meetings
+3. Have agents draft communications for your review
+4. Let agents generate requirements documents and proposals
+5. Human reviews and approves all outputs before client delivery
+
+### Autonomous Execution (Future State)
+
+1. Orchestrator-agent manages entire engagement
+2. Agents compose and send client communications automatically
+3. Meeting facilitator agents lead workshops with human supervision
+4. Prototype builder agents develop systems autonomously
+5. Human involvement at decision points only
+
+## Key Features
+
+- **Process Consistency:** Ensures every client engagement follows proven methodology
+- **Time Savings:** Agents handle routine tasks (email drafting, note-taking, document generation)
+- **Quality Assurance:** Built-in checklists and validation at each phase transition
+- **Adaptability:** Templates and agents adjust to client industry, sophistication, and complexity
+- **Knowledge Capture:** Every engagement generates structured data for continuous improvement
+
+## Usage Guidelines
+
+### For New Client Engagements
+
+1. Create engagement folder: `/engagements/[CLIENT_NAME]-[DATE]/`
+2. Copy relevant templates from `/templates/`
+3. Follow phase-by-phase process from `/sales-process/`
+4. Document learnings and update templates
+
+### For Agent Deployment
+
+1. Read agent prompt file in `/agents/`
+2. Deploy to Anthropic Claude workspace with appropriate context
+3. Test agent with example scenarios before live client use
+4. Review all agent outputs before sending to clients
+
+### For Process Customization
+
+- **Industry Adaptation:** Modify questions and examples in meeting guides
+- **Timeline Adjustment:** Compress or extend phases based on client needs
+- **Scope Variation:** Focus on subset of agents for smaller engagements
+
+## Dependencies
+
+- Anthropic Claude (Sonnet 4.5 or better) for AI agents
+- Video conferencing tool for client meetings
+- Note-taking tool compatible with agent access
+- Document generation tools (Google Docs, Microsoft Word, etc.)
+- Calendar management system
+
+## Roadmap
+
+### Current (Manual)
+
+- ✅ Complete process documentation
+- ✅ Email templates
+- ✅ Meeting guides
+- ✅ Document templates
+
+### Near-Term (AI-Augmented)
+
+- ⏳ Deploy agents in Claude workspace
+- ⏳ Real-time meeting facilitation
+- ⏳ Automated document generation
+- ⏳ Client communication drafting
+
+### Long-Term (Autonomous)
+
+- ⬜ Automated lead research
+- ⬜ Self-scheduling calendar integrations
+- ⬜ Autonomous email sending with approval
+- ⬜ Prototype auto-generation from requirements
+- ⬜ Full engagement orchestration
 
 ## Contributing
 
-- Propose improvements via pull request.
-- Keep changes aligned with the repository’s validation and structure standards.
-- Prefer concise, testable edits with clear success criteria.
+This system is designed for Modular Earth's internal use but follows patterns that can be adapted to other consulting and solution architecture practices.
+
+To contribute:
+
+1. Document learnings from client engagements
+2. Refine agent prompts based on actual usage
+3. Update templates with improved language
+4. Share successful customizations
+
+## License
+
+[Your License]
+
+## Contact
+
+Paul Prae  
+<hireme@paulprae.com>  
+linkedin.com/in/paulprae  
+github.com/praeducer
+
+## Acknowledgments
+
+Built on principles from:
+
+- Service-as-Software (Foundation Capital)
+- AI agent orchestration patterns (LangChain, AutoGen)
+- Enterprise solution architecture methodologies
+- Consulting engagement best practices
+
+---
+
+**Version:** 1.0  
+**Last Updated:** October 2025  
+**Status:** Production-ready for manual execution, agents in development

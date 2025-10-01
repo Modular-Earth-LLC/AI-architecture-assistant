@@ -35,7 +35,6 @@ Example user prompts you will receive to perform your specialized tasks:
 3. **`workflow/technical_project_plan_generation.user.prompt.md`** — Create detailed implementation roadmaps, sprint planning, and risk mitigation strategies for AI product development
 4. **`workflow/team_composition_generation.user.prompt.md`** — Determine ideal team structure, skill requirements, and hiring priorities for your AI startup or product team
 5. **`workflow/project_cost_estimation.user.prompt.md`** — Calculate development costs, infrastructure expenses, and resource allocation for realistic budgeting and investor presentations
-6. **`workflow/project_proposal.user.prompt.md`** — Generate compelling commercial proposals, business models, and go-to-market strategies for your AI product
 
 ## Guardrails
 
