@@ -1,211 +1,395 @@
 # AI Architecture Assistant
 
-A comprehensive multi-agent system for AI solution architecture and sales process automation.
+**A practical framework for AI engineers and architects to gather requirements, design multi-agent systems, and deliver AI solutions.**
 
-## Overview
+---
 
-This repository contains a complete framework for Modular Earth's sales and solution architecture process, from initial client prospecting through prototype delivery and partnership negotiation. The system is designed to be executed manually at first, with progressive automation through specialized AI agents.
+## For AI Engineers and Architects
 
-## Philosophy
+This repository provides a structured, battle-tested process for taking AI projects from initial client conversation to working prototype. If you design and build AI agent systems, this toolkit helps you:
 
-Rather than replacing human expertise, this system augments AI solution architects with specialized agents that handle routine tasks, provide real-time guidance, ensure process consistency, and capture critical information. The human architect maintains control at all decision points while agents accelerate execution.
+- **Gather complete requirements** using proven workshop techniques
+- **Design robust architectures** with reusable patterns
+- **Build working prototypes** fast using agent design templates
+- **Deliver professional solutions** with proper handoff documentation
 
-## Repository Structure
+**Everything is copy-paste friendly.** No complex setup, no APIs to configure. Just guides, templates, and prompts you can use immediately.
 
-AI-architecture-assistant/
-├── sales-process/          # Five-phase client engagement process
-│   ├── phase-1-initial-engagement/
-│   ├── phase-2-requirements-gathering/
-│   ├── phase-3-prototype-development/
-│   ├── phase-4-prototype-review/
-│   └── phase-5-partnership-discussion/
-├── templates/              # Reusable document templates
-├── agents/                 # AI agent prompts and instructions
-└── workflows/              # Process workflows and interaction maps
+---
 
-## The Five-Phase Process
+## Quick Start
 
-### Phase 1: Initial Engagement
+### For Your Next Project
 
-- Discovery call to understand client needs
-- Pain point identification
-- Opportunity qualification
-- **Duration:** 1 week
-- **Key Agents:** discovery-call-agent, notetaker-agent
+1. **Discovery** (30 min)
+   - Use [`requirements/discovery-guide.md`](requirements/discovery-guide.md)
+   - Understand client needs and identify AI opportunities
 
-### Phase 2: Requirements Gathering
+2. **Requirements** (90 min)
+   - Use [`requirements/workshop-guide.md`](requirements/workshop-guide.md)
+   - Capture detailed workflows and create requirements doc
 
-- 90-minute structured workshop
-- Comprehensive business understanding
-- AI opportunity mapping
-- **Duration:** 1-2 weeks
-- **Key Agents:** requirements-workshop-agent, requirements-document-agent
+3. **Architecture** (2-4 hours)
+   - Use [`architecture/design-guide.md`](architecture/design-guide.md)
+   - Design agents and select technology stack
 
-### Phase 3: Prototype Development
+4. **Development** (2-4 weeks)
+   - Use [`development/prototype-guide.md`](development/prototype-guide.md)
+   - Build functional prototype with agent patterns
 
-- System architecture design
-- Working AI agent system build
-- Integration development
-- **Duration:** 2 weeks
-- **Key Agents:** technical-architect-agent, prototype-builder-agent
+5. **Delivery** (1-2 days)
+   - Use [`delivery/demo-guide.md`](delivery/demo-guide.md)
+   - Demo system and gather feedback
+   - Use [`delivery/handoff-checklist.md`](delivery/handoff-checklist.md)
+   - Complete project handoff
 
-### Phase 4: Prototype Review
+### Using the Agent Prompts
 
-- Live demonstration
-- Hands-on client exploration
-- Feedback capture
-- **Duration:** 1 week
-- **Key Agents:** feedback-capture-agent
+This toolkit includes specialized AI assistant prompts for use in **Cursor**, **Claude Projects**, or **Claude Workspaces**:
 
-### Phase 5: Partnership Discussion
+**During requirements:**
+- Copy [`requirements/discovery-agent.prompt.md`](requirements/discovery-agent.prompt.md) into your AI workspace
+- Use for real-time guidance during discovery sessions and workshops
 
-- Formal proposal presentation
-- Pricing and terms negotiation
-- Deal closure or next steps
-- **Duration:** 1-2 weeks
-- **Key Agents:** proposal-generator-agent, sales-strategist-agent
+**During architecture:**
+- Copy [`architecture/technical-architect-agent.prompt.md`](architecture/technical-architect-agent.prompt.md)
+- Get architecture recommendations and design patterns
 
-## AI Agents
+**During development:**
+- Copy [`development/prototype-builder-agent.prompt.md`](development/prototype-builder-agent.prompt.md)
+- Generate agent prompts, code templates, and demo scenarios
 
-This system includes seven specialized agents coordinated by a central orchestrator:
+**Advanced workflows:**
+- Use prompts in [`architecture/`](architecture/) for specialized tasks:
+  - Requirements analysis
+  - Tech stack selection
+  - Team composition planning
+  - Project estimation
 
-### Core Agents
+---
 
-1. **orchestrator-agent** - Central coordinator managing entire engagement workflow
-2. **email-composer-agent** - Drafts all client communications
-3. **meeting-facilitator-agent** - Provides real-time guidance during client meetings
-4. **notetaker-agent** - Captures and structures meeting insights
+## What's Included
 
-### Specialized Agents
+### Requirements Phase
 
-5. **requirements-analyst-agent** - Analyzes requirements and identifies AI opportunities
-6. **technical-architect-agent** - Designs multi-agent system architectures
-7. **sales-strategist-agent** - Provides pricing guidance and negotiation support
+📁 **requirements/**
 
-See `/agents/` directory for complete agent prompts and instructions.
+- **[discovery-guide.md](requirements/discovery-guide.md)** - Run effective 30-minute discovery sessions
+- **[workshop-guide.md](requirements/workshop-guide.md)** - Conduct 90-minute requirements workshops
+- **[requirements-template.md](requirements/requirements-template.md)** - Complete requirements document template
+- **[discovery-agent.prompt.md](requirements/discovery-agent.prompt.md)** - AI assistant for requirements gathering
 
-## Getting Started
+### Architecture Phase
 
-### Manual Execution (Current State)
+📁 **architecture/**
 
-1. Review `/workflows/complete-engagement-workflow.md` for end-to-end process
-2. For each client engagement:
-   - Start with Phase 1 materials in `/sales-process/phase-1-initial-engagement/`
-   - Follow meeting guides and email templates
-   - Progress through phases sequentially
-3. Customize templates based on client industry and needs
+- **[design-guide.md](architecture/design-guide.md)** - Design multi-agent AI systems
+- **[architecture-template.md](architecture/architecture-template.md)** - System architecture document template
+- **[agent-design-patterns.md](architecture/agent-design-patterns.md)** - Reusable agent patterns with examples
+- **[technical-architect-agent.prompt.md](architecture/technical-architect-agent.prompt.md)** - AI assistant for architecture design
+- **5 specialized prompts** for requirements analysis, tech stack, team planning, project planning, cost estimation
 
-### AI-Augmented Execution (Intermediate State)
+### Development Phase
 
-1. Deploy agents in Anthropic Claude workspace
-2. Use agents as real-time copilots during meetings
-3. Have agents draft communications for your review
-4. Let agents generate requirements documents and proposals
-5. Human reviews and approves all outputs before client delivery
+📁 **development/**
 
-### Autonomous Execution (Future State)
+- **[prototype-guide.md](development/prototype-guide.md)** - Build working AI agent prototypes
+- **[development-checklist.md](development/development-checklist.md)** - 2-week sprint checklist
+- **[prototype-builder-agent.prompt.md](development/prototype-builder-agent.prompt.md)** - AI assistant for rapid prototyping
 
-1. Orchestrator-agent manages entire engagement
-2. Agents compose and send client communications automatically
-3. Meeting facilitator agents lead workshops with human supervision
-4. Prototype builder agents develop systems autonomously
-5. Human involvement at decision points only
+### Delivery Phase
+
+📁 **delivery/**
+
+- **[demo-guide.md](delivery/demo-guide.md)** - Conduct effective prototype demonstrations
+- **[handoff-checklist.md](delivery/handoff-checklist.md)** - Complete project handoff process
+- **[communication-templates.md](delivery/communication-templates.md)** - Professional email and meeting templates
+
+---
+
+## Three Quick-Start Scenarios
+
+### Scenario 1: Simple Automation (1-2 weeks)
+
+**When:** Client needs to automate 1-2 repetitive tasks
+
+**Use:**
+1. [`requirements/discovery-guide.md`](requirements/discovery-guide.md) - 30 min discovery call
+2. Skip formal workshop, capture requirements in conversation
+3. [`architecture/agent-design-patterns.md`](architecture/agent-design-patterns.md) - Use "Specialist Agent" pattern
+4. [`development/prototype-guide.md`](development/prototype-guide.md) - Build in 3-5 days
+5. [`delivery/demo-guide.md`](delivery/demo-guide.md) - Quick demo and handoff
+
+**Timeline:** 1-2 weeks  
+**Agents:** 1-2 specialist agents  
+**Effort:** 20-40 hours
+
+### Scenario 2: Standard Multi-Agent System (3-4 weeks)
+
+**When:** Client needs coordinated agents for multiple workflows
+
+**Use:**
+1. [`requirements/discovery-guide.md`](requirements/discovery-guide.md) - Discovery session
+2. [`requirements/workshop-guide.md`](requirements/workshop-guide.md) - Full requirements workshop
+3. [`architecture/design-guide.md`](architecture/design-guide.md) - Design system architecture
+4. [`development/prototype-guide.md`](development/prototype-guide.md) - Build in 2-3 weeks
+5. [`delivery/demo-guide.md`](delivery/demo-guide.md) + [`delivery/handoff-checklist.md`](delivery/handoff-checklist.md) - Demo and handoff
+
+**Timeline:** 3-4 weeks  
+**Agents:** 3-5 coordinated agents  
+**Effort:** 80-160 hours
+
+### Scenario 3: Complex Enterprise System (6-12 weeks)
+
+**When:** Large organization, multiple integrations, high complexity
+
+**Use:**
+1. Full requirements process with multiple stakeholders
+2. Complete architecture documentation
+3. Use all specialized architecture prompts (tech stack, team composition, cost estimation)
+4. Phased development approach
+5. Comprehensive handoff with knowledge transfer
+
+**Timeline:** 6-12 weeks  
+**Agents:** 7+ agents with complex workflows  
+**Effort:** 320+ hours
+
+---
 
 ## Key Features
 
-- **Process Consistency:** Ensures every client engagement follows proven methodology
-- **Time Savings:** Agents handle routine tasks (email drafting, note-taking, document generation)
-- **Quality Assurance:** Built-in checklists and validation at each phase transition
-- **Adaptability:** Templates and agents adjust to client industry, sophistication, and complexity
-- **Knowledge Capture:** Every engagement generates structured data for continuous improvement
+### ✅ Copy-Paste Workflows
 
-## Usage Guidelines
+Every guide is designed to be used immediately:
+- Clear step-by-step instructions
+- Real example scripts and prompts
+- No complex setup required
+- Works with any AI platform
 
-### For New Client Engagements
+### ✅ Agent Design Patterns
 
-1. Create engagement folder: `/engagements/[CLIENT_NAME]-[DATE]/`
-2. Copy relevant templates from `/templates/`
-3. Follow phase-by-phase process from `/sales-process/`
-4. Document learnings and update templates
+Proven patterns for common scenarios:
+- Specialist agents (focused on single tasks)
+- Workflow agents (multi-step processes)
+- Document generators (formatted output)
+- Research & synthesis agents
+- Review & validation agents
+- Coordinator/router agents
 
-### For Agent Deployment
+Each pattern includes:
+- When to use it
+- Complete prompt templates
+- Testing approaches
+- Common variations
 
-1. Read agent prompt file in `/agents/`
-2. Deploy to Anthropic Claude workspace with appropriate context
-3. Test agent with example scenarios before live client use
-4. Review all agent outputs before sending to clients
+### ✅ Platform Agnostic
 
-### For Process Customization
+Works with your preferred tools:
+- **LLM Platforms:** Anthropic Claude, OpenAI, Azure OpenAI, others
+- **Development:** Python, Node.js, any language
+- **Deployment:** Cloud, on-premise, serverless
+- **AI Tools:** Cursor, Claude Projects, Claude Workspaces
 
-- **Industry Adaptation:** Modify questions and examples in meeting guides
-- **Timeline Adjustment:** Compress or extend phases based on client needs
-- **Scope Variation:** Focus on subset of agents for smaller engagements
+### ✅ Real-World Tested
 
-## Dependencies
+These processes have been used to deliver actual client projects. Not theoretical—practical and battle-tested.
 
-- Anthropic Claude (Sonnet 4.5 or better) for AI agents
-- Video conferencing tool for client meetings
-- Note-taking tool compatible with agent access
-- Document generation tools (Google Docs, Microsoft Word, etc.)
-- Calendar management system
+---
 
-## Roadmap
+## Philosophy
 
-### Current (Manual)
+### Human-First, AI-Augmented
 
-- ✅ Complete process documentation
-- ✅ Email templates
-- ✅ Meeting guides
-- ✅ Document templates
+This toolkit is designed for **manual execution** first:
+- Copy guides into your workflow
+- Follow step-by-step processes
+- Use templates as starting points
+- Leverage AI assistants where helpful
 
-### Near-Term (AI-Augmented)
+You don't need complex automation. You need clear processes.
 
-- ⏳ Deploy agents in Claude workspace
-- ⏳ Real-time meeting facilitation
-- ⏳ Automated document generation
-- ⏳ Client communication drafting
+### Function Over Perfection
 
-### Long-Term (Autonomous)
+The goal is **working systems**, not perfect systems:
+- Prototype to prove value
+- Iterate based on feedback
+- Ship functional code fast
+- Optimize for clarity and maintainability
 
-- ⬜ Automated lead research
-- ⬜ Self-scheduling calendar integrations
-- ⬜ Autonomous email sending with approval
-- ⬜ Prototype auto-generation from requirements
-- ⬜ Full engagement orchestration
+### Practical, Not Academic
+
+This is a **practitioner's toolkit**:
+- Focus on what works in real projects
+- Clear recommendations, not endless options
+- Examples from actual use cases
+- Honest about trade-offs and limitations
+
+---
+
+## Who This Is For
+
+### ✅ Great for:
+
+- **AI Engineers** building agent systems for clients or internal projects
+- **Solution Architects** designing AI implementations
+- **Independent Consultants** delivering AI solutions
+- **Product Engineers** prototyping AI features
+- **Engineering Managers** planning AI projects
+
+### ⚠️ Less useful for:
+
+- ML researchers focused on model development
+- Data scientists building predictive models
+- Salespeople (this is technical, not sales-focused)
+- Non-technical business owners (too hands-on)
+
+---
+
+## Example Usage
+
+### Using Discovery Guide
+
+```bash
+# Before client meeting
+1. Read requirements/discovery-guide.md
+2. Prepare 3-5 relevant AI use case examples
+3. Set up note-taking system
+
+# During 30-min discovery call
+1. Follow question structure from guide
+2. Capture pain points and technology stack
+3. Identify AI opportunities
+
+# Within 1 hour after
+1. Use meeting summary template
+2. Categorize pain points (HIGH/MEDIUM/LOW for AI)
+3. Determine next steps
+```
+
+### Using Agent Design Patterns
+
+```bash
+# When designing an agent
+1. Read architecture/agent-design-patterns.md
+2. Choose pattern matching your need:
+   - Specialist Agent for focused tasks
+   - Document Generator for formatted outputs
+   - Research Agent for information gathering
+3. Copy prompt template
+4. Customize with your domain specifics
+5. Test and iterate
+```
+
+### Using with Cursor AI
+
+```bash
+# Setup
+1. Open this repo in Cursor
+2. Copy requirements/discovery-agent.prompt.md
+3. Paste into Cursor chat
+4. Cursor will now provide real-time guidance
+
+# During requirements workshop
+YOU: "Client just described spending 8 hours/week on manual reporting"
+CURSOR: "🔴 PAIN POINT IDENTIFIED: Manual report generation
+         Classification: HIGH - Document generation task
+         Suggested follow-up: 'Walk me through creating one report...'
+         Potential solution: Report automation agent"
+```
+
+---
+
+## Documentation Standards
+
+All guides in this repository follow these principles:
+
+1. **Actionable** - Every guide includes clear next steps
+2. **Scannable** - Use headings, bullets, and formatting
+3. **Example-Rich** - Real examples, not abstract concepts
+4. **Honest** - Include what doesn't work, not just what does
+5. **Concise** - Respect your time, no unnecessary length
+
+---
 
 ## Contributing
 
-This system is designed for Modular Earth's internal use but follows patterns that can be adapted to other consulting and solution architecture practices.
+This toolkit is maintained as a resource for the AI architecture community.
 
-To contribute:
+### Ways to Contribute
 
-1. Document learnings from client engagements
-2. Refine agent prompts based on actual usage
-3. Update templates with improved language
-4. Share successful customizations
+**Share improvements:**
+- Better workshop questions
+- Additional agent patterns
+- Real-world case studies
+- Process refinements
+
+**Submit pull requests:**
+- Fix errors or unclear sections
+- Add missing use cases
+- Improve examples
+- Enhance templates
+
+**Provide feedback:**
+- Open issues for suggestions
+- Share what works/doesn't work for you
+- Request additional guides or patterns
+
+---
 
 ## License
 
-[Your License]
+MIT License - Use freely for commercial and personal projects
 
-## Contact
+---
 
-Paul Prae  
-<hireme@paulprae.com>  
-linkedin.com/in/paulprae  
-github.com/praeducer
+## Author
+
+**Paul Prae**  
+AI Architect & Engineer
+
+- Email: <hireme@paulprae.com>
+- LinkedIn: [linkedin.com/in/paulprae](https://linkedin.com/in/paulprae)
+- GitHub: [github.com/praeducer](https://github.com/praeducer)
+
+---
 
 ## Acknowledgments
 
 Built on principles from:
+- **Service-as-Software** (Foundation Capital) - AI-native business models
+- **AI Agent Orchestration** (LangChain, AutoGen) - Multi-agent patterns
+- **Solution Architecture** - Enterprise architecture methodologies
+- **Consulting Best Practices** - Requirements gathering and client delivery
 
-- Service-as-Software (Foundation Capital)
-- AI agent orchestration patterns (LangChain, AutoGen)
-- Enterprise solution architecture methodologies
-- Consulting engagement best practices
+Inspired by real client engagements and the generous sharing of the AI engineering community.
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** October 2025  
-**Status:** Production-ready for manual execution, agents in development
+## Quick Links
+
+**Core Guides:**
+- [Discovery Guide](requirements/discovery-guide.md) - Start here for new projects
+- [Workshop Guide](requirements/workshop-guide.md) - Detailed requirements gathering
+- [Design Guide](architecture/design-guide.md) - System architecture design
+- [Agent Patterns](architecture/agent-design-patterns.md) - Reusable agent designs
+- [Prototype Guide](development/prototype-guide.md) - Build working systems
+- [Demo Guide](delivery/demo-guide.md) - Effective demonstrations
+
+**Templates:**
+- [Requirements Template](requirements/requirements-template.md)
+- [Architecture Template](architecture/architecture-template.md)
+- [Communication Templates](delivery/communication-templates.md)
+
+**AI Assistants:**
+- [Discovery Agent](requirements/discovery-agent.prompt.md)
+- [Technical Architect Agent](architecture/technical-architect-agent.prompt.md)
+- [Prototype Builder Agent](development/prototype-builder-agent.prompt.md)
+
+---
+
+**Version:** 2.0 (Refactored October 2025)  
+**Status:** Production-ready for manual execution
+
+---
+
+**Get Started:** Read [`requirements/discovery-guide.md`](requirements/discovery-guide.md) and use it for your next client conversation.
