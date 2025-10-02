@@ -81,6 +81,9 @@ Copy any agent prompt into **Cursor**, **Claude Projects**, **ChatGPT**, or **Mi
 /delivery/
 ├── demo-guide.md                   # How to demo effectively
 └── handoff-checklist.md            # Project handoff checklist
+
+/optimization/
+└── optimize-ai-architecture-system.user.prompt.md  # System optimization prompt
 ```
 
 ---
@@ -254,6 +257,14 @@ Potential solution: Report automation agent
 - Demo scenario templates
 - Iteration framework
 
+### System Optimization
+
+- Meta-prompts for optimizing AI workflows
+- Reduce complexity and redundancy
+- Improve accessibility for beginners
+- Maintain coherence as systems grow
+- Platform compatibility optimization
+
 ---
 
 ## Documentation Standards
@@ -275,6 +286,43 @@ All guides follow these principles:
 3. **Copy** agent prompts into your AI tool of choice
 4. **Follow** the process from discovery → demo
 5. **Adapt** everything to your specific needs
+
+---
+
+## System Optimization
+
+As this framework grows and evolves, you can systematically optimize and improve it using AI assistance.
+
+### Using the System Optimizer
+
+**File:** `optimization/optimize-ai-architecture-system.user.prompt.md`
+
+This meta-prompt enables the [Prompt Engineering Assistant](https://github.com/Modular-Earth-LLC/AI-engineering-assistant) to analyze and optimize the entire AI architecture framework.
+
+**Quick start:**
+
+1. **Set up PE Assistant** in Cursor (or your preferred AI platform)
+2. **Copy** the optimization prompt: `optimization/optimize-ai-architecture-system.user.prompt.md`
+3. **Paste** into conversation with PE Assistant
+4. **Answer** clarifying questions about your priorities
+5. **Review** optimization recommendations and implement incrementally
+
+**The optimizer will:**
+- Reduce complexity while preserving functionality
+- Eliminate redundancy across prompts and guides
+- Improve accessibility for AI beginners
+- Ensure platform compatibility (Cursor, ChatGPT, Claude, Mistral, Copilot)
+- Incorporate latest AI research and techniques
+- Maintain the framework's pragmatic philosophy
+
+**When to optimize:**
+- Repository has grown beyond 25 files
+- User feedback indicates confusion
+- New AI techniques emerge that should be integrated
+- Platform capabilities change significantly
+- Every 3-6 months as maintenance
+
+This creates a **self-improving system** that stays current with AI advancements while becoming more accessible over time.
 
 ---
 
