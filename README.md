@@ -1,477 +1,616 @@
-# AI Solution Architecture Framework
+# AI Architecture Assistant 🤖🏗️
 
-**Build production-ready AI agent systems in 1-2 weeks—from requirements to working prototype.**
+**Transform AI ideas into production-ready architectures in hours, not weeks.**
 
-[![Framework](https://img.shields.io/badge/Framework-v4.0-blue)]() [![Status](https://img.shields.io/badge/Status-Production%20Ready-green)]() [![License](https://img.shields.io/badge/License-MIT-yellow)]()
+A multi-agent system that guides you through the complete AI development lifecycle—from requirements gathering to deployment—following industry best practices (AWS Well-Architected, TDSP/MLOps workflows, Anthropic prompt engineering).
 
----
+**Perfect for:** Junior to mid-level AI engineers and architects building GenAI systems
 
-## Why This Framework?
-
-Most AI projects fail because teams skip architecture. This framework gives you battle-tested processes, agent patterns, and AI assistants that work together to ship working systems **fast**.
-
-**The problem:** 50% of AI projects stall at POC stage due to poor architecture and planning.
-
-**This solution:** A proven 1-2 week process from concept to prototype, optimized for **speed** and **pragmatism**.
+**Deployment:** Cursor | Claude Projects | AWS Bedrock | Platform-Agnostic
 
 ---
 
-## 🚀 Start Here: 15-Minute Quick Start
+## What This System Does
 
-**New to AI architecture?** Get your first agent working in 15 minutes:
+Think of this like having 5 expert AI consultants on your team:
 
-### Option 1: Use the Quick Start Wizard (Recommended)
+1. **Supervisor Agent** 🎯 - Your guide who routes you to the right expert
+2. **Requirements Agent** 📋 - Helps you understand what to build (discovery sessions)
+3. **Architecture Agent** 🏛️ - Designs your AI system (tech stack, diagrams, cost estimates)
+4. **Engineering Agent** 👨‍💻 - Builds working prototypes (code, UI, demos)
+5. **Deployment Agent** 🚀 - Deploys to your platform (Cursor, AWS Bedrock, etc.)
+6. **Optimization Agent** ⚡ - Improves your AI systems (and this system itself!)
 
-```bash
-# 1. Copy the wizard prompt into Cursor or Claude
-requirements/quick-start-wizard.prompt.md
-
-# 2. Answer 10 questions (5 minutes)
-# 3. Get your custom requirements doc (instant)
-# 4. Follow the generated next steps (10 minutes)
-```
-
-**The wizard generates:**
-- ✅ Custom requirements document
-- ✅ Agent architecture recommendations
-- ✅ Technology stack suggestions
-- ✅ Clear next steps for your specific use case
-
-### Option 2: Follow the Example
-
-See a complete workflow in action:
-1. Read **[Simple Example: Email Automation Agent](examples/email-automation.md)** (5 min)
-2. Copy the agent template (2 min)
-3. Customize for your use case (8 min)
-4. **You have a working agent!**
+**The magic:** These agents work together like a well-orchestrated team, passing information through a shared knowledge base, so you get consistent, high-quality results.
 
 ---
 
-## 📋 What You Get
+## 🚀 Quick Start (15 Minutes)
 
-### ✅ Complete Process (Discover → Design → Build → Demo)
+###Step 1: Choose Your Entry Point
 
-**The 1-2 Week Timeline:**
+**First time building an AI system?**
+→ Start with the **Supervisor Agent** - it will guide you through everything
+
+**Have a specific task?**
+→ Jump to the appropriate specialized agent (see Agent Guide below)
+
+### Step 2: Set Up Your Environment
+
+**Option A: Cursor (Easiest)**
+1. Open this repository in Cursor
+2. Create a new Custom Chat Mode
+3. Copy the contents of `supervisor_agent.system.prompt.md`
+4. Paste into Custom Instructions → Save as "AI Architecture Assistant"
+5. Start chatting: "I want to build an AI system"
+
+**Option B: Claude Projects**
+1. Create new Claude Project named "AI Architecture Assistant"
+2. Copy `supervisor_agent.system.prompt.md` → Paste as Custom Instructions
+3. Upload `knowledge_base/` folder to Project Knowledge
+4. Start conversation: "Help me design an AI system"
+
+**Option C: AWS Bedrock (Enterprise)**
+→ See `guides/platform_deployment.md` for full Bedrock multi-agent setup
+
+### Step 3: Your First AI System
+
+**Try the example:** Design a Financial Operations Assistant for solo-entrepreneurs
 
 ```
-Week 1: Requirements & Design
-├─ Day 1: Discovery (30 min) → Identify opportunities
-├─ Day 2: Workshop (90 min) → Detailed requirements
-├─ Day 3-4: Architecture (4 hrs) → System design
-└─ Day 5: Tech decisions (2 hrs) → Stack selection
+You: "I'm a solo-entrepreneur spending 10 hours/week on invoicing, 
+expense tracking, and financial reports. Can AI help?"
 
-Week 2: Build & Validate
-├─ Day 1-3: Core agents → Working prototypes
-├─ Day 4-5: Integrations → Connect systems
-├─ Day 6-8: Testing → Quality assurance
-├─ Day 9: Demo prep → Scenarios ready
-└─ Day 10: Stakeholder demo → Validation
+Supervisor Agent: "Absolutely! Let me connect you with the Requirements Agent..."
+
+[15-minute discovery session]
+
+Requirements Agent: "✅ Requirements complete. Ready for architecture design?"
+
+[2-hour architecture design]
+
+Architecture Agent: "✅ Design complete. Tech stack: Python + Claude + Streamlit.
+Cost: $75K development + $200/mo infrastructure. Ready to build prototype?"
+
+[8-12 hour prototype development]
+
+Engineering Agent: "✅ Prototype built! Location: outputs/prototypes/financial-operations-assistant/"
+
+[Demo to stakeholders, gather feedback]
+
+Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for production?"
 ```
 
-### ✅ AI Assistants (Real-Time Guidance)
-
-Copy these prompts into **Cursor**, **Claude**, or **ChatGPT** for expert assistance:
-
-| Agent | Purpose | When to Use |
-|-------|---------|-------------|
-| **[Quick Start Wizard](requirements/quick-start-wizard.prompt.md)** | 15-minute onboarding | Starting new project |
-| **[Discovery Agent](requirements/discovery-agent.prompt.md)** | Requirements gathering | Initial meetings |
-| **[Requirements Extraction](requirements/requirements-extraction.prompt.md)** | Structure meeting notes | After discovery sessions |
-| **[Technical Architect](architecture/technical-architect-agent.prompt.md)** | System design + Mermaid diagrams | Architecture phase |
-| **[Solutions Architect](architecture/solutions-architect-system.prompt.md)** | Internal project planning | Executive proposals |
-| **[Prototype Builder](development/prototype-builder-agent.prompt.md)** | Code generation | Development phase |
-
-### ✅ Proven Agent Patterns
-
-9 reusable patterns for 95% of use cases:
-
-- **Specialist Agent** - Single-task focus (reports, analysis, classification)
-- **Workflow Agent** - Multi-step processes (onboarding, troubleshooting)
-- **Document Generator** - Formatted outputs (proposals, emails, reports)
-- **Research & Synthesis** - Information gathering (competitive intel, market research)
-- **Review & Validation** - Quality control (content review, compliance checking)
-- **Coordinator/Router** - Orchestration (support routing, task assignment)
-- **Chain-of-Thought** - Complex reasoning (problem-solving, planning)
-- **Feedback Loop** - Iterative improvement (learning from corrections)
-- **Adaptive Agent** - User-aware behavior (adjusts to expertise level)
-
-📖 **[Complete Pattern Library](architecture/agent-design-patterns.md)**
-
-### ✅ Production-Ready Workflows
-
-**8 specialized workflows for internal teams:**
-
-**Requirements & Discovery:**
-1. **[Requirements Analysis](architecture/requirements_analysis.user.prompt.md)** - Market validation, product requirements
-2. **[Requirements Extraction](requirements/requirements-extraction.prompt.md)** - Structure unorganized notes
-
-**Architecture & Planning:**
-3. **[Tech Stack Selection](architecture/tech_stack_generation.user.prompt.md)** - Technology recommendations with trade-off analysis
-4. **[Team Composition](architecture/team_composition_generation.user.prompt.md)** - Hiring strategy, role definitions
-5. **[LOE Estimation](architecture/loe_estimation_detailed.user.prompt.md)** - Engineering hours, timeline, complexity
-6. **[Project Planning](architecture/technical_project_plan_generation.user.prompt.md)** - Timelines, sprints, risk mitigation
-7. **[Cost Estimation](architecture/project_cost_estimation.user.prompt.md)** - Development costs, infrastructure, ROI
-
-**Executive Proposals** (🆕):
-8. **[Project Proposals](proposals/)** - Get CTO/CFO approval and budget allocation
-   - [Discovery/Assessment Proposal](proposals/discovery-assessment-proposal.prompt.md) - Technical feasibility (2-6 weeks)
-   - [POC/MVP Implementation](proposals/poc-mvp-implementation-proposal.prompt.md) - Build phase (4-16 weeks)
-   - [Proposal Template Generator](proposals/project-proposal-template.prompt.md) - Standardize org process
-
-📖 **[Complete Proposals Guide](proposals/README.md)** - Executive approval workflow
+**Result:** Working multi-agent financial assistant in ~1 week ⏱️
 
 ---
 
-## 🎯 Choose Your Path
+## 📚 Agent Guide - When to Use Each Agent
 
-### Path 1: First-Time User (15 minutes)
+### Use Supervisor Agent When:
+- ✅ You're new to this system
+- ✅ You're not sure which agent to use
+- ✅ You want guided workflow through multiple phases
+- ✅ You want seamless agent transitions
 
-```
-1. Use Quick Start Wizard → Get custom guidance
-2. Review generated requirements → Understand your project
-3. Copy relevant agent prompt → Start building
-4. Done! You have direction and a starting point.
-```
-
-### Path 2: Run Discovery Session (2 hours)
-
-```
-1. Read discovery-guide.md → Understand the process
-2. Copy discovery-agent.prompt.md into AI tool
-3. Conduct 30-min stakeholder meeting → Capture needs
-4. Generate requirements document → Blueprint ready
-5. Move to architecture phase
-```
-
-### Path 3: Get Executive Approval (2-4 weeks) 🆕
-
-**For internal teams seeking CTO/CFO approval and budget:**
-
-```
-Week 1-2: Discovery & Assessment
-- Discovery session (30 min)
-- Requirements extraction (1 hour)
-- Technical feasibility assessment (2-6 weeks if needed)
-- Create assessment proposal
-
-Week 2-3: Proposal Creation
-- Design architecture (2-4 hours)
-- Estimate effort and costs (4 hours)
-- Create POC/MVP proposal (4-6 hours)
-- Review with stakeholders
-
-Week 3-4: Approval Process
-- Submit to CTO/CFO for review
-- Present to steering committee (1 hour)
-- Address questions and feedback
-- Get approval and budget allocation
-
-Then: Proceed to implementation (Path 4)
-```
-
-**📖 [Complete Guide](proposals/README.md)** | **📝 [Templates](proposals/)**
-
-### Path 4: Full Project (1-2 weeks)
-
-```
-Week 1:
-- Discovery session (30 min)
-- Requirements workshop (90 min)
-- Architecture design (2-4 hours)
-- Tech stack selection (2 hours)
-
-Week 2:
-- Build prototype (1-2 weeks)
-- Demo and validate (1 hour)
-- Iterate based on feedback
-```
+**Location:** `supervisor_agent.system.prompt.md`
 
 ---
 
-## 📚 Complete Documentation
+### Use Requirements Agent When:
+- ✅ Starting a new AI project (gather requirements)
+- ✅ Conducting discovery sessions with stakeholders
+- ✅ Parsing meeting notes into structured requirements
+- ✅ Classifying pain points by AI suitability
 
-### Requirements Phase
-- **[Discovery Guide](requirements/discovery-guide.md)** - How to run discovery sessions (30 min)
-- **[Workshop Guide](requirements/workshop-guide.md)** - Comprehensive requirements gathering (90 min)
-- **[Requirements Template](requirements/requirements-template.md)** - Document structure
+**Location:** `ai_agents/requirements_agent.system.prompt.md`
 
-### Architecture Phase
-- **[Design Guide](architecture/design-guide.md)** - System architecture principles
-- **[Architecture Template](architecture/architecture-template.md)** - Document structure
-- **[Agent Design Patterns](architecture/agent-design-patterns.md)** - 9 reusable patterns
+**User Prompts:**
+- `user_prompts/requirements/quick_discovery.user.prompt.md` - 15-min rapid assessment
+- `user_prompts/requirements/standard_discovery.user.prompt.md` - 30-min session
+- `user_prompts/requirements/comprehensive_workshop.user.prompt.md` - 90-min deep-dive
+- `user_prompts/requirements/extract_requirements.user.prompt.md` - Parse notes
 
-### Development Phase
-- **[Prototype Guide](development/prototype-guide.md)** - Build working systems (1-2 weeks)
-- **[Development Checklist](development/development-checklist.md)** - 2-week sprint guide
-
-### Delivery Phase
-- **[Demo Guide](delivery/demo-guide.md)** - Effective stakeholder presentations
-- **[Handoff Checklist](delivery/handoff-checklist.md)** - Production handoff
+**Output:** `knowledge_base/user_requirements.json`
 
 ---
 
-## 💡 Real-World Examples
+### Use Architecture Agent When:
+- ✅ Designing AI system architecture
+- ✅ Selecting tech stack (LLM providers, frameworks, infrastructure)
+- ✅ Generating architecture diagrams
+- ✅ Estimating costs and timelines
+- ✅ Creating project plans
+- ✅ Assembling executive proposals
 
-### Example 1: Simple Automation (3-5 days)
+**Location:** `ai_agents/architecture_agent.system.prompt.md`
 
-**Scenario:** Automate 2-3 repetitive tasks
+**User Prompts (Multi-Shot Sequence):**
+1. `user_prompts/architecture/tech_stack_selection.user.prompt.md`
+2. `user_prompts/architecture/architecture_diagram_generation.user.prompt.md`
+3. `user_prompts/architecture/team_composition.user.prompt.md`
+4. `user_prompts/architecture/loe_estimation.user.prompt.md`
+5. `user_prompts/architecture/cost_estimation.user.prompt.md`
+6. `user_prompts/architecture/project_plan_generation.user.prompt.md`
 
-**Process:**
-1. 30-min discovery → Identify tasks
-2. Skip formal workshop, capture requirements in conversation
-3. Use "Specialist Agent" pattern
-4. Build prototype in 3-5 days
-5. Demo and refine
+**Proposal Assembly:**
+- `user_prompts/proposals/discovery_proposal_assembly.user.prompt.md`
+- `user_prompts/proposals/implementation_proposal_assembly.user.prompt.md`
 
-**Result:** 2-3 specialized agents, 20-40 hours effort
-
----
-
-### Example 2: Multi-Agent System (2-3 weeks)
-
-**Scenario:** Complex workflow automation with integrations
-
-**Process:**
-1. Full discovery session
-2. 90-min requirements workshop
-3. Design multi-agent architecture
-4. Build prototype over 2-3 weeks
-5. Comprehensive stakeholder demo
-
-**Result:** 5-7 coordinated agents with integrations, 80-160 hours effort
+**Output:** `knowledge_base/design_decisions.json`
 
 ---
 
-### Example 3: Cursor Integration
+### Use Engineering Agent When:
+- ✅ Building prototypes from architecture designs
+- ✅ Generating agent code (Python, Node.js)
+- ✅ Creating UIs (Streamlit, React, CLI)
+- ✅ Writing demo scenarios and test cases
 
-```bash
-# Real workflow example
-1. Open this repo in Cursor
-2. Copy requirements/discovery-agent.prompt.md into Cursor chat
-3. Cursor provides real-time guidance during stakeholder meetings
+**Location:** `ai_agents/engineering_agent.system.prompt.md`
 
-Example interaction:
-YOU: "Stakeholder spends 8 hours/week on manual reports"
+**User Prompts:**
+- `user_prompts/engineering/prototype_builder.user.prompt.md`
 
-CURSOR: 
-🔴 PAIN POINT IDENTIFIED: Manual report generation
-Classification: HIGH - Document generation task
-Follow-up: "Walk me through creating one report step-by-step"
-Solution: Report automation agent (estimated 6-hour weekly savings)
+**Output:** `outputs/prototypes/[project-name]/`
+
+---
+
+### Use Deployment Agent When:
+- ✅ Deploying prototypes to target platforms
+- ✅ Creating testing strategies
+- ✅ Assessing production readiness
+- ✅ Generating handoff documentation
+
+**Location:** `ai_agents/deployment_agent.system.prompt.md`
+
+**User Prompts:**
+- `user_prompts/deployment/platform_deployment.user.prompt.md`
+- `user_prompts/deployment/testing_strategy.user.prompt.md`
+
+---
+
+### Use Optimization Agent When:
+- ✅ Improving deployed AI systems
+- ✅ Refactoring prompts for efficiency
+- ✅ Reducing LLM API costs
+- ✅ Optimizing this AI Architecture Assistant system itself
+
+**Location:** `ai_agents/optimization_agent.system.prompt.md`
+
+---
+
+## 📁 Repository Structure
+
+```
+AI-architecture-assistant/
+├── supervisor_agent.system.prompt.md       # START HERE - Your main orchestrator
+│
+├── ai_agents/                              # Specialized agents (copy to chat modes)
+│   ├── requirements_agent.system.prompt.md
+│   ├── architecture_agent.system.prompt.md
+│   ├── engineering_agent.system.prompt.md
+│   ├── deployment_agent.system.prompt.md
+│   └── optimization_agent.system.prompt.md
+│
+├── user_prompts/                           # Task-specific instructions
+│   ├── requirements/                       # Discovery session prompts
+│   ├── architecture/                       # Design step prompts
+│   ├── proposals/                          # Executive proposal assembly
+│   ├── engineering/                        # Implementation prompts
+│   └── deployment/                         # Deployment prompts
+│
+├── knowledge_base/                         # Shared data (JSON)
+│   ├── system_config.json                  # Platform, constraints, stakeholders
+│   ├── user_requirements.json              # Discovery outputs
+│   └── design_decisions.json               # Architecture outputs
+│
+├── outputs/                                # Generated prototypes
+│   └── prototypes/[project-name]/          # Your built AI systems
+│
+├── guides/                                 # User documentation
+│   ├── getting_started.md                  # New users start here
+│   ├── workflow_guide.md                   # Complete lifecycle
+│   ├── platform_deployment.md              # Platform-specific setup
+│   ├── executive_overview.md               # For business leaders
+│   └── examples/                           # Example projects
+│
+├── templates/                              # Reusable templates
+└── docs/                                   # Reference documentation
+    └── agent_design_patterns.md            # AI agent patterns library
 ```
 
 ---
 
-## 🏗️ Repository Structure
+## 🎓 Learning Path for Junior Engineers
+
+### Level 1: First AI System (2-3 hours)
+1. **Read:** This README (you're here! ✅)
+2. **Try:** Follow Quick Start above with financial operations example
+3. **Practice:** Complete one discovery → design → prototype cycle
+4. **Understand:** How agents work together through knowledge base
+
+### Level 2: Independent Usage (1 week)
+1. **Read:** `guides/getting_started.md` (deep dive)
+2. **Read:** `guides/workflow_guide.md` (complete lifecycle)
+3. **Try:** Design your own AI system for a real problem
+4. **Practice:** All 6 architecture design steps
+
+### Level 3: Advanced Patterns (2 weeks)
+1. **Read:** `docs/agent_design_patterns.md` (9 reusable patterns)
+2. **Study:** Financial operations assistant in `outputs/prototypes/`
+3. **Try:** Build multi-agent system with 3+ agents
+4. **Master:** AWS Well-Architected principles application
+
+---
+
+## 💡 Key Concepts
+
+### Multi-Agent Architecture
+This system uses a **supervisor-worker pattern** (like AWS Bedrock multi-agent orchestration):
+- **Supervisor** routes requests to specialized workers
+- **Workers** (agents) each handle specific domains
+- **Knowledge base** stores shared state
+- **User prompts** provide task-specific instructions
+
+### Knowledge Base Pattern
+All agents read/write to JSON files for consistency:
+- `system_config.json` - Your project settings (you configure once)
+- `user_requirements.json` - Requirements Agent writes, Architecture Agent reads
+- `design_decisions.json` - Architecture Agent writes, Engineering Agent reads
+
+This prevents information loss and enables traceability.
+
+### Multi-Shot Prompting
+Architecture Agent doesn't do everything itself—it orchestrates 6 separate user prompts in sequence:
+1. Tech stack selection
+2. Architecture diagram generation
+3. Team composition
+4. LOE estimation
+5. Cost estimation
+6. Project plan generation
+
+Each produces a specific deliverable that informs the next.
+
+---
+
+## 🎯 Primary Example: Financial Operations Assistant
+
+Throughout this system, we use a **multi-agent financial operations assistant for solo-entrepreneurs** as the reference example. This is inspired by (but more well-architected than) the [financial-assistant-for-families](https://github.com/Modular-Earth-LLC/financial-assistant-for-families) reference.
+
+**Why this example:**
+- Real-world use case most people understand
+- Demonstrates multi-agent coordination
+- Shows knowledge base pattern
+- Covers all design steps
+- Includes both technical and business perspectives
+
+**What it does:**
+- Automates invoicing (saves 2 hrs/week)
+- Categorizes expenses (saves 3 hrs/week)
+- Generates financial reports (saves 5 hrs/week)
+- Provides financial insights and forecasting
+
+**Architecture:**
+- 2 specialized agents (Operations + Analytics)
+- Shared knowledge base (local JSON)
+- Streamlit UI for non-technical users
+- Claude Sonnet for complex analysis, Haiku for simple categorization
+
+You can follow this example through the entire system to understand how each phase works.
+
+---
+
+## 🎭 Deployment Scenarios
+
+This system supports multiple deployment patterns:
+
+### Scenario A: Cursor Custom Chat Modes (Development)
+- Each agent runs independently
+- Manual switching between agents
+- Knowledge base via file system
+- **Best for:** Small teams, local development, rapid iteration
+
+### Scenario B: Cursor Supervisor Mode (Integrated)
+- Supervisor dynamically loads specialized agents
+- Automatic agent transitions
+- Seamless workflow
+- **Best for:** Integrated development experience
+
+### Scenario C: AWS Bedrock Multi-Agent (Production)
+- Supervisor as Bedrock orchestrator agent
+- Specialized agents as Bedrock sub-agents
+- User prompts via Bedrock Prompt Management
+- Knowledge base via Bedrock Knowledge Bases
+- **Best for:** Enterprise, scalable production deployments
+
+See `guides/platform_deployment.md` for detailed setup instructions for each scenario.
+
+---
+
+## 🔧 For AI Engineers: Under the Hood
+
+### How It Works
+
+**Phase 0: Requirements**
+```
+User → Requirements Agent → Conduct discovery
+                          → Classify pain points (HIGH/MEDIUM/LOW)
+                          → Match to agent patterns
+                          → Write user_requirements.json
+```
+
+**Phase 1: Architecture**
+```
+User → Architecture Agent → Read user_requirements.json
+                          → Execute 6-step design process
+                          → Enforce AWS Well-Architected
+                          → Write design_decisions.json
+                          → Optionally assemble executive proposals
+```
+
+**Phase 2: Engineering**
+```
+User → Engineering Agent → Read design_decisions.json
+                         → Generate agent prompts
+                         → Write implementation code
+                         → Create UI and demos
+                         → Output to outputs/prototypes/
+```
+
+**Phase 3: Deployment**
+```
+User → Deployment Agent → Read prototype from outputs/
+                        → Create platform-specific deployment guide
+                        → Generate testing strategy
+                        → Assess production readiness
+```
+
+**Phase 4: Optimization**
+```
+User → Optimization Agent → Discover system state
+                          → Assess against best practices
+                          → Identify improvements
+                          → Execute safe refactorings
+```
+
+### Knowledge Base Schema
+
+**system_config.json** (Read-only for agents)
+- Project info, platform settings
+- Stakeholders (decision makers, contributors)
+- Constraints (budget, timeline, compliance)
+- Team capabilities and gaps
+
+**user_requirements.json** (Written by Requirements Agent)
+- Customer context
+- Use case and business value
+- Functional and non-functional requirements
+- AI services, data, integrations
+- Risks and financial projections
+
+**design_decisions.json** (Written by Architecture Agent)
+- Executive summary (for leaders)
+- Tech stack selections with rationale
+- Architecture diagram and component specifications
+- Team composition and hiring needs
+- LOE estimates (hours, timeline, complexity)
+- Cost projections (development + infrastructure + TCO)
+- Project plan (phased roadmap, milestones, risks)
+
+### Anthropic Best Practices Integration
+
+All agents follow Anthropic's recommended patterns:
+- **XML tags** for structure: `<role>`, `<capabilities>`, `<instructions>`, `<examples>`, `<thinking>`
+- **Tool-based knowledge base access** (conceptual - adapt to platform)
+- **Chain-of-thought reasoning** with `<thinking>` tags
+- **Concrete examples** in `<example>` tags
+- **Multi-shot prompting** for complex workflows
+
+### AWS Well-Architected Enforcement
+
+Architecture Agent validates all designs against:
+- **6 Core Pillars:** Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability
+- **ML Lens:** Machine learning best practices
+- **GenAI Lens:** Generative AI specific guidance (RAG, prompt management, responsible AI)
+
+References:
+- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
+- [Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/)
+- [Generative AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/)
+
+---
+
+## 📖 Documentation Guide
+
+### For Technical Builders (AI Engineers)
+
+**Start here:**
+1. `guides/getting_started.md` - Detailed getting started guide
+2. `guides/workflow_guide.md` - Complete lifecycle walkthrough
+3. `guides/platform_deployment.md` - Platform-specific setup (Cursor, Claude, Bedrock)
+
+**Reference:**
+- `docs/agent_design_patterns.md` - 9 reusable AI agent patterns
+- Knowledge base JSON files - Schema documentation in comments
+
+**Examples:**
+- `guides/examples/financial_operations_assistant.md` - Complete example
+- `outputs/prototypes/` - Generated prototypes
+
+### For Business Leaders (CTOs, CFOs, VPs)
+
+**Start here:**
+1. `guides/executive_overview.md` - Understanding multi-agent systems and ROI
+2. `guides/reading_proposals.md` - How to evaluate technical proposals and plans
+
+**What you'll receive from this system:**
+- Executive proposals (go/no-go recommendations)
+- Technical project plans (architecture diagrams, timelines, costs)
+- Prototypes (working demos you can interact with)
+
+These outputs are designed for **dual-audience**: technical depth for engineers, business clarity for decision-makers.
+
+---
+
+## 🏗️ Complete Workflow Example
+
+**Real-world scenario:** Solo-entrepreneur wants to automate financial operations
 
 ```
-/requirements/         # Discover phase
-├── quick-start-wizard.prompt.md        # 🆕 15-minute onboarding
-├── discovery-guide.md                   # 30-minute discovery process
-├── discovery-agent.prompt.md           # AI assistant for discovery
-├── requirements-extraction.prompt.md   # 🆕 Structure meeting notes
-├── workshop-guide.md                    # 90-minute deep-dive
-└── requirements-template.md             # Document structure
+Day 1: Requirements (15-30 minutes)
+├─ Chat with Requirements Agent
+├─ Answer discovery questions
+└─ Output: user_requirements.json ✅
 
-/architecture/         # Design phase
-├── design-guide.md                      # Architecture principles
-├── agent-design-patterns.md            # 9 reusable patterns
-├── solutions-architect-system.prompt.md # 🆕 Internal project planning
-├── technical-architect-agent.prompt.md  # AI assistant + Mermaid diagrams
-├── requirements_analysis.user.prompt.md
-├── tech_stack_generation.user.prompt.md # Enhanced with decision criteria
-├── team_composition_generation.user.prompt.md
-├── loe_estimation_detailed.user.prompt.md # 🆕 Timeline & complexity focus
-├── technical_project_plan_generation.user.prompt.md
-└── project_cost_estimation.user.prompt.md
+Day 1-2: Architecture Design (2-4 hours)
+├─ Chat with Architecture Agent
+├─ Execute 6 design steps:
+│  1. Tech stack selection (30 min)
+│  2. Architecture diagram (20 min)
+│  3. Team composition (20 min)
+│  4. LOE estimation (30 min)
+│  5. Cost estimation (20 min)
+│  6. Project plan (40 min)
+└─ Output: design_decisions.json ✅
 
-/proposals/            # 🆕 Executive approval phase
-├── README.md                             # Complete proposals guide
-├── project-proposal-template.prompt.md   # Template generator
-├── discovery-assessment-proposal.prompt.md # Feasibility assessment
-└── poc-mvp-implementation-proposal.prompt.md # Build proposals
+Day 2: Executive Proposal (30 minutes)
+├─ Architecture Agent assembles proposal
+└─ Output: Implementation proposal document ✅
 
-/development/          # Build phase
-├── prototype-guide.md                   # 1-2 week development
-├── prototype-builder-agent.prompt.md   # AI assistant for coding
-└── development-checklist.md             # Sprint tracking
+[Executive reviews and approves]
 
-/delivery/            # Demo phase
-├── demo-guide.md                        # Presentation strategies
-└── handoff-checklist.md                 # Production handoff
+Day 3-5: Prototype Development (8-12 hours)
+├─ Engineering Agent builds prototype
+├─ Generates agent prompts
+├─ Writes Python code
+├─ Creates Streamlit UI
+├─ Builds 5 demo scenarios
+└─ Output: outputs/prototypes/financial-operations-assistant/ ✅
 
-/examples/            # 🆕 Real-world examples
-└── email-automation.md                  # Complete walkthrough
+Day 5: Deployment (2-4 hours)
+├─ Deployment Agent creates deployment guide
+├─ Sets up testing strategy
+├─ Assesses production readiness
+└─ Prototype deployed to Cursor custom chat modes ✅
+
+[Stakeholders interact with prototype, provide feedback]
+
+Day 6-7: Iteration (4-8 hours)
+├─ Optimization Agent analyzes feedback
+├─ Proposes improvements
+└─ Refined prototype ✅
+
+Total Time: 1 week from idea to working multi-agent AI system
 ```
 
 ---
 
-## 🎓 Who This Is For
+## 🛠️ Maintenance & Optimization
 
-### ✅ Perfect for:
+### Keeping This System Current
 
-- **AI engineers** building agent systems
-- **Solution architects** designing AI implementations
-- **Product engineers** prototyping AI features
-- **Technical leads** planning AI projects
-- **Consultants** gathering requirements for AI solutions
-- **Beginners** new to AI architecture (start with Quick Start Wizard!)
+**The Optimization Agent can improve this system:**
 
-### ⚠️ Not ideal for:
+```
+You: "Optimize the AI Architecture Assistant system"
 
-- ML researchers focused on model development
-- Data scientists building predictive models
-- Non-technical stakeholders (this is hands-on technical)
+Optimization Agent: [Discovers repository structure]
+                   → [Assesses against best practices]
+                   → [Identifies redundancies, gaps, improvements]
+                   → [Proposes safe refactorings]
+                   → [Executes with validation]
+```
 
----
+**Recommended optimization cycle:** Every 3 months or after 5+ project uses
 
-## 🧭 Philosophy
+### Contributing Improvements
 
-### Function Over Perfection
-
-Build working systems that demonstrate value:
-- ✅ Prototype to prove concepts
-- ✅ Iterate based on real feedback
-- ✅ Ship functional code fast
-- ✅ Optimize for clarity and maintainability
-
-### Human-First Design
-
-AI augments, doesn't replace judgment:
-- ✅ Clear processes you can follow manually
-- ✅ AI assistants provide guidance when helpful
-- ✅ Templates are starting points, not rigid rules
-- ✅ Adapt everything to your specific context
-
-### Practical, Not Academic
-
-Real-world focused:
-- ✅ What works in actual projects
-- ✅ Clear recommendations over endless options
-- ✅ Examples from real use cases
-- ✅ Honest about trade-offs and limitations
+If you discover improvements:
+1. Use Optimization Agent to analyze
+2. Create proposals with evidence
+3. Test thoroughly before committing
+4. Update documentation alongside code
 
 ---
 
-## 🔧 Platform Compatibility
+## ❓ FAQ
 
-**Optimized for:**
-- **Cursor** - File context awareness, tool integration
-- **Claude Projects** - Deep reasoning, long context
-- **ChatGPT** - Quick iterations, code generation
-- **Mistral** - Cost-effective alternatives
-- **GitHub Copilot** - In-editor assistance
+**Q: Do I need to use all agents?**  
+A: No! Use Supervisor Agent for guidance, or jump directly to the agent you need. The system is flexible.
 
-**Works with any:**
-- LLMs (Claude, GPT-4, Mistral, Gemini)
-- Languages (Python, Node.js, any stack)
-- Deployment (Cloud, on-premise, local)
+**Q: Can I use this for non-AI systems?**  
+A: The Requirements and Architecture agents work for any software system, but the examples focus on GenAI.
 
----
+**Q: What if I only need architecture diagrams?**  
+A: Use Architecture Agent directly with the architecture_diagram_generation user prompt.
 
-## 📊 Success Metrics
+**Q: How do I customize this for my organization?**  
+A: Edit `knowledge_base/system_config.json` with your platform, constraints, and preferences.
 
-**After using this framework, teams report:**
-- ⚡ **10x faster** from idea to working prototype (weeks → days)
-- 🎯 **80% reduction** in architecture rework
-- 📈 **95% stakeholder approval** in first demo
-- 💰 **50% cost reduction** through better planning
+**Q: What LLM models work best with this?**  
+A: Designed for Claude (Sonnet, Opus) but works with GPT-4, Gemini, or other LLMs. Anthropic patterns are platform-agnostic.
 
----
+**Q: Can this run locally for privacy?**  
+A: Yes! Use local LLMs (Ollama) and file-based knowledge base. See platform_deployment guide.
 
-## 🚀 Next Steps
-
-**Choose your starting point:**
-
-1. **Never built an AI agent before?**
-   → Use **[Quick Start Wizard](requirements/quick-start-wizard.prompt.md)** (15 min)
-
-2. **Have a specific project in mind?**
-   → Read **[Discovery Guide](requirements/discovery-guide.md)** (15 min)
-   → Copy **[Discovery Agent](requirements/discovery-agent.prompt.md)** into Cursor/Claude
-   → Schedule stakeholder meeting
-
-3. **Want to see examples first?**
-   → Review **[Agent Design Patterns](architecture/agent-design-patterns.md)** (20 min)
-   → Check **[Example: Email Automation](examples/email-automation.md)** (10 min)
-
-4. **Ready to dive deep?**
-   → Follow the **[Complete 2-Week Process](README.md#-complete-process-discover--design--build--demo)**
+**Q: How do proposals work?**  
+A: Architecture Agent assembles proposals from knowledge base data. You present to executives, they approve/reject, then Engineering Agent builds if approved.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Support & Resources
 
-This is a living framework built on real-world experience. Contributions welcome:
+### Learning Resources
+- **Anthropic Prompt Engineering:** https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering
+- **AWS Well-Architected:** https://aws.amazon.com/architecture/well-architected/
+- **AWS Multi-Agent Orchestration:** https://aws.amazon.com/solutions/guidance/multi-agent-orchestration-on-aws/
+- **Microsoft TDSP:** https://github.com/Azure/Microsoft-TDSP/
 
-- ✅ Better workshop questions
-- ✅ Additional agent patterns
-- ✅ Real-world case studies
-- ✅ Process improvements
-- ✅ Bug fixes and clarifications
-
-**How to contribute:**
-1. Fork the repository
-2. Make your improvements
-3. Submit a pull request with clear description
-4. Share your use case and results
+### Getting Help
+- Check `guides/` directory for detailed documentation
+- Review examples in `guides/examples/`
+- Use Optimization Agent to analyze issues
+- Review `docs/agent_design_patterns.md` for architecture patterns
 
 ---
 
-## 📄 License
+## 🎉 Success Stories
 
-MIT License - Use freely for commercial and personal projects
+**Expected outcomes using this system:**
+
+- ⚡ **Faster design:** 2-4 hours for complete architecture (vs. days of manual work)
+- 💰 **Cost clarity:** Accurate estimates prevent budget overruns
+- 🎯 **Better decisions:** Evidence-based recommendations, not guesswork
+- 🚀 **Rapid prototyping:** Working systems in 1 week (vs. months)
+- 📈 **Continuous improvement:** Optimization Agent keeps systems current
 
 ---
 
-## 👤 Author
+## 📋 License
 
-**Paul Prae**  
-AI Architect & Engineer
-
-- 📧 Email: <hireme@paulprae.com>
-- 💼 LinkedIn: [linkedin.com/in/paulprae](https://linkedin.com/in/paulprae)
-- 🐙 GitHub: [github.com/praeducer](https://github.com/praeducer)
+[Your license here]
 
 ---
 
 ## 🙏 Acknowledgments
 
-Built on principles from:
-- **Service-as-Software** (Foundation Capital) - AI-native business models
-- **AI Agent Orchestration** (LangChain, AutoGen, CrewAI) - Multi-agent patterns
-- **Solution Architecture** - Enterprise architecture methodologies
-- **Requirements Engineering** - Structured requirements gathering
-- **Prompt Engineering Research** (2024-2025) - Latest CoT, ToT, and self-consistency techniques
+This system incorporates best practices from:
+- AWS Well-Architected Framework
+- Anthropic prompt engineering guidelines
+- Microsoft Team Data Science Process (TDSP)
+- MLOps.org standards
+- AWS Multi-Agent Orchestration patterns
+- Strands Agents SDK principles
 
-Inspired by real projects and the AI engineering community.
-
----
-
-**Version:** 4.1 (Executive Approval & Enhanced Architecture - October 2025)  
-**Status:** Production-ready  
-**Last Updated:** October 2025
-
-**What's New in 4.1:**
-- 🆕 Internal project proposals for CTO/CFO approval
-- 🆕 Requirements extraction from unstructured notes
-- 🆕 Detailed LOE estimation (timeline & complexity focus)
-- 🆕 Mermaid diagram generation in Technical Architect
-- 🆕 Enhanced tech stack selection with decision criteria
-- 🆕 Solutions Architect system prompt for internal teams
+Inspired by: [financial-assistant-for-families](https://github.com/Modular-Earth-LLC/financial-assistant-for-families)
 
 ---
 
-## 🎯 Quick Links
+**Version:** 1.0  
+**Last Updated:** 2025-10-03  
+**Status:** Production-ready for AI architecture assistance
 
-- [15-Minute Quick Start](requirements/quick-start-wizard.prompt.md) ⚡
-- [Discovery Guide](requirements/discovery-guide.md) 📋
-- [Executive Proposals](proposals/README.md) 📊 🆕
-- [Agent Patterns](architecture/agent-design-patterns.md) 🎨
-- [Prototype Guide](development/prototype-guide.md) 🛠️
-- [Examples](examples/) 💡
+---
 
-**Questions?** Open an issue or reach out directly.
-
-**Ready to build?** Start with the [Quick Start Wizard](requirements/quick-start-wizard.prompt.md) →  
-**Need approval?** Check the [Proposals Guide](proposals/README.md) →
+**Ready to build your first AI system? Start with the Supervisor Agent and say "I want to build an AI system" 🚀**
