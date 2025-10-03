@@ -5,17 +5,30 @@
 
 ---
 
-## Overview
+## Quick Reference
 
-This document contains proven patterns for designing AI agents that perform specific tasks reliably. Use these as starting points for your own agent designs.
+**Choose your pattern based on what you need:**
 
-Each pattern includes:
+| Pattern | Use When | Build Time | Complexity |
+|---------|----------|------------|------------|
+| **[Specialist Agent](#pattern-1-specialist-agent)** | Single focused task (reports, analysis) | 2-4 hours | ⭐ Simple |
+| **[Workflow Agent](#pattern-2-workflow-agent)** | Multi-step process (onboarding, troubleshooting) | 4-8 hours | ⭐⭐ Moderate |
+| **[Document Generator](#pattern-3-document-generator)** | Create formatted outputs (proposals, emails) | 3-6 hours | ⭐ Simple |
+| **[Research & Synthesis](#pattern-4-research--synthesis-agent)** | Gather and summarize information | 4-6 hours | ⭐⭐ Moderate |
+| **[Review & Validation](#pattern-5-review--validation-agent)** | Quality control, compliance checking | 3-5 hours | ⭐ Simple |
+| **[Coordinator/Router](#pattern-6-coordinatorrouter-agent)** | Direct work to specialists | 6-10 hours | ⭐⭐⭐ Complex |
+| **[Chain-of-Thought](#pattern-7-chain-of-thought-agent)** | Complex reasoning, problem-solving | 4-8 hours | ⭐⭐ Moderate |
+| **[Feedback Loop](#pattern-8-feedback-loop-agent)** | Learn from corrections | 6-10 hours | ⭐⭐⭐ Complex |
+| **[Adaptive Agent](#pattern-9-adaptive-agent)** | Adjust to user expertise level | 6-10 hours | ⭐⭐⭐ Complex |
 
-- When to use it
-- How it works
-- Example prompt structure
-- Common variations
-- Pitfalls to avoid
+**🎯 Quick tips:**
+- **First-time builders:** Start with Specialist, Document Generator, or Review & Validation
+- **Most common:** 80% of use cases need Specialist, Workflow, or Document Generator
+- **Multi-agent systems:** Coordinator/Router orchestrates multiple Specialists
+
+---
+
+## Core Agent Patterns
 
 ---
 

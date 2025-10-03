@@ -24,23 +24,40 @@ I need to select the optimal technology stack for my AI-driven MVP. Here are the
 - DevOps experience: [NOVICE / INTERMEDIATE / EXPERT]
 
 **Constraints:**
-- Budget: [MONTHLY_BUDGET_RANGE]
-- Timeline: [DEVELOPMENT_TIMELINE]
+- Budget: [MONTHLY_BUDGET_RANGE or ANNUAL_BUDGET]
+- Timeline: [DEVELOPMENT_TIMELINE - weeks/months]
 - Compliance requirements: [GDPR / HIPAA / SOC2 / NONE]
 - Integration needs: [EXTERNAL_APIS / SERVICES]
+- Existing infrastructure: [CURRENT_TECH_STACK if replacing/extending]
 
 **Performance Requirements:**
-- Response time: [TARGET_RESPONSE_TIME]
-- Availability: [UPTIME_REQUIREMENT]
-- Scalability: [EXPECTED_GROWTH_RATE]
-- Data volume: [EXPECTED_DATA_SIZE]
+- Response time: [TARGET_RESPONSE_TIME - e.g., <2 seconds]
+- Availability: [UPTIME_REQUIREMENT - e.g., 99.9%]
+- Scalability: [EXPECTED_GROWTH_RATE - e.g., 10x in 6 months]
+- Data volume: [EXPECTED_DATA_SIZE - e.g., 1TB, 10M records]
+- Concurrent users: [EXPECTED_CONCURRENT_USERS]
+
+**Additional Context:**
+- Project type: [New system | Feature addition | Integration | Migration]
+- Technical complexity: [Low | Medium | High | Very High]
+- Strategic importance: [Experimental | Important | Critical]
+- Desired tech stack maturity: [Cutting-edge | Modern | Battle-tested]
+
+**Decision Criteria (prioritize):**
+1. [e.g., Time to market - must launch quickly]
+2. [e.g., Team familiarity - minimize learning curve]
+3. [e.g., Cost optimization - minimize infrastructure costs]
+4. [e.g., Scalability - prepare for rapid growth]
+5. [e.g., Maintainability - long-term support]
 
 Please provide:
-1. Recommended technology stack with rationale
-2. Alternative options with trade-offs
-3. Cost estimates for each option
-4. Learning curve assessment for team
-5. Migration path from MVP to production
+1. **Recommended technology stack** with detailed rationale for each choice
+2. **Alternative options** with trade-offs analysis (pros/cons)
+3. **Cost breakdown** for each stack option (development + infrastructure)
+4. **Team readiness assessment** - learning curve and training needs
+5. **Risk analysis** - technical risks for each option
+6. **Migration/scaling path** - how to evolve from MVP to production scale
+7. **Decision matrix** - comparison table across key criteria
 
 ---
 

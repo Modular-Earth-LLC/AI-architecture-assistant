@@ -18,6 +18,7 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 **Target Users:** AI engineers, solution architects, consultants, product teams - **especially those new to AI**
 
 **Core Workflow:**
+
 1. Discover → Understand the problem (30 min)
 2. Document → Capture requirements (90 min)
 3. Design → Architect the solution (2-4 hours)
@@ -46,11 +47,13 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 ### 1. Agent Prompts (Highest Priority)
 
 **Files:**
+
 - `requirements/discovery-agent.prompt.md` (368 lines)
 - `architecture/technical-architect-agent.prompt.md` (505 lines)
 - `development/prototype-builder-agent.prompt.md` (595 lines)
 
 **Optimize for:**
+
 - Character limits: Cursor (8K tokens), ChatGPT (8K), Mistral (6K), Copilot (4K)
 - Progressive complexity (essential → advanced)
 - Interactive workflow integration
@@ -59,6 +62,7 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 ### 2. Architecture Workflow Prompts
 
 **Files (5 prompts in /architecture/):**
+
 - `requirements_analysis.user.prompt.md`
 - `tech_stack_generation.user.prompt.md`
 - `team_composition_generation.user.prompt.md`
@@ -70,12 +74,14 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 ### 3. Guides and Templates
 
 **Analyze:**
+
 - Discovery guide (comprehensive but potentially overwhelming)
 - Workshop guide (thorough but lengthy)
 - Architecture template (detailed but may need simplification)
 - Agent design patterns (valuable reference but could be more scannable)
 
 **Optimize for:**
+
 - 30-minute quick start path for first-time users
 - Progressive disclosure (basic → intermediate → advanced)
 - Scannable structure (visual hierarchy, clear headings)
@@ -83,6 +89,7 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 ### 4. Latest AI Techniques Integration
 
 **Research and incorporate:**
+
 - Advanced reasoning architectures (Chain-of-Thought, Tree-of-Thoughts, ReAct)
 - Multi-agent orchestration patterns (latest from AutoGen, LangGraph, CrewAI)
 - Prompt engineering best practices (as of late 2024/early 2025)
@@ -97,6 +104,7 @@ Analyze and optimize the entire AI Solution Architecture Framework in this repos
 **Goal:** New user gets their first useful result in 15 minutes or less
 
 **Consider:**
+
 - Quick start template (fill-in-the-blank for simplest case)
 - Interactive walkthrough mode
 - "Choose your path" based on experience level
@@ -159,30 +167,35 @@ Please provide:
 ## Platform Optimization Requirements
 
 ### Cursor Custom Agents
+
 - Leverage file context (can read workspace files)
 - Tool integration (codebase search, file operations)
 - Keep prompts modular and composable
 - Target: 300-500 lines per agent
 
 ### ChatGPT Custom GPTs  
+
 - Instructions file: Core behavior only
 - Knowledge base: Templates, examples, references
 - Clear conversation flow
 - Target: 300-500 lines instructions
 
 ### Claude Projects
+
 - System prompt + project knowledge
 - Emphasize reasoning and planning
 - Detailed output formatting
 - Target: 300-600 lines
 
 ### Mistral Le Chat Pro
+
 - More conservative token limits (6K)
 - Concise, directive language
 - Structured outputs
 - Target: 250-400 lines
 
 ### GitHub Copilot
+
 - Code-generation focus
 - Minimal prose, maximum patterns
 - File structure emphasis
@@ -209,12 +222,14 @@ I expect this optimization to leverage your interactive requirements gathering:
 ## References
 
 **Within this repository:**
+
 - `/README.md` - Entry point and philosophy
 - `/requirements/discovery-guide.md` - Example of comprehensive guide
 - `/architecture/agent-design-patterns.md` - Reusable patterns reference
 - `/architecture/AI-architecture_assistant.system.prompt.md` - Current system prompt
 
 **External (apply concepts):**
+
 - AI Engineering Assistant repository patterns
 - Latest AutoGen, LangGraph, CrewAI documentation
 - Anthropic, OpenAI, Mistral platform guidelines
@@ -225,4 +240,3 @@ I expect this optimization to leverage your interactive requirements gathering:
 **Note:** This is a meta-optimization prompt. Apply your full interactive workflow, dual-persona validation, and platform optimization capabilities to transform this framework into the most accessible, effective AI architecture system available.
 
 Start by analyzing the current state and asking any clarifying questions about priorities or constraints.
-
