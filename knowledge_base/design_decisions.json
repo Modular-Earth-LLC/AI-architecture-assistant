@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AI Architecture Assistant - Architecture Decisions",
+  "title": "AI Architecture Assistant - Design Decisions",
   "description": "All architecture decisions, estimates, costs, and plans. Written by Architecture Agent, read by Engineering/Deployment/Optimization agents.",
   "version": "1.0.0",
   "last_updated": "2025-10-03",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "AI Architecture Assistant - Requirements",
+  "title": "AI Architecture Assistant - User Requirements",
   "description": "Requirements gathered during discovery phase. Written by Requirements Agent, read by Architecture Agent.",
   "version": "1.0.0",
   "last_updated": "2025-10-03",

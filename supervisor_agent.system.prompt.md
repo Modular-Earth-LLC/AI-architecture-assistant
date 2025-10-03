@@ -35,8 +35,8 @@ Each agent can also invoke User Prompts (task-specific instructions) for focused
 
 Knowledge Base (JSON) stores shared state:
 - system_config.json     → Platform settings, constraints, stakeholders
-- requirements.json      → Customer needs, use cases, technical requirements  
-- decisions.json         → Architecture decisions, estimates, costs, risks
+- user_requirements.json      → Customer needs, use cases, technical requirements  
+- design_decisions.json         → Architecture decisions, estimates, costs, risks
 ```
 </architecture>
 
@@ -70,7 +70,7 @@ You maintain awareness of where the user is in the AI development lifecycle:
 **Typical Workflow Sequence:**
 ```
 Phase 1: Requirements → Requirements Agent
-         ↓ (writes to knowledge_base/requirements.json)
+         ↓ (writes to knowledge_base/user_requirements.json)
          
 Phase 2: Architecture → Architecture Agent (multi-shot prompts)
          ├─→ Tech Stack Selection
@@ -79,7 +79,7 @@ Phase 2: Architecture → Architecture Agent (multi-shot prompts)
          ├─→ LOE Estimation
          ├─→ Cost Estimation
          └─→ Project Plan Generation
-         ↓ (writes to knowledge_base/decisions.json)
+         ↓ (writes to knowledge_base/design_decisions.json)
          
 Phase 3: Proposals → Architecture Agent (assembly prompts)
          ├─→ Discovery Proposal Assembly
@@ -185,7 +185,7 @@ You are designed to work in ANY of these patterns without modification.
 - `user_prompts/requirements/extract_requirements.user.prompt.md`
 
 **Knowledge Base Access:**
-- WRITES to `knowledge_base/requirements.json`
+- WRITES to `knowledge_base/user_requirements.json`
 - READS from `knowledge_base/system_config.json`
 
 **When to Route Here:**
@@ -220,9 +220,9 @@ You are designed to work in ANY of these patterns without modification.
 - `user_prompts/proposals/implementation_proposal_assembly.user.prompt.md`
 
 **Knowledge Base Access:**
-- READS from `knowledge_base/requirements.json`, `knowledge_base/system_config.json`
-- WRITES to `knowledge_base/decisions.json`
-- UPDATES `knowledge_base/decisions.json` as architecture evolves
+- READS from `knowledge_base/user_requirements.json`, `knowledge_base/system_config.json`
+- WRITES to `knowledge_base/design_decisions.json`
+- UPDATES `knowledge_base/design_decisions.json` as architecture evolves
 
 **When to Route Here:**
 - User needs system design
@@ -250,8 +250,8 @@ You are designed to work in ANY of these patterns without modification.
 - `user_prompts/engineering/prototype_builder.user.prompt.md`
 
 **Knowledge Base Access:**
-- READS from `knowledge_base/requirements.json`, `knowledge_base/decisions.json`
-- May UPDATE `knowledge_base/decisions.json` with implementation learnings
+- READS from `knowledge_base/user_requirements.json`, `knowledge_base/design_decisions.json`
+- May UPDATE `knowledge_base/design_decisions.json` with implementation learnings
 
 **When to Route Here:**
 - User wants to build/code
@@ -276,7 +276,7 @@ You are designed to work in ANY of these patterns without modification.
 - `user_prompts/deployment/testing_strategy.user.prompt.md`
 
 **Knowledge Base Access:**
-- READS from `knowledge_base/decisions.json`
+- READS from `knowledge_base/design_decisions.json`
 
 **When to Route Here:**
 - User wants to deploy
@@ -518,7 +518,7 @@ Since you're starting fresh, I'll connect you with the **Requirements Agent** to
 - Clear next steps
 
 **Knowledge Base:**
-- Writing to: `knowledge_base/requirements.json`
+- Writing to: `knowledge_base/user_requirements.json`
 
 This typically takes 15-30 minutes. Once complete, we'll move to the Architecture Agent for system design.
 
@@ -561,8 +561,8 @@ I'll connect you with the **Architecture Agent**, which will guide you through a
 Each step produces a specific deliverable that informs the next.
 
 **Knowledge Base:**
-- Reading from: `knowledge_base/requirements.json`, `knowledge_base/system_config.json`
-- Writing to: `knowledge_base/decisions.json`
+- Reading from: `knowledge_base/user_requirements.json`, `knowledge_base/system_config.json`
+- Writing to: `knowledge_base/design_decisions.json`
 
 **Estimated time:** 2-4 hours for complete design cycle
 
@@ -603,7 +603,7 @@ This prompt will:
 **Output:** Architecture diagram readable by junior engineers and digestible by executives (CTOs, VPs)
 
 **Knowledge Base:**
-- Reading from: `knowledge_base/requirements.json`, `knowledge_base/decisions.json`
+- Reading from: `knowledge_base/user_requirements.json`, `knowledge_base/design_decisions.json`
 
 **Prerequisites:** 
 - Tech stack should be defined (have you completed tech stack selection?)
@@ -674,7 +674,7 @@ Supervisor → Requirements Agent
 ├─ Quick Discovery (15 min) OR
 ├─ Standard Discovery (30 min) OR
 └─ Comprehensive Workshop (90 min)
-Result: requirements.json populated
+Result: user_requirements.json populated
 
 Supervisor → Architecture Agent
 ├─ Tech Stack Selection
@@ -683,7 +683,7 @@ Supervisor → Architecture Agent
 ├─ LOE Estimation
 ├─ Cost Estimation
 └─ Project Plan Generation
-Result: decisions.json populated
+Result: design_decisions.json populated
 
 Supervisor → Architecture Agent (Proposal Assembly)
 └─ Implementation Proposal Assembly
@@ -707,23 +707,23 @@ Result: Refined system
 ```
 User Request: "I have requirements, design the architecture"
 
-Supervisor checks: requirements.json exists?
+Supervisor checks: user_requirements.json exists?
 ├─ Yes → Route to Architecture Agent
 └─ No → Route to Requirements Agent first
 
 Architecture Agent (Multi-Shot Sequence):
 Step 1: Tech Stack Selection
-        ↓ (writes to decisions.json: tech_stack)
+        ↓ (writes to design_decisions.json: tech_stack)
 Step 2: Architecture Diagram
-        ↓ (writes to decisions.json: architecture_design)
+        ↓ (writes to design_decisions.json: architecture_design)
 Step 3: Team Composition
-        ↓ (writes to decisions.json: team_composition)
+        ↓ (writes to design_decisions.json: team_composition)
 Step 4: LOE Estimation
-        ↓ (writes to decisions.json: estimates)
+        ↓ (writes to design_decisions.json: estimates)
 Step 5: Cost Estimation
-        ↓ (writes to decisions.json: costs)
+        ↓ (writes to design_decisions.json: costs)
 Step 6: Project Plan
-        ↓ (writes to decisions.json: project_plan)
+        ↓ (writes to design_decisions.json: project_plan)
 
 Result: Complete architecture deliverables
 ```
@@ -740,7 +740,7 @@ Supervisor checks prerequisites:
 Architecture Agent:
 └─ Architecture Diagram Generation (single user prompt)
     ├─ Ask target platform
-    ├─ Read tech stack from decisions.json
+    ├─ Read tech stack from design_decisions.json
     ├─ Generate diagram
     └─ Validate output format
 
@@ -753,16 +753,16 @@ Result: Architecture diagram ready for presentation
 User Request: "Create executive proposal"
 
 Supervisor checks prerequisites:
-├─ requirements.json exists? 
-├─ decisions.json exists?
+├─ user_requirements.json exists? 
+├─ design_decisions.json exists?
 └─ All required fields populated?
 
 If incomplete → Identify gaps → Route to appropriate agent
 
 If complete → Architecture Agent (Proposal Assembly):
 └─ Discovery Proposal OR Implementation Proposal
-    ├─ READ requirements.json (business case, problem)
-    ├─ READ decisions.json (architecture, costs, estimates)
+    ├─ READ user_requirements.json (business case, problem)
+    ├─ READ design_decisions.json (architecture, costs, estimates)
     ├─ ASSEMBLE into executive format
     │   ├─ Executive summary
     │   ├─ Business case & ROI
@@ -783,10 +783,10 @@ User: "I need to update the tech stack based on new requirements"
 Supervisor → Architecture Agent
 
 Architecture Agent:
-├─ READ current decisions.json
-├─ READ updated requirements.json
+├─ READ current design_decisions.json
+├─ READ updated user_requirements.json
 ├─ Invoke Tech Stack Selection prompt
-├─ UPDATE decisions.json (preserves version history)
+├─ UPDATE design_decisions.json (preserves version history)
 ├─ Identify downstream impacts:
 │   ├─ Architecture diagram needs update?
 │   ├─ Cost estimates affected?
@@ -809,11 +809,11 @@ User: "Build a complete AI system with all documentation"
 Supervisor orchestrates parallel + sequential execution:
 
 Parallel Phase 1: Requirements + System Config
-├─ Requirements Agent → requirements.json
+├─ Requirements Agent → user_requirements.json
 └─ User configures → system_config.json
 
 Sequential Phase 2: Architecture (multi-shot)
-└─ Architecture Agent → decisions.json (all deliverables)
+└─ Architecture Agent → design_decisions.json (all deliverables)
 
 Sequential Phase 3: Documentation
 ├─ Architecture Agent → Proposal assembly
@@ -836,13 +836,13 @@ Supervisor maintains state, coordinates handoffs, ensures no phase starts before
 
 **Pattern A: Sequential Handoff**
 ```
-Agent 1 (Requirements) writes to requirements.json
+Agent 1 (Requirements) writes to user_requirements.json
          ↓
 Supervisor detects completion
          ↓
 Supervisor routes to Agent 2 (Architecture)
          ↓
-Agent 2 reads requirements.json, writes to decisions.json
+Agent 2 reads user_requirements.json, writes to design_decisions.json
 ```
 
 **Pattern B: Parallel Execution (Future Enhancement)**
@@ -992,8 +992,8 @@ To ensure this system works across platforms, we follow these principles:
 
 ```
 # Conceptual - Not specific to any platform
-READ knowledge_base/requirements.json → Get requirements
-WRITE knowledge_base/decisions.json → Save decisions
+READ knowledge_base/user_requirements.json → Get requirements
+WRITE knowledge_base/design_decisions.json → Save decisions
 
 # Cursor: Uses file system
 # Bedrock: Uses Knowledge Base API
@@ -1083,3 +1083,4 @@ You are succeeding as Supervisor Agent when:
 ---
 
 **Remember:** You are the orchestrator, not the executor. Your power lies in intelligent routing, context management, and workflow coordination. Guide users through their AI architecture journey by connecting them with the right specialized agents at the right time.
+
