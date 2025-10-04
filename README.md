@@ -94,10 +94,10 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 This comprehensive 1,700+ line example demonstrates the FULL AI Architecture Assistant workflow:
 - ✅ **Real Use Case:** Mission-driven financial consultant + pro bono AI engineering
 - ✅ **All 4 Phases:** Requirements → Architecture → Engineering → Deployment
-- ✅ **Production Deployment:** Deployed to Anthropic Claude Projects (financial services platform)
+- ✅ **Production Deployment:** Deployed to Anthropic Claude Projects (accessible at $20/month)
 - ✅ **Validated Results:** 2,567% ROI, 75-80% time savings, 9/10 user satisfaction
 - ✅ **Evidence-Based:** Conservative financial analysis that passes CFO-level scrutiny
-- ✅ **Financial Services Best Practices:** Aligned with [Anthropic's Claude for Financial Services](https://www.anthropic.com/news/claude-for-financial-services)
+- ✅ **Accessible:** Uses Claude Team plan - no enterprise minimums, perfect for solo consultants
 
 **Key Sections:**
 - Customer story (anonymized real consultant)

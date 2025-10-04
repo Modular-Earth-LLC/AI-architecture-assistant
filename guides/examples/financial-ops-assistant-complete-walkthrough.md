@@ -216,14 +216,14 @@ The AI engineer used the Architecture Agent's 6-step design process to create a 
 
 | Component | Technology | Rationale |
 |-----------|-----------|-----------|
-| **LLM Provider** | Anthropic Claude (Projects) | Enterprise-grade security, financial services compliance, function calling |
+| **LLM Provider** | Anthropic Claude (Projects) | Strong security, data privacy, function calling support |
 | **Models** | Claude 3.5 Sonnet (primary), Claude 3 Haiku (expense classification) | Balance of performance and cost, optimized for financial analysis |
-| **Deployment Platform** | Claude Projects / Claude for Enterprise | Built for financial services, SOC 2 Type II certified, data not used for training |
+| **Deployment Platform** | Claude Projects (Team plan) | Accessible to individuals ($20/month), SOC 2 Type II certified, data not used for training |
 | **Integration Layer** | Model Context Protocol (MCP) | Anthropic's native protocol for tool/data integration |
 | **Backend** | Python 3.11 + Anthropic API | Clean agent architecture, minimal dependencies |
 | **Knowledge Base** | Claude Projects Knowledge | Built-in vector search, semantic retrieval, supports financial documents |
 | **Data Connectors** | MCP Servers | SQLite MCP server for structured data, file system MCP server for documents |
-| **Infrastructure** | Claude.ai (hosted by Anthropic) | Enterprise SLA, 99.9% uptime, meets financial services compliance standards |
+| **Infrastructure** | Claude.ai (hosted by Anthropic) | Fully managed cloud platform, 99.9% uptime, SOC 2 Type II certified |
 
 **Alternative Stacks Considered:**
 
@@ -233,18 +233,21 @@ The AI engineer used the Architecture Agent's 6-step design process to create a 
 4. **Cursor IDE** - Great for development, but not designed for financial services production workloads
 
 **Why Anthropic Claude Projects:**
-- **Financial Services Focus:** Anthropic's [Claude for Financial Services](https://www.anthropic.com/news/claude-for-financial-services) solution is purpose-built for this use case
+- **Accessible to Individuals:** Team plan at $20/month or Pro at $20/month - no enterprise minimums
 - **Data Privacy:** By default, data is NOT used for training models (critical for client confidentiality)
-- **Compliance:** SOC 2 Type II certified, meets financial services regulatory standards
-- **Performance:** Claude leads on financial analysis tasks per Vals AI Finance Agent benchmark
+- **Compliance:** SOC 2 Type II certified, appropriate for handling sensitive financial data
+- **Strong Performance:** Claude excels at financial analysis, calculation accuracy, and structured data processing
 - **Ease of Use:** No infrastructure management, built-in knowledge base, immediate deployment
+- **Affordable:** Far more cost-effective than enterprise solutions while maintaining quality
 
 **Cost Analysis:**
 - Development: $0 (pro bono)
-- Claude Projects subscription: $20/month (Team plan) or $30/user/month (Enterprise)
+- Claude Projects subscription: $20/month (Team plan, perfect for solo consultants)
 - LLM API usage (additional): ~$140/month (estimated based on usage projections)
 - Infrastructure: $0 (fully managed by Anthropic)
-- **Total First Year:** ~$2,160 ($180/month fully loaded)
+- **Total First Year:** ~$1,920 ($160/month fully loaded)
+
+*Note: Claude Pro ($20/month) is also an option without Projects features, reducing cost further. Team plan chosen for Projects knowledge base and MCP integration.*
 
 **Decision documented in:** `knowledge_base/design_decisions.json → tech_stack`
 
@@ -1391,15 +1394,16 @@ outputs/prototypes/financial-ops-assistant/
 
 ### Deployment to Anthropic Claude Projects
 
-The AI engineer deployed the Financial Operations Assistant to Anthropic's Claude Projects platform, leveraging their enterprise-grade infrastructure for financial services.
+The AI engineer deployed the Financial Operations Assistant to Anthropic's Claude Projects platform (Team plan, $20/month), making it accessible and affordable for solo consultants and small businesses.
 
-**Why Claude Projects for Financial Services:**
-- ✅ Built-in compliance (SOC 2 Type II, financial services standards)
-- ✅ Data privacy by default (not used for model training)
-- ✅ Enterprise SLA (99.9% uptime)
-- ✅ Built-in knowledge base with semantic search
-- ✅ Model Context Protocol (MCP) for data integration
-- ✅ No infrastructure management required
+**Why Claude Projects for Solo Consultants:**
+- ✅ **Affordable:** $20/month Team plan - no enterprise minimums or high user counts
+- ✅ **Data privacy by default:** Client data not used for model training (critical for confidentiality)
+- ✅ **Compliance:** SOC 2 Type II certified - appropriate for handling sensitive financial data
+- ✅ **Reliable:** 99.9% uptime SLA
+- ✅ **Built-in knowledge base:** Semantic search across uploaded documents
+- ✅ **Model Context Protocol (MCP):** Native integration for persistent data storage
+- ✅ **No infrastructure management:** Fully managed cloud platform
 
 #### Step 1: Claude Projects Setup (15 minutes)
 
