@@ -27,7 +27,7 @@ Think of this like having 5 expert AI consultants on your team:
 
 ## 🚀 Quick Start (15 Minutes)
 
-###Step 1: Choose Your Entry Point
+### Step 1: Choose Your Entry Point
 
 **First time building an AI system?**
 → Start with the **Supervisor Agent** - it will guide you through everything
@@ -38,6 +38,7 @@ Think of this like having 5 expert AI consultants on your team:
 ### Step 2: Set Up Your Environment
 
 **Option A: Cursor (Easiest)**
+
 1. Open this repository in Cursor
 2. Create a new Custom Chat Mode
 3. Copy the contents of `supervisor_agent.system.prompt.md`
@@ -45,6 +46,7 @@ Think of this like having 5 expert AI consultants on your team:
 5. Start chatting: "I want to build an AI system"
 
 **Option B: Claude Projects**
+
 1. Create new Claude Project named "AI Architecture Assistant"
 2. Copy `supervisor_agent.system.prompt.md` → Paste as Custom Instructions
 3. Upload `knowledge_base/` folder to Project Knowledge
@@ -87,7 +89,8 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 ## 📚 Agent Guide - When to Use Each Agent
 
-### Use Supervisor Agent When:
+### Use Supervisor Agent When
+
 - ✅ You're new to this system
 - ✅ You're not sure which agent to use
 - ✅ You want guided workflow through multiple phases
@@ -97,7 +100,8 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 ---
 
-### Use Requirements Agent When:
+### Use Requirements Agent When
+
 - ✅ Starting a new AI project (gather requirements)
 - ✅ Conducting discovery sessions with stakeholders
 - ✅ Parsing meeting notes into structured requirements
@@ -106,6 +110,7 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 **Location:** `ai_agents/requirements_agent.system.prompt.md`
 
 **User Prompts:**
+
 - `user_prompts/requirements/quick_discovery.user.prompt.md` - 15-min rapid assessment
 - `user_prompts/requirements/standard_discovery.user.prompt.md` - 30-min session
 - `user_prompts/requirements/comprehensive_workshop.user.prompt.md` - 90-min deep-dive
@@ -115,7 +120,8 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 ---
 
-### Use Architecture Agent When:
+### Use Architecture Agent When
+
 - ✅ Designing AI system architecture
 - ✅ Selecting tech stack (LLM providers, frameworks, infrastructure)
 - ✅ Generating architecture diagrams
@@ -126,6 +132,7 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 **Location:** `ai_agents/architecture_agent.system.prompt.md`
 
 **User Prompts (Multi-Shot Sequence):**
+
 1. `user_prompts/architecture/tech_stack_selection.user.prompt.md`
 2. `user_prompts/architecture/architecture_diagram_generation.user.prompt.md`
 3. `user_prompts/architecture/team_composition.user.prompt.md`
@@ -134,6 +141,7 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 6. `user_prompts/architecture/project_plan_generation.user.prompt.md`
 
 **Proposal Assembly:**
+
 - `user_prompts/proposals/discovery_proposal_assembly.user.prompt.md`
 - `user_prompts/proposals/implementation_proposal_assembly.user.prompt.md`
 
@@ -141,7 +149,8 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 ---
 
-### Use Engineering Agent When:
+### Use Engineering Agent When
+
 - ✅ Building prototypes from architecture designs
 - ✅ Generating agent code (Python, Node.js)
 - ✅ Creating UIs (Streamlit, React, CLI)
@@ -150,13 +159,15 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 **Location:** `ai_agents/engineering_agent.system.prompt.md`
 
 **User Prompts:**
+
 - `user_prompts/engineering/prototype_builder.user.prompt.md`
 
 **Output:** `outputs/prototypes/[project-name]/`
 
 ---
 
-### Use Deployment Agent When:
+### Use Deployment Agent When
+
 - ✅ Deploying prototypes to target platforms
 - ✅ Creating testing strategies
 - ✅ Assessing production readiness
@@ -165,12 +176,14 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 **Location:** `ai_agents/deployment_agent.system.prompt.md`
 
 **User Prompts:**
+
 - `user_prompts/deployment/platform_deployment.user.prompt.md`
 - `user_prompts/deployment/testing_strategy.user.prompt.md`
 
 ---
 
-### Use Optimization Agent When:
+### Use Optimization Agent When
+
 - ✅ Improving deployed AI systems
 - ✅ Refactoring prompts for efficiency
 - ✅ Reducing LLM API costs
@@ -179,6 +192,7 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 **Location:** `ai_agents/optimization_agent.system.prompt.md`
 
 **User Prompts:**
+
 - `user_prompts/optimization/system_optimization.user.prompt.md` - Optimize any AI system
 - `user_prompts/optimization/improve_ai_architecture_assistant.user.prompt.md` - System-wide improvement
 - `user_prompts/optimization/improve_requirements_agent.user.prompt.md` - Targeted agent improvement
@@ -236,18 +250,21 @@ AI-architecture-assistant/
 ## 🎓 Learning Path for Junior Engineers
 
 ### Level 1: First AI System (2-3 hours)
+
 1. **Read:** This README (you're here! ✅)
 2. **Try:** Follow Quick Start above with financial operations example
 3. **Practice:** Complete one discovery → design → prototype cycle
 4. **Understand:** How agents work together through knowledge base
 
 ### Level 2: Independent Usage (1 week)
+
 1. **Read:** `guides/getting_started.md` (deep dive)
 2. **Read:** `guides/workflow_guide.md` (complete lifecycle)
 3. **Try:** Design your own AI system for a real problem
 4. **Practice:** All 6 architecture design steps
 
 ### Level 3: Advanced Patterns (2 weeks)
+
 1. **Read:** `docs/agent_design_patterns.md` (9 reusable patterns)
 2. **Study:** Financial operations assistant in `outputs/prototypes/`
 3. **Try:** Build multi-agent system with 3+ agents
@@ -258,14 +275,18 @@ AI-architecture-assistant/
 ## 💡 Key Concepts
 
 ### Multi-Agent Architecture
+
 This system uses a **supervisor-worker pattern** (like AWS Bedrock multi-agent orchestration):
+
 - **Supervisor** routes requests to specialized workers
 - **Workers** (agents) each handle specific domains
 - **Knowledge base** stores shared state
 - **User prompts** provide task-specific instructions
 
 ### Knowledge Base Pattern
+
 All agents read/write to JSON files for consistency:
+
 - `system_config.json` - Your project settings (you configure once)
 - `user_requirements.json` - Requirements Agent writes, Architecture Agent reads
 - `design_decisions.json` - Architecture Agent writes, Engineering Agent reads
@@ -273,7 +294,9 @@ All agents read/write to JSON files for consistency:
 This prevents information loss and enables traceability.
 
 ### Multi-Shot Prompting
+
 Architecture Agent doesn't do everything itself—it orchestrates 6 separate user prompts in sequence:
+
 1. Tech stack selection
 2. Architecture diagram generation
 3. Team composition
@@ -290,6 +313,7 @@ Each produces a specific deliverable that informs the next.
 Throughout this system, we use a **multi-agent financial operations assistant for solo-entrepreneurs** as the reference example. This is inspired by (but more well-architected than) the [financial-assistant-for-families](https://github.com/Modular-Earth-LLC/financial-assistant-for-families) reference.
 
 **Why this example:**
+
 - Real-world use case most people understand
 - Demonstrates multi-agent coordination
 - Shows knowledge base pattern
@@ -297,12 +321,14 @@ Throughout this system, we use a **multi-agent financial operations assistant fo
 - Includes both technical and business perspectives
 
 **What it does:**
+
 - Automates invoicing (saves 2 hrs/week)
 - Categorizes expenses (saves 3 hrs/week)
 - Generates financial reports (saves 5 hrs/week)
 - Provides financial insights and forecasting
 
 **Architecture:**
+
 - 2 specialized agents (Operations + Analytics)
 - Shared knowledge base (local JSON)
 - Streamlit UI for non-technical users
@@ -317,18 +343,21 @@ You can follow this example through the entire system to understand how each pha
 This system supports multiple deployment patterns:
 
 ### Scenario A: Cursor Custom Chat Modes (Development)
+
 - Each agent runs independently
 - Manual switching between agents
 - Knowledge base via file system
 - **Best for:** Small teams, local development, rapid iteration
 
 ### Scenario B: Cursor Supervisor Mode (Integrated)
+
 - Supervisor dynamically loads specialized agents
 - Automatic agent transitions
 - Seamless workflow
 - **Best for:** Integrated development experience
 
 ### Scenario C: AWS Bedrock Multi-Agent (Production)
+
 - Supervisor as Bedrock orchestrator agent
 - Specialized agents as Bedrock sub-agents
 - User prompts via Bedrock Prompt Management
@@ -344,6 +373,7 @@ See `guides/platform_deployment.md` for detailed setup instructions for each sce
 ### How It Works
 
 **Phase 0: Requirements**
+
 ```
 User → Requirements Agent → Conduct discovery
                           → Classify pain points (HIGH/MEDIUM/LOW)
@@ -352,6 +382,7 @@ User → Requirements Agent → Conduct discovery
 ```
 
 **Phase 1: Architecture**
+
 ```
 User → Architecture Agent → Read user_requirements.json
                           → Execute 6-step design process
@@ -361,6 +392,7 @@ User → Architecture Agent → Read user_requirements.json
 ```
 
 **Phase 2: Engineering**
+
 ```
 User → Engineering Agent → Read design_decisions.json
                          → Generate agent prompts
@@ -370,6 +402,7 @@ User → Engineering Agent → Read design_decisions.json
 ```
 
 **Phase 3: Deployment**
+
 ```
 User → Deployment Agent → Read prototype from outputs/
                         → Create platform-specific deployment guide
@@ -378,6 +411,7 @@ User → Deployment Agent → Read prototype from outputs/
 ```
 
 **Phase 4: Optimization**
+
 ```
 User → Optimization Agent → Discover system state
                           → Assess against best practices
@@ -388,12 +422,14 @@ User → Optimization Agent → Discover system state
 ### Knowledge Base Schema
 
 **system_config.json** (Read-only for agents)
+
 - Project info, platform settings
 - Stakeholders (decision makers, contributors)
 - Constraints (budget, timeline, compliance)
 - Team capabilities and gaps
 
 **user_requirements.json** (Written by Requirements Agent)
+
 - Customer context
 - Use case and business value
 - Functional and non-functional requirements
@@ -401,6 +437,7 @@ User → Optimization Agent → Discover system state
 - Risks and financial projections
 
 **design_decisions.json** (Written by Architecture Agent)
+
 - Executive summary (for leaders)
 - Tech stack selections with rationale
 - Architecture diagram and component specifications
@@ -412,6 +449,7 @@ User → Optimization Agent → Discover system state
 ### Anthropic Best Practices Integration
 
 All agents follow Anthropic's recommended patterns:
+
 - **XML tags** for structure: `<role>`, `<capabilities>`, `<instructions>`, `<examples>`, `<thinking>`
 - **Tool-based knowledge base access** (conceptual - adapt to platform)
 - **Chain-of-thought reasoning** with `<thinking>` tags
@@ -421,11 +459,13 @@ All agents follow Anthropic's recommended patterns:
 ### AWS Well-Architected Enforcement
 
 Architecture Agent validates all designs against:
+
 - **6 Core Pillars:** Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability
 - **ML Lens:** Machine learning best practices
 - **GenAI Lens:** Generative AI specific guidance (RAG, prompt management, responsible AI)
 
 References:
+
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/)
 - [Generative AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/)
@@ -437,25 +477,30 @@ References:
 ### For Technical Builders (AI Engineers)
 
 **Start here:**
+
 1. `guides/getting_started.md` - Detailed getting started guide
 2. `guides/workflow_guide.md` - Complete lifecycle walkthrough
 3. `guides/platform_deployment.md` - Platform-specific setup (Cursor, Claude, Bedrock)
 
 **Reference:**
+
 - `docs/agent_design_patterns.md` - 9 reusable AI agent patterns
 - Knowledge base JSON files - Schema documentation in comments
 
 **Examples:**
+
 - `guides/examples/financial_operations_assistant.md` - Complete example
 - `outputs/prototypes/` - Generated prototypes
 
 ### For Business Leaders (CTOs, CFOs, VPs)
 
 **Start here:**
+
 1. `guides/executive_overview.md` - Understanding multi-agent systems and ROI
 2. `guides/reading_proposals.md` - How to evaluate technical proposals and plans
 
 **What you'll receive from this system:**
+
 - Executive proposals (go/no-go recommendations)
 - Technical project plans (architecture diagrams, timelines, costs)
 - Prototypes (working demos you can interact with)
@@ -524,6 +569,7 @@ Total Time: 1 week from idea to working multi-agent AI system
 **The Optimization Agent has a comprehensive self-improvement system:**
 
 **Option 1: System-Wide Optimization (Orchestrated)**
+
 ```
 You: Load Optimization Agent + Send @improve_ai_architecture_assistant.user.prompt.md
 
@@ -535,6 +581,7 @@ Optimization Agent: [Discovers entire framework]
 ```
 
 **Option 2: Agent-Specific Improvement (Targeted)**
+
 ```
 You: Load Prompt Engineering Assistant + Send @improve_requirements_agent.user.prompt.md
 
@@ -545,6 +592,7 @@ Prompt Engineering Assistant: [Focuses on Requirements Agent]
 ```
 
 **Key Features:**
+
 - ✅ **Context-Agnostic:** Works with Optimization Agent OR Prompt Engineering Assistant
 - ✅ **Loosely Coupled:** Each improvement prompt is independent
 - ✅ **Recursion Safe:** Iteration tracking prevents infinite loops
@@ -555,6 +603,7 @@ Prompt Engineering Assistant: [Focuses on Requirements Agent]
 ### Contributing Improvements
 
 If you discover improvements:
+
 1. Use Optimization Agent to analyze
 2. Create proposals with evidence
 3. Test thoroughly before committing
@@ -590,12 +639,14 @@ A: Architecture Agent assembles proposals from knowledge base data. You present 
 ## 🤝 Support & Resources
 
 ### Learning Resources
-- **Anthropic Prompt Engineering:** https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering
-- **AWS Well-Architected:** https://aws.amazon.com/architecture/well-architected/
-- **AWS Multi-Agent Orchestration:** https://aws.amazon.com/solutions/guidance/multi-agent-orchestration-on-aws/
-- **Microsoft TDSP:** https://github.com/Azure/Microsoft-TDSP/
+
+- **Anthropic Prompt Engineering:** <https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering>
+- **AWS Well-Architected:** <https://aws.amazon.com/architecture/well-architected/>
+- **AWS Multi-Agent Orchestration:** <https://aws.amazon.com/solutions/guidance/multi-agent-orchestration-on-aws/>
+- **Microsoft TDSP:** <https://github.com/Azure/Microsoft-TDSP/>
 
 ### Getting Help
+
 - Check `guides/` directory for detailed documentation
 - Review examples in `guides/examples/`
 - Use Optimization Agent to analyze issues
@@ -624,6 +675,7 @@ A: Architecture Agent assembles proposals from knowledge base data. You present 
 ## 🙏 Acknowledgments
 
 This system incorporates best practices from:
+
 - AWS Well-Architected Framework
 - Anthropic prompt engineering guidelines
 - Microsoft Team Data Science Process (TDSP)
