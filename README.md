@@ -178,6 +178,16 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 **Location:** `ai_agents/optimization_agent.system.prompt.md`
 
+**User Prompts:**
+- `user_prompts/optimization/system_optimization.user.prompt.md` - Optimize any AI system
+- `user_prompts/optimization/improve_ai_architecture_assistant.user.prompt.md` - System-wide improvement
+- `user_prompts/optimization/improve_requirements_agent.user.prompt.md` - Targeted agent improvement
+- `user_prompts/optimization/improve_architecture_agent.user.prompt.md` - Targeted agent improvement
+- `user_prompts/optimization/improve_engineering_agent.user.prompt.md` - Targeted agent improvement
+- `user_prompts/optimization/improve_deployment_agent.user.prompt.md` - Targeted agent improvement
+- `user_prompts/optimization/improve_optimization_agent.user.prompt.md` - Self-improvement
+- `user_prompts/optimization/improve_supervisor_agent.user.prompt.md` - Targeted agent improvement
+
 ---
 
 ## 📁 Repository Structure
@@ -198,7 +208,8 @@ AI-architecture-assistant/
 │   ├── architecture/                       # Design step prompts
 │   ├── proposals/                          # Executive proposal assembly
 │   ├── engineering/                        # Implementation prompts
-│   └── deployment/                         # Deployment prompts
+│   ├── deployment/                         # Deployment prompts
+│   └── optimization/                       # System & agent improvement prompts
 │
 ├── knowledge_base/                         # Shared data (JSON)
 │   ├── system_config.json                  # Platform, constraints, stakeholders
@@ -510,19 +521,36 @@ Total Time: 1 week from idea to working multi-agent AI system
 
 ### Keeping This System Current
 
-**The Optimization Agent can improve this system:**
+**The Optimization Agent has a comprehensive self-improvement system:**
 
+**Option 1: System-Wide Optimization (Orchestrated)**
 ```
-You: "Optimize the AI Architecture Assistant system"
+You: Load Optimization Agent + Send @improve_ai_architecture_assistant.user.prompt.md
 
-Optimization Agent: [Discovers repository structure]
-                   → [Assesses against best practices]
-                   → [Identifies redundancies, gaps, improvements]
-                   → [Proposes safe refactorings]
-                   → [Executes with validation]
+Optimization Agent: [Discovers entire framework]
+                   → [Assesses all agents against best practices]
+                   → [Executes 6 agent-specific improvements]
+                   → [Validates end-to-end workflows]
+                   → [Generates comprehensive report]
 ```
 
-**Recommended optimization cycle:** Every 3 months or after 5+ project uses
+**Option 2: Agent-Specific Improvement (Targeted)**
+```
+You: Load Prompt Engineering Assistant + Send @improve_requirements_agent.user.prompt.md
+
+Prompt Engineering Assistant: [Focuses on Requirements Agent]
+                             → [Domain-specific improvements]
+                             → [Validation & testing]
+                             → [Independent improvement report]
+```
+
+**Key Features:**
+- ✅ **Context-Agnostic:** Works with Optimization Agent OR Prompt Engineering Assistant
+- ✅ **Loosely Coupled:** Each improvement prompt is independent
+- ✅ **Recursion Safe:** Iteration tracking prevents infinite loops
+- ✅ **Platform-Agnostic:** Works across Cursor, GitHub Copilot, AWS Bedrock
+
+**Recommended optimization cycle:** Quarterly or after 5+ project uses
 
 ### Contributing Improvements
 
@@ -607,9 +635,9 @@ Inspired by: [financial-assistant-for-families](https://github.com/Modular-Earth
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** 2025-10-03  
-**Status:** Production-ready for AI architecture assistance
+**Version:** 1.1  
+**Last Updated:** 2025-10-04  
+**Status:** Production-ready with comprehensive self-improvement system
 
 ---
 

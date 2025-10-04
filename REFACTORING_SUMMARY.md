@@ -65,7 +65,7 @@ Successfully refactored the AI Architecture Assistant to enable comprehensive se
 Created 6 targeted improvement prompts:
 
 ### 3.1 Requirements Agent
-**File:** `user_prompts/requirements/improve_requirements_agent.user.prompt.md`
+**File:** `user_prompts/optimization/improve_requirements_agent.user.prompt.md`
 
 **Focus Areas:**
 - Question quality & sequencing
@@ -79,7 +79,7 @@ Created 6 targeted improvement prompts:
 ---
 
 ### 3.2 Architecture Agent
-**File:** `user_prompts/architecture/improve_architecture_agent.user.prompt.md`
+**File:** `user_prompts/optimization/improve_architecture_agent.user.prompt.md`
 
 **Focus Areas:**
 - Architecture pattern recommendations
@@ -94,7 +94,7 @@ Created 6 targeted improvement prompts:
 ---
 
 ### 3.3 Engineering Agent
-**File:** `user_prompts/engineering/improve_engineering_agent.user.prompt.md`
+**File:** `user_prompts/optimization/improve_engineering_agent.user.prompt.md`
 
 **Focus Areas:**
 - Code generation quality (Clean Code, SOLID, DRY)
@@ -109,7 +109,7 @@ Created 6 targeted improvement prompts:
 ---
 
 ### 3.4 Deployment Agent
-**File:** `user_prompts/deployment/improve_deployment_agent.user.prompt.md`
+**File:** `user_prompts/optimization/improve_deployment_agent.user.prompt.md`
 
 **Focus Areas:**
 - AWS Bedrock deployment patterns
@@ -149,7 +149,7 @@ Created 6 targeted improvement prompts:
 ---
 
 ### 3.6 Supervisor Agent
-**File:** `user_prompts/improve_supervisor_agent.user.prompt.md`
+**File:** `user_prompts/optimization/improve_supervisor_agent.user.prompt.md`
 
 **Focus Areas:**
 - Intent analysis accuracy (>95%)
@@ -282,16 +282,14 @@ BASE_CASE: OPTIMIZATION_ITERATION_COUNT >= MAX_ITERATIONS
 
 ### Created Files (7)
 
-**System-Wide:**
-- `user_prompts/optimization/improve_ai_architecture_assistant.user.prompt.md`
-
-**Agent-Specific:**
-- `user_prompts/requirements/improve_requirements_agent.user.prompt.md`
-- `user_prompts/architecture/improve_architecture_agent.user.prompt.md`
-- `user_prompts/engineering/improve_engineering_agent.user.prompt.md`
-- `user_prompts/deployment/improve_deployment_agent.user.prompt.md`
+**All Improvement Prompts (consolidated in optimization/):**
+- `user_prompts/optimization/improve_ai_architecture_assistant.user.prompt.md` (system-wide)
+- `user_prompts/optimization/improve_requirements_agent.user.prompt.md`
+- `user_prompts/optimization/improve_architecture_agent.user.prompt.md`
+- `user_prompts/optimization/improve_engineering_agent.user.prompt.md`
+- `user_prompts/optimization/improve_deployment_agent.user.prompt.md`
 - `user_prompts/optimization/improve_optimization_agent.user.prompt.md`
-- `user_prompts/improve_supervisor_agent.user.prompt.md`
+- `user_prompts/optimization/improve_supervisor_agent.user.prompt.md`
 
 **Documentation:**
 - `REFACTORING_SUMMARY.md` (this file)
@@ -363,6 +361,48 @@ BASE_CASE: OPTIMIZATION_ITERATION_COUNT >= MAX_ITERATIONS
 
 ---
 
+## Final Organization (Version 1.1)
+
+**Consolidation Update - 2025-10-04:**
+
+All agent-specific improvement prompts have been consolidated into `user_prompts/optimization/` for better organization and discoverability:
+
+**Before:**
+```
+user_prompts/
+├── requirements/improve_requirements_agent.user.prompt.md
+├── architecture/improve_architecture_agent.user.prompt.md
+├── engineering/improve_engineering_agent.user.prompt.md
+├── deployment/improve_deployment_agent.user.prompt.md
+├── optimization/improve_optimization_agent.user.prompt.md
+└── improve_supervisor_agent.user.prompt.md
+```
+
+**After:**
+```
+user_prompts/optimization/
+├── improve_ai_architecture_assistant.user.prompt.md (system-wide)
+├── improve_requirements_agent.user.prompt.md
+├── improve_architecture_agent.user.prompt.md
+├── improve_engineering_agent.user.prompt.md
+├── improve_deployment_agent.user.prompt.md
+├── improve_optimization_agent.user.prompt.md
+└── improve_supervisor_agent.user.prompt.md
+```
+
+**Benefits:**
+- 🎯 **Single Source of Truth:** All improvement prompts in one location
+- 📁 **Better Organization:** Clear that these are optimization-related
+- 🔍 **Easier Discovery:** Users know exactly where to find improvement tools
+- 🔗 **Cleaner References:** Consistent paths across all documentation
+
+All references updated in:
+- `user_prompts/optimization/improve_ai_architecture_assistant.user.prompt.md`
+- `REFACTORING_SUMMARY.md`
+- `README.md`
+
+---
+
 ## Conclusion
 
 The AI Architecture Assistant now has a robust, comprehensive self-improvement system that:
@@ -372,6 +412,7 @@ The AI Architecture Assistant now has a robust, comprehensive self-improvement s
 - **Provides flexibility** with both system-wide and agent-specific improvements
 - **Ensures quality** through validation frameworks and measurable success criteria
 - **Supports all platforms** with platform-agnostic design
+- **Organized efficiently** with all improvement prompts consolidated in optimization/
 
 The system is production-ready and can be deployed immediately.
 
@@ -380,5 +421,5 @@ The system is production-ready and can be deployed immediately.
 **Refactoring Completed By:** AI Engineering Assistant (Prompt Engineering Mode)  
 **Completion Date:** 2025-10-04  
 **Total Implementation Time:** ~2 hours  
-**Version:** 1.0  
-**Status:** ✅ COMPLETE & VALIDATED
+**Version:** 1.1  
+**Status:** ✅ COMPLETE & VALIDATED (All improvement prompts consolidated in optimization/)

@@ -233,7 +233,7 @@ Create prioritized list:
 **For each agent, execute its specialized improvement prompt:**
 
 #### 2.1 Requirements Agent
-**Prompt:** `user_prompts/requirements/improve_requirements_agent.user.prompt.md`
+**Prompt:** `user_prompts/optimization/improve_requirements_agent.user.prompt.md`
 
 **Focus:** Discovery workflows, workshop facilitation, requirement extraction
 
@@ -245,7 +245,7 @@ Create prioritized list:
 ---
 
 #### 2.2 Architecture Agent
-**Prompt:** `user_prompts/architecture/improve_architecture_agent.user.prompt.md`
+**Prompt:** `user_prompts/optimization/improve_architecture_agent.user.prompt.md`
 
 **Focus:** System design, tech stack selection, diagramming, estimation
 
@@ -257,7 +257,7 @@ Create prioritized list:
 ---
 
 #### 2.3 Engineering Agent
-**Prompt:** `user_prompts/engineering/improve_engineering_agent.user.prompt.md`
+**Prompt:** `user_prompts/optimization/improve_engineering_agent.user.prompt.md`
 
 **Focus:** Code generation, prototype building, API design
 
@@ -269,7 +269,7 @@ Create prioritized list:
 ---
 
 #### 2.4 Deployment Agent
-**Prompt:** `user_prompts/deployment/improve_deployment_agent.user.prompt.md`
+**Prompt:** `user_prompts/optimization/improve_deployment_agent.user.prompt.md`
 
 **Focus:** Cloud deployment, infrastructure, CI/CD, handoff
 
@@ -299,7 +299,7 @@ Create prioritized list:
 ---
 
 #### 2.6 Supervisor Agent
-**Prompt:** `user_prompts/improve_supervisor_agent.user.prompt.md`
+**Prompt:** `user_prompts/optimization/improve_supervisor_agent.user.prompt.md`
 
 **Focus:** Workflow orchestration, agent routing, context management
 
