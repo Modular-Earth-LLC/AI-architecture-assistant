@@ -1,7 +1,7 @@
 # Optimize AI Architecture System
 
 **Purpose:** Meta-prompt for systematically improving the AI Solution Architecture Framework  
-**Target Platform:** Multi-platform (Cursor, ChatGPT, Claude, Mistral, GitHub Copilot)  
+**Target Platform:** Multi-platform (Cursor Custom Agents, Anthropic Claude Code/Workspaces, GitHub Copilot Custom Chatmodes)  
 **Processing Agent:** Prompt Engineering Assistant  
 
 ---
