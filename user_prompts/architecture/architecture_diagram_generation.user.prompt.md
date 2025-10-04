@@ -69,14 +69,14 @@ To generate an accurate architecture diagram, I need:
 
 ### From Knowledge Base (Automatic)
 
-**user_requirements.json:**
+**user_user_requirements.json:**
 - Use case and functional requirements
 - Integration needs (external systems, APIs)
 - Performance targets (latency, throughput)
 - Security and compliance requirements
 - Scale expectations (users, data volume)
 
-**design_decisions.json → tech_stack:**
+**design_design_decisions.json → tech_stack:**
 - LLM providers and models
 - Orchestration frameworks
 - Backend/frontend technologies
@@ -702,7 +702,7 @@ Your architecture diagram is successful when:
 
 After generating the diagram, update the knowledge base:
 
-**Write to:** `knowledge_base/design_decisions.json` → `architecture_design` section
+**Write to:** `knowledge_base/design_design_decisions.json` → `architecture_design` section
 
 ```json
 {
@@ -744,4 +744,5 @@ After generating the diagram, update the knowledge base:
 ---
 
 This prompt ensures your architecture diagram effectively communicates your AI system design to all stakeholders while maintaining technical accuracy and alignment with AWS Well-Architected principles.
+
 
