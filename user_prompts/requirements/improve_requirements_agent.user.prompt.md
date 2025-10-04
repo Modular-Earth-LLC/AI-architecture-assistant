@@ -394,6 +394,24 @@ Success Criteria:
 
 ---
 
+## Execution Context
+
+This prompt is **context-agnostic** and can be executed in multiple ways:
+
+### Usage Pattern 1: Orchestrated Improvement
+- Called automatically by system-wide optimization workflow
+- Part of comprehensive framework improvement cycle
+- Results integrated into overall optimization report
+
+### Usage Pattern 2: Standalone Improvement
+- Executed directly by user for targeted optimization
+- Focuses solely on Requirements Agent improvements
+- Generates independent improvement report
+
+**Both patterns produce equivalent results.** The prompt adapts to its execution context automatically.
+
+---
+
 ## Usage Instructions
 
 **When to run:**
@@ -404,8 +422,8 @@ Success Criteria:
 
 **How to execute:**
 
-1. Load Optimization Agent (or use Prompt Engineering Assistant)
-2. Send this prompt: `@improve_requirements_agent.user.prompt.md`
+1. Ensure you have access to the target agent file: `ai_agents/requirements_agent.system.prompt.md`
+2. Send/execute this improvement prompt
 3. Review improvements and validation results
 4. Test with representative scenarios
 5. Deploy changes if validation passes
@@ -418,7 +436,8 @@ Success Criteria:
 
 ---
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Last Updated:** 2025-10-04  
 **Target Agent:** Requirements Agent  
-**Optimization Cycle:** Quarterly or as-needed
+**Optimization Cycle:** Quarterly or as-needed  
+**Execution Mode:** Context-agnostic (orchestrated or standalone)

@@ -418,6 +418,28 @@ Success Criteria:
 
 ---
 
+## Execution Context
+
+This prompt is **context-agnostic** and can be executed in multiple ways:
+
+### Usage Pattern 1: Orchestrated Improvement
+- Called automatically by system-wide optimization workflow
+- Part of comprehensive framework improvement cycle
+- Results integrated into overall optimization report
+- **Special handling:** Self-improvement gets extra validation
+
+### Usage Pattern 2: Standalone Improvement
+- Executed directly by user for targeted optimization
+- Focuses solely on Optimization Agent improvements
+- Generates independent improvement report
+- **Extra caution:** Self-improvement requires exceptional care
+
+**Both patterns produce equivalent results.** The prompt adapts to its execution context automatically.
+
+⚠️ **WARNING:** This is self-improvement (optimizing the optimizer). Extra validation is MANDATORY regardless of execution context.
+
+---
+
 ## Usage Instructions
 
 **When to run:**
@@ -428,8 +450,8 @@ Success Criteria:
 
 **How to execute:**
 
-1. Load Optimization Agent (or Prompt Engineering Assistant)
-2. Send: `@improve_optimization_agent.user.prompt.md`
+1. Ensure you have access to the target agent file: `ai_agents/optimization_agent.system.prompt.md`
+2. Send/execute this improvement prompt
 3. **Extra validation required** - test on sample systems
 4. Review comprehensive validation report
 5. Deploy only if all safety checks pass
@@ -438,8 +460,9 @@ Success Criteria:
 
 ---
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Last Updated:** 2025-10-04  
 **Target Agent:** Optimization Agent (SELF)  
 **Optimization Cycle:** Quarterly or as-needed  
+**Execution Mode:** Context-agnostic (orchestrated or standalone)  
 **Risk Level:** HIGH (self-improvement requires exceptional care)
