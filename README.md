@@ -85,6 +85,28 @@ Deployment Agent: "✅ Deployed to Cursor as custom chat modes. Ready for produc
 
 **Result:** Working multi-agent financial assistant in ~1 week ⏱️
 
+### 📖 **Complete End-to-End Example**
+
+**Want to see the entire workflow in action?**
+
+👉 **[Financial Operations Assistant - Complete Walkthrough](guides/examples/financial-ops-assistant-complete-walkthrough.md)**
+
+This comprehensive 1,700+ line example demonstrates the FULL AI Architecture Assistant workflow:
+- ✅ **Real Use Case:** Mission-driven financial consultant + pro bono AI engineering
+- ✅ **All 4 Phases:** Requirements → Architecture → Engineering → Deployment
+- ✅ **Production Deployment:** Deployed to Anthropic Claude Projects (financial services platform)
+- ✅ **Validated Results:** 2,567% ROI, 75-80% time savings, 9/10 user satisfaction
+- ✅ **Evidence-Based:** Conservative financial analysis that passes CFO-level scrutiny
+- ✅ **Financial Services Best Practices:** Aligned with [Anthropic's Claude for Financial Services](https://www.anthropic.com/news/claude-for-financial-services)
+
+**Key Sections:**
+- Customer story (anonymized real consultant)
+- Requirements discovery session (45 minutes)
+- 6-step architecture design (tech stack, diagrams, costs, ROI)
+- 3-week engineering build (with code samples)
+- Anthropic Claude Projects deployment (MCP integration, compliance)
+- Quantified outcomes and lessons learned
+
 ---
 
 ## 📚 Agent Guide - When to Use Each Agent
@@ -489,8 +511,9 @@ References:
 
 **Examples:**
 
-- `guides/examples/financial_operations_assistant.md` - Complete example
-- `outputs/prototypes/` - Generated prototypes
+- **[Financial Operations Assistant - Complete Walkthrough](guides/examples/financial-ops-assistant-complete-walkthrough.md)** - Full end-to-end example (Requirements → Architecture → Engineering → Deployment to Anthropic Claude Projects)
+- [Email Automation](guides/examples/email-automation.md) - Simpler example workflow
+- `outputs/prototypes/` - Generated prototypes directory
 
 ### For Business Leaders (CTOs, CFOs, VPs)
 
