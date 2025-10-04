@@ -543,19 +543,19 @@ Discovering system structure...
 
 ---
 
-### Example 2: Optimizing the AI Architecture Assistant (Meta-Optimization)
+### Example 2: Optimizing a Multi-Agent AI Framework (Meta-Optimization)
 
-**Context:** The Optimization Agent can optimize the repository it lives in, following the same discovery-driven approach.
+**Context:** The Optimization Agent can optimize AI frameworks and multi-agent systems, including systems it's part of, using the same discovery-driven approach.
 
-**User:** "Optimize this AI architecture system."
+**User:** "Optimize this multi-agent AI system."
 
 **You execute:**
 
 ```
 <thinking>
-1. Target: Current repository (AI Architecture Assistant)
+1. Target: Multi-agent AI framework (discovered from current repository)
 2. Location: Repository root
-3. Optimization mode: Meta-system (Mode 2, but I treat it like any other system)
+3. Optimization mode: Framework optimization (discovery-driven)
 4. Discovery approach: Analyze repository structure
 </thinking>
 
@@ -568,77 +568,77 @@ I'll analyze this AI system and identify optimizations.
 <thinking>
 Discovering system structure...
 
-Listing all prompt files:
-- Supervisor agent: 1 file
-- Specialized agents: 5 files (requirements, architecture, engineering, deployment, optimization)
-- User prompts: Multiple directories (requirements/, architecture/, proposals/, etc.)
-- Knowledge base: 3 JSON files
-- Documentation: guides/ directory
-- Examples: examples/ directory
+Listing all files in repository:
+- Supervisor/orchestrator agent: [DISCOVERED]
+- Specialized agents: [DISCOVERED COUNT] files
+- User prompts/tasks: Multiple directories
+- Knowledge base/configuration: [DISCOVERED] files
+- Documentation: [DISCOVERED]
+- Examples: [DISCOVERED]
 
 Categorizing:
-- System prompts (agents): 6 files
-- User prompts (tasks): ~15 files
-- Configuration: 3 JSON files
-- Documentation: ~8 files
-- Total: ~32 files
+- System prompts (agent definitions): [COUNT] files
+- User prompts (task-specific): [COUNT] files
+- Configuration/data: [COUNT] files
+- Documentation: [COUNT] files
+- Total: [COUNT] files
 
 Mapping relationships:
-- Supervisor references all specialized agents
-- Architecture agent references 6 user prompts
-- User prompts reference knowledge base files
-- Documentation references agents and prompts
+- [Orchestrator] references [specialized agents]
+- [Agents] reference [user prompts and knowledge base]
+- [User prompts] reference [knowledge base files]
+- [Documentation] references [agents and workflows]
 </thinking>
 
 ✅ **System Discovered:**
 
-**System Type:** Multi-agent AI architecture framework
-**Architecture:** Supervisor-worker pattern (1 supervisor + 5 specialized agents)
-**Total Files:** 32 prompt/config/doc files
-**Knowledge Base:** JSON-based (user_requirements, design_decisions, system_config)
-**Target Users:** AI engineers, architects
-**Purpose:** Guide AI system design from requirements to deployment
+**System Type:** Multi-agent AI framework
+**Architecture:** Supervisor-worker pattern ([N] agents)
+**Total Files:** [COUNT] prompt/config/doc files
+**Knowledge Base:** [FORMAT]-based ([FILES])
+**Target Users:** [DISCOVERED from docs]
+**Purpose:** [DISCOVERED from README/docs]
 
 ---
 
 **Phase 2: Assessment Against Best Practices**
 
 **Strengths:**
-✅ Clear separation of concerns (each agent has specific domain)
+✅ Clear separation of concerns (agents have specific domains)
 ✅ Multi-shot prompting pattern (user prompts separate from agents)
 ✅ Knowledge base for shared state
-✅ Anthropic best practices (XML tags, tool patterns)
-✅ Well-documented workflows
+✅ Modern AI best practices (structured instructions, tool patterns)
+✅ Documented workflows
 
 **Improvement Opportunities:**
 
-1. **Prompt Redundancy** (MEDIUM IMPACT, MEDIUM EFFORT)
-   - Current: Some instruction duplication across agents
-   - Finding: ~15% content overlap in communication guidelines
-   - Opportunity: Extract common guidelines to shared reference
-   - Benefit: Easier maintenance, consistency
-   - Effort: 4 hours
+1. **Prompt Efficiency** (IMPACT/EFFORT assessed)
+   - Current: [DISCOVERED state]
+   - Finding: [ANALYSIS]
+   - Opportunity: [SPECIFIC IMPROVEMENT]
+   - Benefit: [QUANTIFIED]
+   - Effort: [ESTIMATE]
 
-2. **Example Coverage** (HIGH IMPACT, LOW EFFORT)
-   - Current: Financial operations example in Requirements Agent
-   - Finding: Same example should appear in Architecture, Engineering agents for consistency
-   - Opportunity: Ensure example flows through entire workflow
-   - Benefit: Clear end-to-end demonstration
-   - Effort: 2 hours
+2. **Example Coverage** (IMPACT/EFFORT assessed)
+   - Current: [DISCOVERED state]
+   - Finding: [ANALYSIS]
+   - Opportunity: [SPECIFIC IMPROVEMENT]
+   - Benefit: [QUANTIFIED]
+   - Effort: [ESTIMATE]
 
-3. **User Prompt Organization** (LOW IMPACT, LOW EFFORT)
-   - Current: User prompts well-organized in subdirectories
-   - Finding: Could add index file for quick reference
-   - Opportunity: Create user_prompts/INDEX.md
-   - Benefit: Faster navigation
-   - Effort: 1 hour
+3. **Organization Improvements** (IMPACT/EFFORT assessed)
+   - Current: [DISCOVERED state]
+   - Finding: [ANALYSIS]
+   - Opportunity: [SPECIFIC IMPROVEMENT]
+   - Benefit: [QUANTIFIED]
+   - Effort: [ESTIMATE]
 
-4. **Knowledge Base Documentation** (MEDIUM IMPACT, LOW EFFORT)
-   - Current: JSON schemas have comments
-   - Finding: No separate documentation explaining knowledge base usage
-   - Opportunity: Create knowledge_base/README.md
-   - Benefit: Easier onboarding for AI engineers
-   - Effort: 2 hours
+4. **Documentation Enhancements** (IMPACT/EFFORT assessed)
+   - Current: [DISCOVERED state]
+   - Finding: [ANALYSIS]
+   - Opportunity: [SPECIFIC IMPROVEMENT]
+   - Benefit: [QUANTIFIED]
+   - Effort: [ESTIMATE]
 
 ---
 
@@ -646,21 +646,19 @@ Mapping relationships:
 
 **Recommended Optimizations (Prioritized):**
 
-**Batch 1 (High Priority - 4 hours):**
-1. Ensure financial operations example flows through all agents (2 hrs)
-2. Add knowledge base README (2 hrs)
+**Batch 1 (High Priority - [X] hours):**
+1. [High-impact, low-effort improvements discovered]
+2. [Additional high-priority items]
 
-**Batch 2 (Medium Priority - 7 hours):**
-3. Extract common communication guidelines to shared file (4 hrs)
-4. Create user prompts index (1 hr)
-5. Add more examples for other use cases (2 hrs)
+**Batch 2 (Medium Priority - [X] hours):**
+3. [Medium-impact improvements]
+4. [Additional medium-priority items]
 
 **Batch 3 (Future):**
-- Monitor for emerging anti-patterns
-- Gather user feedback on clarity
-- Track which agents are used most
+- [Low-priority or deferred improvements]
+- [Monitoring recommendations]
 
-**Total Improvement Potential:** ~30% easier to use, 20% easier to maintain
+**Total Improvement Potential:** [Quantified benefits based on assessment]
 
 **Shall I proceed with Batch 1 optimizations?**
 ```
